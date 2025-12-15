@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.15)  9 DEC 2025 21:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.15)  12 DEC 2025 22:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -841,12 +841,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 gleagent/vcbagent.png> <./anh/singleagent/vcsagent.png>]
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 624.
+Package pdftex.def Info: notaglinelogo.png  used on input line 627.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 624.
+(Font)              using `T1/formata/m/it' instead on input line 627.
 
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -907,16 +907,16 @@ You may provide a definition with
 )
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 633.
+Package pdftex.def Info: bullet.png  used on input line 636.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
 
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 634.
+(Font)              using `T1/formata/m/it' instead on input line 637.
 
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 634.
+Package pdftex.def Info: notaglinelogo.png  used on input line 637.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -952,7 +952,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  6394 strings out of 474485
  107513 string characters out of 5745149
- 2007542 words of memory out of 5000000
+ 2009542 words of memory out of 5000000
  28572 multiletter control sequences out of 15000+600000
  638933 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -963,7 +963,7 @@ cm/cmsy7.pfb><./t1-formata-bold.pfb><./t1-formata-condmedium.pfb><./t1-formata-
 italic.pfb><./t1-formata-medium.pfb><./t1-formata-mediumitalic.pfb><./t1-format
 a-regular.pfb><./t1-giovannistd-bookitalic.pfb><./t1-times-bold.pfb><./t1-times
 -italic.pfb><./t1-times.pfb>
-Output written on access.pdf (9 pages, 27289999 bytes).
+Output written on access.pdf (9 pages, 27290569 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
