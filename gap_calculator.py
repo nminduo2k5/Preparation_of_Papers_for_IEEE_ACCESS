@@ -1,90 +1,66 @@
-#!/usr/bin/env python3
-"""
-Gap Calculator for Stock Forecast Table
-Calculates Gap = Actual - Predicted
-"""
+import re
 
-def calculate_gap(predicted, actual):
-    """Calculate gap between actual and predicted values"""
-    if actual == "--" or predicted == "--":
-        return "--"
-    return round(float(actual) - float(predicted), 2)
+def calculate_gap(pred, act):
+    """Calculate absolute gap |Act - Pred|"""
+    return abs(float(act) - float(pred))
 
-def format_gap_display(gap, start_price, actual_price):
-    """Format gap display with direction indicators"""
-    if gap == "--":
-        return "--"
+def process_latex_table(content):
+    """Process LaTeX table and update Gap values with |Act - Pred|"""
     
-    # Gap direction
-    gap_direction = "uparrow" if gap > 0 else "downarrow"
-    gap_sign = "+" if gap > 0 else ""
+    # Pattern to match table rows with Pred, Act, and Gap values
+    pattern = r'(\d+\.?\d*)\s*&\s*(\d+\.?\d*)\s*&\s*\\textcolor\{[^}]+\}\{[^}]*\}'
     
-    color = "green" if gap > 0 else "red"
-    return f"\\textcolor{{{color}}}{{\\({gap_direction}\\){gap_sign}{gap}}}"
-
-# Example calculations for your table
-print("=== CORRECTED GAP CALCULATIONS ===\n")
-
-# DXG Hierarchical examples
-print("DXG - Hierarchical:")
-print("Row 1 Short-term: Start=22.8, Pred=22.25, Act=24")
-gap1 = calculate_gap(22.25, 24)
-print(f"Gap = {24} - {22.25} = {gap1}")
-print(f"Formatted: {format_gap_display(gap1, 22.8, 24)}")
-
-print("\nRow 1 Medium-term: Start=22.8, Pred=23.38, Act=24.05")
-gap2 = calculate_gap(23.38, 24.05)
-print(f"Gap = {24.05} - {23.38} = {gap2}")
-print(f"Formatted: {format_gap_display(gap2, 22.8, 24.05)}")
-
-print("\nRow 1 Long-term: Start=22.8, Pred=21.83, Act=21.2")
-gap3 = calculate_gap(21.83, 21.2)
-print(f"Gap = {21.2} - {21.83} = {gap3}")
-print(f"Formatted: {format_gap_display(gap3, 22.8, 21.2)}")
-
-print("\n" + "="*50)
-
-# FPT Hierarchical examples
-print("FPT - Hierarchical:")
-print("Row 1 Short-term: Start=101.6, Pred=103.60, Act=105")
-gap4 = calculate_gap(103.60, 105)
-print(f"Gap = {105} - {103.60} = {gap4}")
-print(f"Formatted: {format_gap_display(gap4, 101.6, 105)}")
-
-print("\nRow 1 Medium-term: Start=101.6, Pred=106.07, Act=101.9")
-gap5 = calculate_gap(106.07, 101.9)
-print(f"Gap = {101.9} - {106.07} = {gap5}")
-print(f"Formatted: {format_gap_display(gap5, 101.6, 101.9)}")
-
-print("\n" + "="*50)
-print("\nCORRECTED LATEX TABLE ENTRIES:")
-print("Replace your current Gap columns with these corrected values:")
-print()
-
-# Generate corrected entries for key rows
-corrections = [
-    ("DXG Hierarchical Row 1", "22.8", "22.25", "24", "23.38", "24.05", "21.83", "21.2"),
-    ("DXG Hierarchical Row 4", "20.5", "21.10", "20.9", "28.88", "20.1", "26.71", "--"),
-    ("FPT Hierarchical Row 1", "101.6", "103.60", "105", "106.07", "101.9", "105.57", "103.9"),
-]
-
-for name, start, pred_s, act_s, pred_m, act_m, pred_l, act_l in corrections:
-    print(f"\n{name}:")
+    def replace_gap(match):
+        pred = float(match.group(1))
+        act = float(match.group(2))
+        gap = calculate_gap(pred, act)
+        
+        # Format gap value
+        gap_str = f"{gap:.2f}"
+        
+        # Return the replacement with absolute gap value
+        return f"{pred} & {act} & {gap_str}"
     
-    # Short-term
-    gap_s = calculate_gap(pred_s, act_s)
-    gap_s_formatted = format_gap_display(gap_s, start, act_s)
-    print(f"Short-term Gap: {gap_s_formatted}")
+    # Find and replace all Gap values
+    lines = content.split('\n')
+    updated_lines = []
     
-    # Medium-term  
-    gap_m = calculate_gap(pred_m, act_m)
-    gap_m_formatted = format_gap_display(gap_m, start, act_m)
-    print(f"Medium-term Gap: {gap_m_formatted}")
+    for line in lines:
+        # Look for lines with Pred & Act & Gap pattern
+        if '&' in line and 'textcolor' in line:
+            # Extract numbers before textcolor
+            parts = line.split('&')
+            if len(parts) >= 3:
+                # Find Pred and Act values (usually the last two numbers before textcolor)
+                pred_part = parts[-3].strip()
+                act_part = parts[-2].strip()
+                
+                # Extract numeric values
+                pred_match = re.search(r'(\d+\.?\d*)$', pred_part)
+                act_match = re.search(r'(\d+\.?\d*)$', act_part)
+                
+                if pred_match and act_match:
+                    pred = float(pred_match.group(1))
+                    act = float(act_match.group(1))
+                    gap = calculate_gap(pred, act)
+                    
+                    # Replace the textcolor part with simple gap value
+                    gap_str = f"{gap:.2f}"
+                    line = re.sub(r'\\textcolor\{[^}]+\}\{[^}]*\}', gap_str, line)
+        
+        updated_lines.append(line)
     
-    # Long-term
-    if act_l != "--":
-        gap_l = calculate_gap(pred_l, act_l)
-        gap_l_formatted = format_gap_display(gap_l, start, act_l)
-        print(f"Long-term Gap: {gap_l_formatted}")
-    else:
-        print(f"Long-term Gap: --")
+    return '\n'.join(updated_lines)
+
+# Read the current file content
+with open(r'c:\Users\HP\Desktop\Preparation_of_Papers_for_IEEE_ACCESS\access.tex', 'r', encoding='utf-8') as f:
+    content = f.read()
+
+# Process and update the content
+updated_content = process_latex_table(content)
+
+# Write back to file
+with open(r'c:\Users\HP\Desktop\Preparation_of_Papers_for_IEEE_ACCESS\access_updated.tex', 'w', encoding='utf-8') as f:
+    f.write(updated_content)
+
+print("Gap values have been updated to |Act - Pred| format")

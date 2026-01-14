@@ -21,26 +21,12 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{theinvestor2025}
-\BIBentryALTinterwordspacing
-{The Investor}, ``Securities accounts in vietnam hit 9.3 million, 99\% owned by
-  locals,'' Online, January 2025, accessed 2025-10-19. [Online]. Available:
-  \url{https://theinvestor.vn/securities-accounts-in-vietnam-hit-93-mln-99-owned-by-locals-d14061.html}
-\BIBentrySTDinterwordspacing
-
 \bibitem{vietnamnews2025}
 \BIBentryALTinterwordspacing
 {Vietnam News / FiinTrade}, ``Retail investors net buy over \$3 billion on
   stock market last year,'' January 2025, based on FiinTrade Market Review
   2024. [Online]. Available:
   \url{https://vietnamnews.vn/economy/1690395/retail-investors-net-buy-over-3-billion-on-stock-market-last-year.html}
-\BIBentrySTDinterwordspacing
-
-\bibitem{fiingroup2025}
-\BIBentryALTinterwordspacing
-{FiinTrade}, ``Fiintrade: Da so nha dau tu ca nhan 'du dinh' nam 2024,''
-  \emph{VnExpress}, jan 2025, accessed: 2025-10-30. [Online]. Available:
-  \url{https://vnexpress.net/fiintrade-da-so-nha-dau-tu-ca-nhan-du-dinh-nam-2024-4837646.html}
 \BIBentrySTDinterwordspacing
 
 \bibitem{ha2025}
@@ -70,12 +56,7 @@ C.~M. Jones, ``What do we know about high-frequency trading?'' \emph{Journal of
 \bibitem{Nguyen2022Microstructure}
 M.~H. Nguyen and Q.~A. Tran, ``Market microstructure and order flow dynamics in
   emerging markets: Evidence from vietnam,'' \emph{Pacific-Basin Finance
-  Journal}, vol.~74, pp. 101--125, 2022.
-
-\bibitem{phan2015stock_khuong}
-D.~K. Phan \emph{et~al.}, ``Stock market development and macro-economic
-  factors: Evidence from vietnam,'' \emph{Journal of Asian Finance, Economics
-  and Business}, vol.~2, no.~3, pp. 27--38, 2015.
+  Journal}, vol.~74, p. 101725, 2022.
 
 \bibitem{SSI2024Retail}
 {SSI Research}, ``Vietnam retail investor report,''
@@ -202,5 +183,96 @@ T.~Chai and R.~R. Draxler, ``Root mean square error (rmse) or mean absolute
 R.~J. Hyndman and A.~B. Koehler, ``Another look at measures of forecast
   accuracy,'' \emph{International Journal of Forecasting}, vol.~22, no.~4, pp.
   679--688, 2006.
+
+\bibitem{zhou2012ensemble}
+Z.-H. Zhou, \emph{Ensemble Methods: Foundations and Algorithms}.\hskip 1em plus
+  0.5em minus 0.4em\relax Chapman and Hall/CRC, 2012.
+
+\bibitem{breiman1996bagging}
+L.~Breiman, ``Bagging predictors,'' \emph{Machine Learning}, vol.~24, no.~2,
+  pp. 123--140, 1996.
+
+\bibitem{dietterich2000ensemble}
+T.~G. Dietterich, ``Ensemble methods in machine learning,'' \emph{International
+  Workshop on Multiple Classifier Systems}, pp. 1--15, 2000.
+
+\bibitem{vo2019financial}
+X.~V. Vo, ``Financial market efficiency in emerging markets: Evidence from
+  vietnam,'' \emph{Finance Research Letters}, 2019.
+
+\bibitem{nguyen2021market}
+T.~Nguyen and M.~Tran, ``Market microstructure and retail trading in vietnam,''
+  \emph{Asian Economic Papers}, 2021.
+
+\bibitem{bekaert2007emerging}
+G.~Bekaert, C.~R. Harvey, C.~T. Lundblad, and S.~Siegel, ``The european union,
+  the euro, and equity market integration,'' \emph{Journal of Financial
+  Economics}, vol.~86, no.~3, pp. 606--644, 2007.
+
+\bibitem{campbell1997stock}
+J.~Y. Campbell, A.~W. Lo, and A.~C. MacKinlay, \emph{The econometrics of
+  financial markets}.\hskip 1em plus 0.5em minus 0.4em\relax Princeton
+  University Press, 1997.
+
+\bibitem{guidolin2007asset}
+M.~Guidolin and A.~Timmermann, ``Asset allocation under multivariate regime
+  switching,'' \emph{Journal of Economic Dynamics and Control}, vol.~31,
+  no.~11, pp. 3503--3544, 2007.
+
+\bibitem{kenton2019bert}
+J.~D. M.-W.~C. Kenton and K.~Toutanova, ``Bert: Pre-training of deep
+  bidirectional transformers for language understanding,'' \emph{arXiv preprint
+  arXiv:1810.04805}, 2019.
+
+\bibitem{tetlock2007giving}
+P.~C. Tetlock, ``Giving content to investor sentiment: The role of media in the
+  stock market,'' \emph{The Journal of Finance}, vol.~62, no.~3, pp.
+  1139--1168, 2007.
+
+\bibitem{hansen2001neural}
+L.~K. Hansen and P.~Salamon, ``Neural network ensembles,'' \emph{IEEE
+  Transactions on Pattern Analysis and Machine Intelligence}, vol.~12, no.~10,
+  pp. 993--1001, 1990.
+
+\bibitem{harvey1995predictable}
+C.~R. Harvey, ``Predictable risk and returns in emerging markets,'' \emph{The
+  Review of Financial Studies}, vol.~8, no.~3, pp. 773--816, 1995.
+
+\bibitem{gama2014survey}
+J.~Gama, I.~Žliobaitė, A.~Bifet, M.~Pechenizkiy, and A.~Bouchachia, ``A
+  survey on concept drift adaptation,'' \emph{ACM Computing Surveys}, vol.~46,
+  no.~4, pp. 1--37, 2014.
+
+\bibitem{bommasani2021foundation}
+R.~e.~a. Bommasani, ``On the opportunities and risks of foundation models,''
+  \emph{arXiv preprint arXiv:2108.07258}, 2021.
+
+\bibitem{brown2020language}
+T.~Brown, B.~Mann, N.~Ryder, M.~Subbiah, J.~D. Kaplan, P.~Dhariwal,
+  A.~Neelakantan, P.~Shyam, G.~Sastry, A.~Askell \emph{et~al.}, ``Language
+  models are few-shot learners,'' \emph{Advances in Neural Information
+  Processing Systems}, vol.~33, pp. 1877--1901, 2020.
+
+\bibitem{arrieta2020explainable}
+A.~B. Arrieta, N.~Díez-Rodríguez, J.~Del~Ser, A.~Bennetot, S.~Tabik,
+  A.~Barbado, S.~García, S.~Gil-López, D.~Molina, R.~Benjamins \emph{et~al.},
+  ``Explainable artificial intelligence (xai): Concepts, taxonomies,
+  opportunities and challenges toward responsible ai,'' \emph{Information
+  Fusion}, vol.~58, pp. 82--115, 2020.
+
+\bibitem{phan2015stock}
+D.~K. Phan \emph{et~al.}, ``Stock market development and macro-economic
+  factors: Evidence from vietnam,'' \emph{Journal of Asian Finance, Economics
+  and Business}, vol.~2, no.~3, pp. 27--38, 2015.
+
+\bibitem{qiu2020pre}
+X.~Qiu, T.~Sun, Y.~Xu, Y.~Shao, N.~Dai, and X.~Huang, ``Pre-trained models for
+  natural language processing: A survey,'' \emph{Science China Technological
+  Sciences}, vol.~63, no.~10, pp. 1872--1897, 2020.
+
+\bibitem{cont2001empirical}
+R.~Cont, ``Empirical properties of asset returns: Stylized facts and
+  statistical issues,'' \emph{Quantitative Finance}, vol.~1, no.~2, pp.
+  223--236, 2001.
 
 \end{thebibliography}

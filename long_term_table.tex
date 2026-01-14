@@ -1,0 +1,36 @@
+\begin{table}[!h]
+\centering
+\caption{Average Long-term Performance of Prediction Architectures Across Stocks (60-day horizon)}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{c c c c c}
+\hline
+\textbf{Stock} & \textbf{Architecture} & \textbf{Avg MAE} & \textbf{Avg RMSE} & \textbf{Avg MAPE} \\
+\hline
+
+\multirow{3}{*}{\textbf{DXG}}
+& Hierarchical     & \textbf{3.70} & \textbf{4.85} & \textbf{18.2\%} \\
+& Ensemble Voting  & 4.09 & 5.12 & 19.8\% \\
+& Round Robin      & 5.24 & 6.78 & 25.1\% \\
+\hline
+
+\multirow{3}{*}{\textbf{FPT}}
+& Round Robin      & \textbf{5.63} & \textbf{7.89} & \textbf{6.1\%} \\
+& Ensemble Voting  & 6.90 & 8.45 & 7.3\% \\
+& Hierarchical     & 8.35 & 10.12 & 8.9\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCB}}
+& Ensemble Voting  & \textbf{5.60} & \textbf{6.23} & \textbf{9.8\%} \\
+& Round Robin      & 5.93 & 6.87 & 10.4\% \\
+& Hierarchical     & 7.12 & 8.45 & 12.5\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCS}}
+& Ensemble Voting  & \textbf{3.78} & \textbf{4.12} & \textbf{8.7\%} \\
+& Hierarchical     & 4.03 & 4.35 & 9.2\% \\
+& Round Robin      & 4.40 & 4.89 & 10.1\% \\
+\hline
+
+\end{tabular}
+}
+\end{table}

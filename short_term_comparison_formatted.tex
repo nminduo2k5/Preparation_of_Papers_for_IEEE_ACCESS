@@ -1,0 +1,46 @@
+\subsubsection{Short-term Performance Comparison}
+
+\begin{table*}[!h]
+\centering
+\caption{Short-term Performance Comparison Across LLMs (Best values in bold)}
+\label{tab:short_term_comparison}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
+\scriptsize
+\begin{tabular}{llccc|ccc|ccc}
+\toprule
+\multirow{2}{*}{\textbf{Stock}} &
+\multirow{2}{*}{\textbf{Architecture}} & 
+\multicolumn{3}{c|}{\textbf{Llama 3.1:8b}} & 
+\multicolumn{3}{c|}{\textbf{GPT-4o}} & 
+\multicolumn{3}{c}{\textbf{Google Gemini 2.0}} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8} \cmidrule(lr){9-11}
+& & \textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} & \textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} & \textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} \\
+\midrule
+
+\multirow{3}{*}{\textbf{DXG}}
+& \textbf{Hierarchical} & 0.54 & 0.68 & 2.4\% & \textbf{0.50} & 0.62 & 2.3\% & 0.71 & 0.94 & 3.1\% \\
+& \textbf{Round Robin} & \textbf{0.51} & \textbf{0.61} & \textbf{2.3\%} & \textbf{0.50} & \textbf{0.60} & \textbf{2.3\%} & 0.79 & 0.97 & 3.5\% \\
+& \textbf{Ensemble} & 0.55 & 0.69 & 2.5\% & 0.51 & 0.64 & \textbf{2.3\%} & 0.89 & 1.09 & 3.9\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{FPT}}
+& \textbf{Hierarchical} & 2.82 & 3.29 & 2.9\% & \textbf{2.04} & \textbf{2.83} & \textbf{2.1\%} & 2.67 & 2.85 & 2.8\% \\
+& \textbf{Round Robin} & \textbf{2.79} & \textbf{3.27} & \textbf{2.8\%} & 2.75 & 3.23 & \textbf{2.8\%} & 2.16 & 2.50 & 2.3\% \\
+& \textbf{Ensemble} & 2.90 & 3.38 & 2.9\% & 2.73 & 3.20 & \textbf{2.8\%} & \textbf{1.38} & \textbf{1.58} & \textbf{1.4\%} \\
+\midrule
+
+\multirow{3}{*}{\textbf{VCB}}
+& \textbf{Hierarchical} & 1.43 & 2.06 & 2.4\% & 0.58 & 0.73 & 0.9\% & 1.34 & 1.55 & 2.2\% \\
+& \textbf{Round Robin} & \textbf{0.51} & 0.70 & \textbf{0.8\%} & \textbf{0.26} & \textbf{0.34} & \textbf{0.4\%} & \textbf{1.09} & \textbf{1.32} & \textbf{1.8\%} \\
+& \textbf{Ensemble} & 9.46 & 13.40 & 14.4\% & 0.46 & 0.65 & 0.7\% & 1.79 & 1.96 & 2.9\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{VCS}}
+& \textbf{Hierarchical} & 1.73 & 1.79 & 3.7\% & 1.76 & 1.81 & 3.8\% & 0.75 & 0.82 & 1.6\% \\
+& \textbf{Round Robin} & 1.80 & 1.85 & 3.8\% & 1.79 & 1.85 & 3.8\% & 0.72 & 0.81 & 1.5\% \\
+& \textbf{Ensemble} & 2.26 & 2.40 & 4.8\% & \textbf{1.31} & \textbf{1.50} & \textbf{2.8\%} & \textbf{0.68} & \textbf{0.80} & \textbf{1.5\%} \\
+
+\bottomrule
+\end{tabular}
+\end{table*}

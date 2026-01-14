@@ -1,0 +1,82 @@
+\clearpage
+\onecolumn
+
+\subsubsection{Performance Comparison Across LLMs and Time Horizons}
+
+\begin{table*}[!h]
+\centering
+\caption{Performance Comparison Across LLMs and Time Horizons}
+\label{tab:llm_performance_comparison}
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.05}
+\scriptsize
+\begin{tabular}{llccc|ccc|ccc|ccc|ccc|ccc}
+\toprule
+\multirow{3}{*}{\textbf{Stock}} &
+\multirow{3}{*}{\textbf{Architecture}} & 
+\multicolumn{9}{c|}{\textbf{Short-term}} &
+\multicolumn{3}{c|}{\textbf{Medium-term}} &
+\multicolumn{3}{c}{\textbf{Long-term}} \\
+\cmidrule(lr){3-11} \cmidrule(lr){12-14} \cmidrule(lr){15-17}
+& & 
+\multicolumn{3}{c|}{\textbf{Llama 3.1:8b}} & 
+\multicolumn{3}{c|}{\textbf{GPT-4o}} & 
+\multicolumn{3}{c|}{\textbf{Google Gemini 2.0}} &
+\multicolumn{3}{c|}{\textbf{Best LLM}} &
+\multicolumn{3}{c}{\textbf{Best LLM}} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8} \cmidrule(lr){9-11} \cmidrule(lr){12-14} \cmidrule(lr){15-17}
+& & \textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} & \textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} & \textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} & \textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} & \textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} \\
+\midrule
+
+\multirow{3}{*}{\textbf{DXG}}
+& \textbf{Hierarchical} & 0.54 & 0.68 & 2.4\% & \textbf{0.50} & 0.62 & 2.3\% & 0.71 & 0.94 & 3.1\% & \textbf{0.76}$^G$ & \textbf{0.95}$^G$ & \textbf{3.5\%}$^G$ & \textbf{3.60}$^G$ & 4.55 & \textbf{21.2\%}$^G$ \\
+& \textbf{Round Robin} & \textbf{0.51} & \textbf{0.61} & \textbf{2.3\%} & \textbf{0.50} & \textbf{0.60} & \textbf{2.3\%} & 0.79 & 0.97 & 3.5\% & \textbf{1.84}$^G$ & \textbf{2.16}$^G$ & \textbf{8.7\%}$^G$ & 4.19$^{GPT}$ & 4.63$^{GPT}$ & 23.9\%$^{GPT}$ \\
+& \textbf{Ensemble} & 0.55 & 0.69 & 2.5\% & 0.51 & 0.64 & \textbf{2.3\%} & 0.89 & 1.09 & 3.9\% & \textbf{0.76}$^G$ & \textbf{0.95}$^G$ & \textbf{3.5\%}$^G$ & \textbf{3.25}$^G$ & \textbf{4.06}$^G$ & \textbf{19.1\%}$^G$ \\
+\midrule
+
+\multirow{3}{*}{\textbf{FPT}}
+& \textbf{Hierarchical} & 2.82 & 3.29 & 2.9\% & \textbf{2.04} & \textbf{2.83} & \textbf{2.1\%} & 2.67 & 2.85 & 2.8\% & \textbf{6.58}$^{GPT}$ & \textbf{8.31}$^{GPT}$ & \textbf{6.4\%}$^{GPT}$ & 2.24$^{GPT}$ & 2.86$^{GPT}$ & 2.4\%$^{GPT}$ \\
+& \textbf{Round Robin} & \textbf{2.79} & \textbf{3.27} & \textbf{2.8\%} & 2.75 & 3.23 & \textbf{2.8\%} & 2.16 & 2.50 & 2.3\% & \textbf{6.64}$^L$ & \textbf{8.32}$^L$ & \textbf{6.5\%}$^L$ & \textbf{1.48}$^{GPT}$ & \textbf{1.99}$^{GPT}$ & \textbf{1.6\%}$^{GPT}$ \\
+& \textbf{Ensemble} & 2.90 & 3.38 & 2.9\% & 2.73 & 3.20 & \textbf{2.8\%} & \textbf{1.38} & \textbf{1.58} & \textbf{1.4\%} & \textbf{5.81}$^G$ & \textbf{6.97}$^G$ & \textbf{5.7\%}$^G$ & \textbf{2.06}$^L$ & \textbf{2.73}$^L$ & \textbf{2.2\%}$^L$ \\
+\midrule
+
+\multirow{3}{*}{\textbf{VCB}}
+& \textbf{Hierarchical} & 1.43 & 2.06 & 2.4\% & 0.58 & 0.73 & 0.9\% & 1.34 & 1.55 & 2.2\% & \textbf{1.16}$^L$ & \textbf{1.58}$^L$ & \textbf{1.8\%}$^L$ & \textbf{5.21}$^G$ & \textbf{5.81}$^G$ & \textbf{8.9\%}$^G$ \\
+& \textbf{Round Robin} & \textbf{0.51} & 0.70 & \textbf{0.8\%} & \textbf{0.26} & \textbf{0.34} & \textbf{0.4\%} & \textbf{1.09} & \textbf{1.32} & \textbf{1.8\%} & 1.67$^L$ & 2.23$^L$ & 2.7\%$^L$ & 5.09$^{GPT}$ & 5.75$^{GPT}$ & 8.7\%$^{GPT}$ \\
+& \textbf{Ensemble} & 9.46 & 13.40 & 14.4\% & 0.46 & 0.65 & 0.7\% & 1.79 & 1.96 & 2.9\% & 1.63$^L$ & 2.01$^L$ & 2.6\%$^L$ & \textbf{4.37}$^{GPT}$ & \textbf{5.03}$^{GPT}$ & \textbf{7.4\%}$^{GPT}$ \\
+\midrule
+
+\multirow{3}{*}{\textbf{VCS}}
+& \textbf{Hierarchical} & 1.73 & 1.79 & 3.7\% & 1.76 & 1.81 & 3.8\% & 0.75 & 0.82 & 1.6\% & \textbf{0.74}$^G$ & \textbf{1.19}$^G$ & \textbf{1.6\%}$^G$ & 1.32$^L$ & 1.52$^L$ & 3.0\%$^L$ \\
+& \textbf{Round Robin} & 1.80 & 1.85 & 3.8\% & 1.79 & 1.85 & 3.8\% & 0.72 & 0.81 & 1.5\% & \textbf{1.65}$^{GPT}$ & \textbf{1.95}$^{GPT}$ & \textbf{3.4\%}$^{GPT}$ & \textbf{1.04}$^L$ & \textbf{1.27}$^L$ & \textbf{2.4\%}$^L$ \\
+& \textbf{Ensemble} & 2.26 & 2.40 & 4.8\% & \textbf{1.31} & \textbf{1.50} & \textbf{2.8\%} & \textbf{0.68} & \textbf{0.80} & \textbf{1.5\%} & 0.75$^G$ & 0.94$^G$ & 1.6\%$^G$ & 1.19$^L$ & 1.42$^{GPT}$ & 2.7\%$^L$ \\
+
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\vspace{0.5cm}
+
+\begin{table*}[!h]
+\centering
+\caption{Summary of Best Performing LLM by Stock and Time Horizon}
+\label{tab:best_llm_summary}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\scriptsize
+\begin{tabular}{lccc}
+\toprule
+\textbf{Stock} & \textbf{Short-term Winner} & \textbf{Medium-term Winner} & \textbf{Long-term Winner} \\
+\midrule
+\textbf{DXG} & GPT-4o / Llama 3.1:8b & GPT-4o & Google Gemini 2.0 \\
+\textbf{FPT} & Google Gemini 2.0 & Google Gemini 2.0 & GPT-4o \\
+\textbf{VCB} & GPT-4o & Llama 3.1:8b & GPT-4o \\
+\textbf{VCS} & Google Gemini 2.0 & Google Gemini 2.0 & Llama 3.1:8b \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\textbf{Legend:} $^L$ = Llama 3.1:8b, $^{GPT}$ = GPT-4o, $^G$ = Google Gemini 2.0 Flash
+
+\newpage
+\twocolumn
