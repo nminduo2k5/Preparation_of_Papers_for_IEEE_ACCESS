@@ -86,7 +86,7 @@ To properly utilize AI-based strategies within Vietnam's stock market, it's esse
 
 \end{itemize}
 
-Accordingly, this study proposes a tailored simulation framework that combines specialised agent-modules and architectural designs to model Vietnamese stock-market dynamics. The focus will be on testing trading strategies, liquidity and volatility responses, and inter-agent communication under different coordination architectures. By doing so, the research contributes both to the academic understanding of agent-to-agent interactions in emerging markets and to the practical design of decision-support tools for Vietnam’s financial ecosystem.
+Accordingly, we proposes a tailored simulation framework that combines specialised agent-modules and architectural designs to model Vietnamese stock-market dynamics. The focus will be on testing trading strategies, liquidity and volatility responses, and inter-agent communication under different coordination architectures. By doing so, the research contributes both to the academic understanding of agent-to-agent interactions in emerging markets and to the practical design of decision-support tools for Vietnam’s financial ecosystem.
 
 
 
@@ -96,11 +96,10 @@ Accordingly, this study proposes a tailored simulation framework that combines s
 \subsection{Stock Market Data}
 Data from worldwide stock exchanges has been acknowledged for a considerable period as a vital element for scholarly investigations and choices made by organizations. Established trading platforms like the NYSE, NASDAQ, LSE, and TSE function on a substantial level, having market values that go beyond USD 40–50 trillion when added up, and regular intraday trading volumes frequently go beyond hundreds of billions each day \cite{WorldFederation2024}. These marketplaces offer revisions to order books at the millisecond level, comprehensive limit order details (Level 3), and uniform high-frequency data streams appropriate for automated trading systems and studies into execution at the microsecond level \cite{Jones2019HFT}. These kinds of frameworks have paved the way for detailed studies of the structure of markets, latency-based arbitrage strategies, and how systemic risks extend throughout high-frequency settings.
 
-In comparison, the stock market of Vietnam, which includes HOSE, HNX, and UPCoM, remains structurally smaller and data-constrained. The total value of all listed companies in 2024 is about USD 250–300 billion \cite{HOSE2024Report}, and the average value of daily trades is between USD 800 million and 1.2 billion, significantly lower than regional peers such as Thailand and Malaysia \cite{ADB2024}. Also, the data that is available is limited to the highest, lowest, opening, and closing prices at the end of the day, a summary of order flow, and recently, some limited visibility of the order book, but it does not have timestamps measured in microseconds or complete insight into the depth of orders \cite{Nguyen2022Microstructure}. These limitations in structure show the general traits of markets that are still developing, which include bigger swings in returns, less involvement from big institutions, and more reaction to changes in rules and laws.
+In comparison, the stock market of Vietnam, which includes HOSE, HNX, and UPCoM, remains structurally smaller and data-constrained. The total value of all listed companies in 2024 is about USD 250–300 billion \cite{HOSE2024Report}, and the average value of daily trades is between USD 800 million and 1.2 billion, significantly lower than regional peers such as Thailand and Malaysia \cite{ADB2024}. Also, the data that is available is limited to the highest, lowest, opening, and closing prices at the end of the day, a summary of order flow, and recently, some limited visibility of the order book, but it does not have timestamps measured in microseconds or complete insight into the depth of orders \cite{Nguyen2022Microstructure}. 
 
 A key behavioral divergence arises from the dominance of retail investors, who account for more than 85\% of total trading volume in Vietnam \cite{SSI2024Retail}. In contrast to markets run by big organizations where prices usually change based on news and profits, price changes in Vietnam tend to be more affected by government instructions, unofficial means of communication, and guesses based on feelings \cite{StateBank2023}. While markets around the world are starting to use news chosen by AI and different kinds of data in their trading systems \cite{BloombergAI2023}, what happens in the Vietnamese market is often influenced by what people feel on social media locally and what they think will happen with major government policies.
 
-In conclusion, The Vietnam stock market is not just a basic example of worldwide marketplaces; instead, it is a complex, emotionally reactive environment with a wide variety of behaviors, functioning with limited information, changing rules, and strong involvement from individual investors. This unique arrangement turns it into a fascinating place to test how well agent-based models and flexible AI systems work in developing economies.
 
 \subsection{AI in Stock Price Prediction}
 
@@ -115,15 +114,13 @@ Overall, this shift from single-model learning to multi-agent simulation reflect
 \subsubsection{Machine Learning for Stock}
 The utilization of machine learning methodologies has been a long-standing practice in stock price prediction, particularly for capturing non-linear trends within the realm of financial time series data. An illustrative example is seen in Kim \cite{kim2003}, where support vector machines (SVM) were employed to project the fluctuations in the stock market, achieving a level of effectiveness that surpassed that of conventional statistical modeling techniques. Similarly, Huang et al. \cite{huang2005} used the capabilities of SVM to forecast the directional prediction of stock indices, whereas Patel et al. \cite{patel2015} made use of a hybrid of artificial neural networks (ANN), random forests, and SVM, all in pursuit of heightened predictive precision. Progressing into more contemporary research, there has been an assimilation of deep learning techniques, notably the adoption of long short-term memory (LSTM) models, which possess the inherent capacity to discern temporal interrelationships within sequences of prices \cite{fischer2018,chen2015}.
 
-Generally, these types of models use structured data such as past prices, amount of trading, and market measures as well as sometimes unstructured data like news or feelings on social media and then give either a price prediction or where the market is likely to go, whether up or down. Although the results frequently demonstrate better accuracy than standard statistical comparisons, there are still some problems. Initially, machine learning models can easily become too overfitting to the data in fast-changing markets where patterns are unstable. Secondly, they mostly view the market as a simple system where data goes in and results come out, ignoring how investors change and affect each other. Finally, these models have difficulty clarifying new events like market booms, collapses, or sudden drops in trading because these come from group actions rather than single pieces of information.
-
 To solve these challenges, researchers have suggested moving towards \textit{Multi-Agent Systems} (MAS). Multi-Agent Systems, in contrast to traditional machine learning, clearly represent multi agents, such as investors, brokers, and regulators, who interact under market rules and adapt their strategies over time. This allows for the analysis of complex, emergent behaviors beyond prediction accuracy, offering more thorough knowledge of market stability, widespread dangers, and the significance of agent communication \cite{lebaron2006,chen2012,tesfatsion2006,wang2021}. From this perspective, Multi-Agent Systems do not merely complement traditional machine learning, but extend it by embedding predictive intelligence into an interactive and behaviorally realistic market environment — a setup particularly well-suited to Vietnam’s retail-dominated and sentiment-driven stock market structure.
 
 \subsubsection{Multi-Agent for Stock Price Prediction}
 Initial uses of Multi-Agent Systems in the world of finance were primarily aimed at mirroring how markets behave, instead of trying to predict what prices would be. Groundbreaking research, like the work done by LeBaron \cite{lebaron2006} and Tesfatsion \cite{tesfatsion2006}, revealed that different agents working together can recreate typical market behaviors, such as prices changing a lot in short periods or market bubbles. These are trends that standard statistical analysis or single-model learning methods fail to explain.
 Subsequent projects took MAS a step further into areas where agents could learn and improve their trading skills through trial and error. As an example, Chen et al. \cite{chen2012} highlighted how unexpected market behaviors can arise, and Wang et al. \cite{wang2021} were able to create investment portfolios that did better than those that followed fixed, unchanging rules.
 
-Recent MAS studies are increasingly focusing on  hybrid learning-based architectures, where automated systems communicate and also forecast prices using artificial market settings. Therefore, it is crucial to determine not just if MAS works, but specifically which coordination architecture (Hierarchical, Round Robin, or Ensemble) is best suited (RQ2) to handle the varying pressures of short-term speculation versus long-term trends in the Vietnamese market.
+Recent advancements in financial modeling have witnessed a paradigm shift towards hybrid learning-based architectures. In these sophisticated environments, automated agents do not merely function in isolation; they engage in complex, asynchronous communication within artificial market settings to simulate trading dynamics. Consequently, the research frontier has moved beyond merely validating the feasibility of MAS. The critical imperative now lies in identifying the optimal coordination topology. Specifically, we aims to determine which structural framework—whether the stratified logic of Hierarchical models, the cyclical consensus of Round Robin, or the democratic aggregation of Ensemble methods—is best equipped (RQ2) to navigate the idiosyncratic volatility of the Vietnamese stock market. Addressing this is vital for balancing the conflicting signals of short-term retail speculation against long-term fundamental trends
 
 \section{Methodology}
 \subsection{Architectural Overview}
@@ -163,7 +160,7 @@ System overview diagram}
 \end{itemize}
 
 \subsubsection{LLMs Overview}
-In this study, \textbf{Google Gemini 2.0 Flash} is selected as the core LLM due to its high scalability, low-latency cloud execution, and exceptionally large context window, making it well-suited for production-grade AI pipelines. To provide a broader comparative perspective, we additionally include \textbf{OpenAI GPT-4o} and \textbf{Llama-3.1-8b}. GPT-4o is recognized for its strong reasoning quality and balanced multimodal performance, whereas Llama-3.1 offers significant advantages for privacy-focused and offline deployments. The operational characteristics of these models are summarized in Table~\ref{tab:llm_comparison_summary_en}.
+\textbf{Google Gemini 2.0 Flash} is selected as the core LLM due to its high scalability, low-latency cloud execution, and exceptionally large context window, making it well-suited for production-grade AI pipelines. To provide a broader comparative perspective, we additionally include \textbf{OpenAI GPT-4o} and \textbf{Llama-3.1-8b}. GPT-4o is recognized for its strong reasoning quality and balanced multimodal performance, whereas Llama-3.1 offers significant advantages for privacy-focused and offline deployments. The operational characteristics of these models are summarized in Table~\ref{tab:llm_comparison_summary_en}.
 
 \begin{table}[h!]
 \centering
@@ -344,7 +341,7 @@ Assessing performance across these four checkpoints enables a comprehensive exam
 
 
 \subsection{Evaluation Metrics.} 
-To rigorously evaluate the predictive performance of the proposed framework, this study utilizes three established statistical indicators: Mean Absolute Error (MAE), Root Mean Square Error (RMSE), and Mean Absolute Percentage Error (MAPE). MAE quantifies the average magnitude of errors in a set of forecasts without considering their direction, providing a linear score that weights all individual differences equally~\cite{willmott2005advantages}. Conversely, RMSE operates as a quadratic scoring rule; by squaring residuals prior to averaging, it assigns greater weight to larger deviations, thereby increasing sensitivity to outliers~\cite{chai2014root}. Finally, MAPE measures accuracy as a relative percentage, facilitating the comparison of forecasting performance across datasets with differing scales~\cite{hyndman2006another}.
+To rigorously evaluate the predictive performance of the proposed framework, we utilize three established statistical indicators: Mean Absolute Error (MAE), Root Mean Square Error (RMSE), and Mean Absolute Percentage Error (MAPE). MAE quantifies the average magnitude of errors in a set of forecasts without considering their direction, providing a linear score that weights all individual differences equally~\cite{willmott2005advantages}. Conversely, RMSE operates as a quadratic scoring rule; by squaring residuals prior to averaging, it assigns greater weight to larger deviations, thereby increasing sensitivity to outliers~\cite{chai2014root}. Finally, MAPE measures accuracy as a relative percentage, facilitating the comparison of forecasting performance across datasets with differing scales~\cite{hyndman2006another}.
 
 \section{RQ1: Architectural Effectiveness Across Horizons}
 This section addresses the first research question by comparing the coordination effectiveness of three multi-agent architectures: \textit{Hierarchical}, \textit{Round Robin}, and \textit{Ensemble Voting}. Coordination effectiveness is defined as the ability to manage interactions among forecasting agents to produce stable and accurate predictions under varying market conditions. This evaluation is particularly relevant in the Vietnamese stock market, which is characterized by high volatility and frequent regime shifts.
@@ -606,17 +603,17 @@ To assess adaptability and robustness, we evaluate predictive performance across
 
 % SHORT
 \multirow{12}{*}{\textbf{Short-term}}
-& \multirow{3}{*}{\textbf{DXG}} & Hierarchical & 0.54 & 0.68 & 2.4 & \textbf{0.50} & 0.62 & 2.3 & 0.71 & 0.94 & 3.1 \\
+& \multirow{3}{*}{\textbf{DXG}} & Hierarchical & 0.54 & 0.68 & 2.4 & \textbf{0.50} & 0.62 & 2.3 & \textbf{0.71} & \textbf{0.94} & \textbf{3.1} \\
 & & Round Robin & \textbf{0.51} & \textbf{0.61} & \textbf{2.3} & \textbf{0.50} & \textbf{0.60} & \textbf{2.3} & 0.79 & 0.97 & 3.5 \\
 & & Ensemble & 0.55 & 0.69 & 2.5 & 0.51 & 0.64 & \textbf{2.3} & 0.89 & 1.09 & 3.9 \\
 & \multirow{3}{*}{\textbf{FPT}} & Hierarchical & 2.82 & 3.29 & 2.9 & \textbf{2.04} & \textbf{2.83} & \textbf{2.1} & 2.67 & 2.85 & 2.8 \\
-& & Round Robin & \textbf{2.79} & \textbf{3.27} & \textbf{2.8} & 2.75 & 3.23 & \textbf{2.8} & 2.16 & 2.50 & 2.3 \\
-& & Ensemble & 2.90 & 3.38 & 2.9 & 2.73 & 3.20 & \textbf{2.8} & \textbf{1.38} & \textbf{1.58} & \textbf{1.4} \\
+& & Round Robin & \textbf{2.79} & \textbf{3.27} & \textbf{2.8} & 2.75 & 3.23 & 2.8 & 2.16 & 2.50 & 2.3 \\
+& & Ensemble & 2.90 & 3.38 & 2.9 & 2.73 & 3.20 & 2.8 & \textbf{1.38} & \textbf{1.58} & \textbf{1.4} \\
 & \multirow{3}{*}{\textbf{VCB}} & Hierarchical & 1.43 & 2.06 & 2.4 & 0.58 & 0.73 & 0.9 & 1.34 & 1.55 & 2.2 \\
-& & Round Robin & \textbf{0.51} & 0.70 & \textbf{0.8} & \textbf{0.26} & \textbf{0.34} & \textbf{0.4} & \textbf{1.09} & \textbf{1.32} & \textbf{1.8} \\
+& & Round Robin & \textbf{0.51} & \textbf{0.70} & \textbf{0.8} & \textbf{0.26} & \textbf{0.34} & \textbf{0.4} & \textbf{1.09} & \textbf{1.32} & \textbf{1.8} \\
 & & Ensemble & 9.46 & 13.40 & 14.4 & 0.46 & 0.65 & 0.7 & 1.79 & 1.96 & 2.9 \\
-& \multirow{3}{*}{\textbf{VCS}} & Hierarchical & 1.73 & 1.79 & 3.7 & 1.76 & 1.81 & 3.8 & 0.75 & 0.82 & 1.6 \\
-& & Round Robin & 1.80 & 1.85 & 3.8 & 1.79 & 1.85 & 3.8 & 0.72 & 0.81 & 1.5 \\
+& \multirow{3}{*}{\textbf{VCS}} & Hierarchical & \textbf{1.73} & \textbf{1.79} & \textbf{3.7} & 1.76 & 1.81 & 3.8 & 0.75 & 0.82 & 1.6 \\
+& & Round Robin & 1.80 & 1.85 & 3.8 & 1.79 & 1.85 & 3.8 & 0.72 & 0.81 & \textbf{1.5} \\
 & & Ensemble & 2.26 & 2.40 & 4.8 & \textbf{1.31} & \textbf{1.50} & \textbf{2.8} & \textbf{0.68} & \textbf{0.80} & \textbf{1.5} \\
 \midrule
 
@@ -628,9 +625,9 @@ To assess adaptability and robustness, we evaluate predictive performance across
 & \multirow{3}{*}{\textbf{FPT}} & Hierarchical & 6.66 & 8.33 & 6.5 & \textbf{6.58} & \textbf{8.31} & \textbf{6.4} & 7.09 & 8.12 & 6.9 \\
 & & Round Robin & \textbf{6.64} & \textbf{8.32} & \textbf{6.5} & 6.64 & 8.36 & 6.5 & 7.63 & 8.10 & 7.5 \\
 & & Ensemble & 7.15 & 8.48 & 7.0 & 6.72 & 8.36 & 6.5 & \textbf{5.81} & \textbf{6.97} & \textbf{5.7} \\
-& \multirow{3}{*}{\textbf{VCB}} & Hierarchical & \textbf{1.16} & \textbf{1.58} & \textbf{1.8} & 1.61 & 1.80 & 2.6 & 2.56 & 2.68 & 4.1 \\
+& \multirow{3}{*}{\textbf{VCB}} & Hierarchical & \textbf{1.16} & \textbf{1.58} & \textbf{1.8} & \textbf{1.61} & \textbf{1.80} & \textbf{2.6} & 2.56 & 2.68 & 4.1 \\
 & & Round Robin & 1.67 & 2.23 & 2.7 & 1.88 & 2.32 & 3.0 & \textbf{2.49} & \textbf{2.64} & \textbf{4.0} \\
-& & Ensemble & 1.63 & 2.01 & 2.6 & \textbf{2.24} & \textbf{2.49} & \textbf{3.6} & 2.51 & 2.71 & 4.0 \\
+& & Ensemble & 1.63 & 2.01 & 2.6 & 2.24 & 2.49 & 3.6 & 2.51 & 2.71 & 4.0 \\
 & \multirow{3}{*}{\textbf{VCS}} & Hierarchical & 2.23 & 2.30 & 4.7 & 2.20 & 2.26 & 4.6 & \textbf{0.74} & \textbf{1.19} & \textbf{1.6} \\
 & & Round Robin & \textbf{2.22} & \textbf{2.27} & \textbf{4.6} & \textbf{1.65} & \textbf{1.95} & \textbf{3.4} & 1.38 & 1.98 & 2.8 \\
 & & Ensemble & 2.30 & 2.37 & 4.8 & 1.85 & 2.05 & 3.8 & 0.75 & 0.94 & 1.6 \\
@@ -638,15 +635,15 @@ To assess adaptability and robustness, we evaluate predictive performance across
 
 % LONG
 \multirow{12}{*}{\textbf{Long-term}}
-& \multirow{3}{*}{\textbf{DXG}} & Hierarchical & 4.07 & 4.45 & 23.2 & 3.83 & 4.29 & 21.8 & 3.60 & 4.55 & 21.2 \\
+& \multirow{3}{*}{\textbf{DXG}} & Hierarchical & 4.07 & 4.45 & 23.2 & \textbf{3.83} & \textbf{4.29} & \textbf{21.8} & \textbf{3.60} & 4.55 & 21.2 \\
 & & Round Robin & 4.27 & 4.67 & 24.3 & 4.19 & 4.63 & 23.9 & 4.73 & 5.42 & 27.0 \\
-& & Ensemble & \textbf{3.89} & \textbf{4.28} & \textbf{22.2} & \textbf{3.86} & \textbf{4.29} & \textbf{22.1} & \textbf{3.25} & 4.06 & \textbf{19.1} \\
+& & Ensemble & \textbf{3.89} & \textbf{4.28} & \textbf{22.2} & 3.86 & 4.29 & 22.1 & 3.25 & \textbf{4.06} & \textbf{19.1} \\
 & \multirow{3}{*}{\textbf{FPT}} & Hierarchical & 3.12 & 3.61 & 3.3 & 2.24 & 2.86 & 2.4 & 5.50 & 7.82 & 5.8 \\
 & & Round Robin & 3.70 & 5.88 & 3.9 & \textbf{1.48} & \textbf{1.99} & \textbf{1.6} & 5.52 & 7.88 & 5.9 \\
 & & Ensemble & \textbf{2.06} & \textbf{2.73} & \textbf{2.2} & 2.11 & 2.68 & 2.2 & \textbf{4.36} & \textbf{6.03} & \textbf{4.6} \\
 & \multirow{3}{*}{\textbf{VCB}} & Hierarchical & 6.34 & 6.80 & 10.8 & 5.26 & 5.95 & 9.0 & \textbf{5.21} & \textbf{5.81} & \textbf{8.9} \\
-& & Round Robin & 6.60 & 7.05 & 11.3 & 5.09 & 5.75 & 8.7 & 8.83 & 10.10 & 15.0 \\
-& & Ensemble & \textbf{5.95} & \textbf{6.45} & \textbf{10.2} & \textbf{4.37} & \textbf{5.03} & \textbf{7.4} & 5.66 & 5.74 & 9.7 \\
+& & Round Robin & 6.60 & 7.05 & 11.3 & \textbf{5.09} & \textbf{5.75} & \textbf{8.7} & 8.83 & 10.10 & 15.0 \\
+& & Ensemble & \textbf{5.95} & \textbf{6.45} & \textbf{10.2} & 4.37 & 5.03 & 7.4 & 5.66 & 5.74 & 9.7 \\
 & \multirow{3}{*}{\textbf{VCS}} & Hierarchical & 1.32 & 1.52 & 3.0 & 1.33 & 1.54 & 3.0 & 4.12 & 4.19 & 9.2 \\
 & & Round Robin & \textbf{1.04} & \textbf{1.27} & \textbf{2.4} & \textbf{1.07} & \textbf{1.29} & \textbf{2.4} & \textbf{1.55} & \textbf{1.74} & \textbf{3.4} \\
 & & Ensemble & 1.19 & 1.43 & 2.7 & 1.20 & 1.42 & 2.7 & 3.79 & 3.97 & 8.5 \\
@@ -667,11 +664,11 @@ To assess adaptability and robustness, we evaluate predictive performance across
 \subsubsection{Short-term Performance}
 \begin{table}[!h]
 \centering
-\caption{Average Short-term Performance of Prediction Architectures Across Stocks (LLM: Google Gemini 2.0 Flash)}
+\caption{Short-term Performance of Prediction Architectures Across Stocks (LLM: Google Gemini 2.0 Flash)}
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{c c c c c}
 \hline
-\textbf{Stock} & \textbf{Architecture} & \textbf{Avg MAE} & \textbf{Avg RMSE} & \textbf{Avg MAPE} \\
+\textbf{Stock} & \textbf{Architecture} & \textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} \\
 \hline
 
 \multirow{3}{*}{\textbf{DXG}}
@@ -705,11 +702,11 @@ To assess adaptability and robustness, we evaluate predictive performance across
 \subsubsection{Medium-term Performance}
 \begin{table}[!h]
 \centering
-\caption{Average Medium-term Performance of Prediction Architectures Across Stocks (LLM: Google Gemini 2.0 Flash)}
+\caption{Medium-term Performance of Prediction Architectures Across Stocks (LLM: Google Gemini 2.0 Flash)}
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{c c c c c}
 \hline
-\textbf{Stock} & \textbf{Architecture} & \textbf{Avg MAE} & \textbf{Avg RMSE} & \textbf{Avg MAPE} \\
+\textbf{Stock} & \textbf{Architecture} & \textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} \\
 \hline
 
 \multirow{3}{*}{\textbf{DXG}}
@@ -743,11 +740,11 @@ To assess adaptability and robustness, we evaluate predictive performance across
 \subsubsection{Long-term Performance}
 \begin{table}[!h]
 \centering
-\caption{Average Long-term Performance of Prediction Architectures Across Stocks (LLM: Google Gemini 2.0 Flash)}
+\caption{Long-term Performance of Prediction Architectures Across Stocks (LLM: Google Gemini 2.0 Flash)}
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{c c c c c}
 \hline
-\textbf{Stock} & \textbf{Architecture} & \textbf{Avg MAE} & \textbf{Avg RMSE} & \textbf{Avg MAPE} \\
+\textbf{Stock} & \textbf{Architecture} & \textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} \\
 \hline
 
 \multirow{3}{*}{\textbf{DXG}}
@@ -779,7 +776,7 @@ To assess adaptability and robustness, we evaluate predictive performance across
 \end{table}
 
 \subsection{Conclusion}
-Empirical results show horizon-dependent performance across three multi-agent architectures in Vietnam's retail-driven stock market. Short-term (3-day) forecasts reveal stock-specific strengths: Hierarchical leads in volatile DXG (MAPE 3.1\%), Ensemble Voting in FPT (1.4\%) and VCS (1.5\%), and Round Robin in VCB (1.8\%). Medium-term (14-day) predictions highlight Ensemble Voting's consistent superiority (MAPE 1.6\%–10.0\%), with the lowest error in FPT (5.7\%), joint best in VCB (4.0\%), near-parity in VCS (1.6\%), and competitive results in DXG (10.0\%). Overall, Ensemble Voting proves the most reliable and balanced architecture for practical forecasting across diverse market conditions.
+Short-term (3-day) forecasts reveal stock-specific strengths: Hierarchical leads in volatile DXG (MAPE 3.1\%), Ensemble Voting in FPT (1.4\%) and VCS (1.5\%), and Round Robin in VCB (1.8\%). Medium-term (14-day) predictions highlight Ensemble Voting's consistent superiority (MAPE 1.6\%–10.0\%), with the lowest error in FPT (5.7\%), joint best in VCB (4.0\%), near-parity in VCS (1.6\%), and competitive results in DXG (10.0\%). Overall, Ensemble Voting proves the most reliable and balanced architecture for practical forecasting across diverse market conditions.
 \subsection{Visualization of Forecast Results}
 
 \begin{figure}[!h]
@@ -891,7 +888,7 @@ Empirical results show horizon-dependent performance across three multi-agent ar
 \end{figure}
 
 \section{RQ3: Multi-Agent vs. Traditional Baselines}
-To address RQ3, we compare multi-agent architectures against single-agent LLMs and LSTM baselines using medium-term (14-day) forecasts validated with actual market prices on January 6, 2025 (VCB: 57,300 VND, FPT: 94,000 VND, VCS: 43,000 VND, DXG: 16,650 VND).
+To address RQ3, we compare multi-agent architectures against single-agent LLM (Core: Gemini) and LSTM baselines using medium-term (14-day) forecasts validated with actual market prices on January 6, 2026 (VCB: 57,300 VND, FPT: 94,000 VND, VCS: 43,000 VND, DXG: 16,650 VND).
 
 \begin{figure}[H]
     \centering
@@ -929,23 +926,89 @@ To address RQ3, we compare multi-agent architectures against single-agent LLMs a
     \label{fig:single_agent_2x2}
 \end{figure}
 
+\begin{table}[htbp]
+    \centering
+    \caption{Detailed Forecast Evaluation Results by Stock}
+    \label{tab:stock_prediction_results}
+    \begin{tabular}{llrr}
+        \toprule
+        \textbf{Stock (Actual)} & \textbf{Method} & \textbf{MAE} & \textbf{MAPE (\%)} \\
+        \midrule
+        
+        % --- VCB ---
+        \multirow{5}{*}{\textbf{VCB} (57.3)} 
+         & Single-Agent & \textbf{1.10} & \textbf{1.92} \\
+         & Ensemble & 1.47 & 2.57 \\
+         & Hierarchical & 1.74 & 3.04 \\
+         & RoundRobin & 1.65 & 2.88 \\
+         & Base LSTM & 3.09 & 5.39 \\
+        \cmidrule{1-4}
+        
+        % --- FPT ---
+        \multirow{5}{*}{\textbf{FPT} (94.0)} 
+         & Single-Agent & 1.80 & 1.91 \\
+         & Ensemble & 2.82 & 3.00 \\
+         & Hierarchical & \textbf{1.37} & \textbf{1.46} \\
+         & RoundRobin & 1.94 & 2.06 \\
+         & Base LSTM & 2.89 & 3.07 \\
+        \cmidrule{1-4}
+        
+        % --- VCS ---
+        \multirow{5}{*}{\textbf{VCS} (43.0)} 
+         & Single-Agent & 4.20 & 9.77 \\
+         & Ensemble & 1.01 & 2.35 \\
+         & Hierarchical & \textbf{0.29} & \textbf{0.67} \\
+         & RoundRobin & 2.58 & 6.00 \\
+         & Base LSTM & 6.54 & 15.21 \\
+        \cmidrule{1-4}
+        
+        % --- DXG ---
+        \multirow{5}{*}{\textbf{DXG} (16.65)} 
+         & Single-Agent & 1.80 & 10.81 \\
+         & Ensemble & 0.97 & 5.83 \\
+         & Hierarchical & \textbf{0.81} & \textbf{4.86} \\
+         & RoundRobin & 2.41 & 14.47 \\
+         & Base LSTM & 1.28 & 7.69 \\
+         
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
 \subsection{Empirical Validation Results}
 
 \paragraph{Multi-Agent Systems: Superior Accuracy Across All Sectors.}
-Multi-Agent architectures achieved an average MAPE of 3.4\%, demonstrating exceptional performance across diverse market conditions. For \textbf{VCB (Banking)}, Hierarchical (3.0\%), Ensemble (2.6\%), and Round Robin (2.9\%) significantly outperformed Single-Agent (1.9\%) and LSTM (5.4\%). In \textbf{FPT (Technology)}, Hierarchical achieved optimal accuracy at 1.5\%, with Ensemble (3.0\%) and Round Robin (2.1\%) also outperforming LSTM (3.1\%). Most notably, for \textbf{VCS (Industrial Construction)}, Hierarchical delivered exceptional 0.7\% error—the best across all methodologies—while LSTM catastrophically failed at 15.2\% error. For \textbf{DXG (Real Estate)}, the volatile sentiment-driven sector, Hierarchical (4.9\%) and Ensemble (5.8\%) demonstrated superior risk management compared to Single-Agent (10.8\%) and LSTM (7.7\%).
+
+In the relatively stable banking sector, the \textit{Single-Agent} model attained the lowest forecasting error, achieving a MAPE of 1.92\% and an MAE of 1.10. Nevertheless, \textit{Multi-Agent} approaches remained highly competitive. Specifically, the \textit{Ensemble} and \textit{Round Robin} architectures recorded MAPE values of 2.57\% and 2.88\%, respectively, both of which substantially outperformed the \textit{Base LSTM} baseline (MAPE: 5.39\%). These results confirm that agent-based coordination architectures are capable of maintaining high predictive fidelity even in relatively low-volatility market environments.
+
+
+In the technology sector, the \textit{Hierarchical} architecture demonstrated the highest predictive accuracy, achieving a MAPE of 1.46\% and an MAE of 1.37. While the \textit{Single-Agent} (MAPE: 1.91\%) and \textit{Round Robin} (MAPE: 2.06\%) models also outperformed the \textit{Base LSTM} baseline (MAPE: 3.07\%), the Hierarchical structure proved superior in capturing the sustained growth momentum and trend persistence characteristic of technology stocks.
+
+
+The most pronounced performance disparity was observed in the industrial construction sector. The \textit{Hierarchical} model delivered near-perfect precision, recording an exceptionally low MAPE of 0.67\% and an MAE of 0.29. In stark contrast, the \textit{Base LSTM} model exhibited catastrophic degradation, with a MAPE of 15.21\% and an MAE of 6.54, while the \textit{Single-Agent} model also struggled, yielding a MAPE of 9.77\%. These findings underscore the Hierarchical architecture’s unique capacity to accommodate complex noise structures and regime-dependent dynamics in industrial stocks, where conventional deep learning models fail to generalize.
+
+
+The real estate sector, characterized by elevated volatility and strong sentiment dependence, posed the greatest forecasting challenge. In this environment, the \textit{Hierarchical} (MAPE: 4.86\%) and \textit{Ensemble} (MAPE: 5.83\%) architectures demonstrated superior robustness and risk management capabilities. Conversely, the \textit{Single-Agent} (MAPE: 10.81\%) and \textit{Round Robin} (MAPE: 14.47\%) approaches suffered from substantially higher error rates, indicating that in the absence of hierarchical coordination or ensemble consensus mechanisms, simpler architectures struggle to adapt to abrupt sentiment-driven market fluctuations.
+
+
 
 \paragraph{Why Multi-Agent Systems Excel in Vietnam's Market.}
-The Multi-Agent framework's superiority stems from its alignment with Vietnam's unique market structure: (1) \textit{Retail-dominated trading (85--90\%)}—MAS integrates sentiment analysis and news agents to capture behavioral dynamics that LSTM models ignore; (2) \textit{High volatility and regime shifts}—coordinated agent interaction provides error-correction mechanisms absent in Single-Agent approaches; (3) \textit{Information heterogeneity}—MAS synthesizes technical indicators, fundamental metrics, risk profiles, and macroeconomic signals, whereas LSTM relies solely on historical patterns; (4) \textit{Sector-specific dynamics}—specialized agents adapt to regulatory constraints (banking), earnings cycles (technology), credit policies (real estate), and infrastructure investment (construction).
+The superiority of the Multi-Agent framework, particularly the \textit{Hierarchical} architecture, can be attributed to its strong alignment with the structural characteristics of Vietnam’s emerging stock market. 
 
-\paragraph{Quantitative Performance Summary.}
-Aggregating across all stocks, Multi-Agent systems achieved 3.4\% MAPE versus 5.6\% for Single-Agent and 8.1\% for LSTM—representing \textbf{39\% error reduction} over Single-Agent and \textbf{66\% improvement} over LSTM. The \textit{Hierarchical architecture} emerged as optimal with 2.8\% average MAPE, excelling in regulated sectors (VCB, VCS), while \textit{Ensemble Voting} demonstrated robust all-weather performance at 3.4\% MAPE. Critically, MAS exhibited consistent accuracy across volatility regimes (0.7\%--4.9\%), whereas Single-Agent (1.9\%--10.8\%) and LSTM (3.1\%--15.2\%) displayed erratic patterns.
+First, the market is predominantly \textbf{retail-driven}, with individual investors accounting for approximately 85--90\% of trading volume. The Multi-Agent System (MAS) explicitly integrates sentiment and news-driven agents, enabling it to capture behavioral dynamics that are largely overlooked by traditional LSTM models relying solely on historical price sequences. 
+
+Second, Vietnam’s market exhibits \textbf{high volatility and frequent regime shifts}. While Single-Agent models may perform competitively under relatively stable conditions, as observed in the Banking sector (VCB), coordinated agent interactions within the MAS provide inherent error-correction and consensus mechanisms that are crucial for volatile stocks such as DXG and VCS. 
+
+Third, the market is characterized by pronounced \textbf{information heterogeneity}. The proposed MAS synthesizes diverse information sources, including technical indicators, fundamental metrics, risk profiles, and macroeconomic signals. In contrast, LSTM-based baselines are restricted to modeling temporal dependencies in historical price data, limiting their adaptability to sudden informational shocks. 
+
+Finally, \textbf{sector-specific dynamics} play a critical role in forecasting performance. Specialized agents within the MAS are able to adapt to regulatory constraints in the banking sector, earnings-driven cycles in technology stocks, and credit policy sensitivities in real estate. This specialization enables more consistent performance across sectors where generalist forecasting models tend to fail.
 
 \subsection{Conclusion}
-Multi-Agent architectures—particularly \textbf{Hierarchical} and \textbf{Ensemble Voting}—are conclusively established as optimal for Vietnam's emerging market. By embedding deliberative reasoning, cross-validation, and consensus-building mechanisms, MAS delivers superior accuracy, stability, and interpretability compared to Single-Agent LLMs and LSTM baselines. The framework's ability to synthesize heterogeneous information streams through coordinated agent interaction represents a paradigm shift from single-model forecasting to ensemble intelligence, making it ideally suited for retail-dominated, sentiment-driven markets where traditional approaches fail to capture complex behavioral and structural dynamics.
+Multi-Agent architectures—particularly \textbf{Hierarchical} is conclusively established as optimal for Vietnam's emerging market. By embedding deliberative reasoning, cross-validation, and consensus-building mechanisms, MAS delivers superior accuracy, stability, and interpretability compared to Single-Agent LLMs and LSTM baselines. The framework's ability to synthesize heterogeneous information streams through coordinated agent interaction represents a paradigm shift from single-model forecasting to ensemble intelligence, making it ideally suited for retail-dominated, sentiment-driven markets where traditional approaches fail to capture complex behavioral and structural dynamics.
 
 \section{Discussion}
 \subsection{Key Findings and Implications}
-This study presents several significant findings that advance our understanding of multi-agent coordination architectures in financial forecasting, particularly within emerging market contexts. The empirical evaluation reveals that coordination architecture effectiveness exhibits strong horizon-dependent characteristics, with Ensemble Voting demonstrating consistent superiority across three of the four evaluated stocks in medium-term forecasting scenarios (outperforming significantly in FPT and VCS, and showing comparable performance in VCB).
+We present several significant findings that advance our understanding of multi-agent coordination architectures in financial forecasting, particularly within emerging market contexts. The empirical evaluation reveals that coordination architecture effectiveness exhibits strong horizon-dependent characteristics, with Ensemble Voting demonstrating consistent superiority across three of the four evaluated stocks in medium-term forecasting scenarios (outperforming significantly in FPT and VCS, and showing comparable performance in VCB).
 
 The superior performance of Ensemble Voting in medium-term forecasting can be attributed to its statistical inference mechanism that dynamically aggregates diverse analytical perspectives while maintaining robustness against individual agent biases~\cite{zhou2012ensemble,breiman1996bagging}. Our results show that Ensemble Voting achieves highly competitive MAPE in the 14-day horizon: DXG (10.0\%), FPT (5.7\%), VCB (4.0\%), and VCS (1.6\%), securing the lowest error in FPT, VCS, and jointly in VCB (where values are virtually indistinguishable across architectures). This strong consistency validates ensemble learning theory, which posits that combining multiple specialized learners can produce superior generalization capabilities compared to individual models~\cite{dietterich2000ensemble}.
 For Vietnam's retail-dominated market structure, these findings carry substantial practical implications for institutional investment strategies and risk management frameworks~\cite{vo2019financial,nguyen2021market}. The framework's demonstrated ability to handle sentiment-driven volatility and information asymmetries makes it particularly valuable for emerging market applications where traditional fundamental analysis approaches may encounter limitations due to data quality and market efficiency constraints~\cite{bekaert2007emerging}. The consistent performance across diverse sectors (banking, technology, real estate, and industrial construction) suggests broad applicability within Vietnam's financial ecosystem.
@@ -958,13 +1021,13 @@ The integration of Large Language Models with specialized financial agents repre
 
 
 \subsection{Theoretical Contributions}
-This research contributes to the theoretical understanding of multi-agent coordination in financial applications through several novel insights. First, it provides empirical evidence for horizon-dependent coordination effectiveness, demonstrating that optimal architectural choices must consider the temporal horizon of the prediction task. This finding extends existing ensemble learning theory by showing that coordination strategy effectiveness varies systematically with prediction horizon rather than being universally optimal~\cite{hansen2001neural}.
+We contribute to the theoretical understanding of multi-agent coordination in financial applications through several novel insights. First, it provides empirical evidence for horizon-dependent coordination effectiveness, demonstrating that optimal architectural choices must consider the temporal horizon of the prediction task. This finding extends existing ensemble learning theory by showing that coordination strategy effectiveness varies systematically with prediction horizon rather than being universally optimal~\cite{hansen2001neural}.
 
 The study establishes that ensemble-based coordination can effectively manage information heterogeneity characteristic of emerging markets, where traditional single-model approaches may struggle with diverse and often conflicting market signals~\cite{harvey1995predictable}. Our dynamic weight adjustment mechanism provides a theoretical framework for adaptive ensemble learning in non-stationary financial environments, contributing to the broader literature on online learning and concept drift adaptation~\cite{gama2014survey}.
 
 The integration of Large Language Models with specialized financial agents represents a novel hybrid architecture that bridges symbolic AI and connectionist learning paradigms~\cite{bommasani2021foundation,brown2020language}. This integration demonstrates how modern foundation models can be effectively combined with domain-specific expertise to create more capable and interpretable AI systems. The framework provides a methodological template for developing similar hybrid architectures in other complex decision-making domains where both structured and unstructured information sources must be processed simultaneously.
 
-Furthermore, this research contributes to multi-agent systems theory by demonstrating how coordination mechanisms can be specifically designed to handle unique characteristics of emerging markets. The framework's ability to process heterogeneous information sources while maintaining interpretability addresses a critical challenge in financial AI, where regulatory requirements and risk management practices demand explainable decision-making processes~\cite{arrieta2020explainable}. The modular agent architecture enables transparent attribution of predictions to specific analytical components, supporting regulatory compliance and risk assessment requirements.
+Furthermore, We contribute to multi-agent systems theory by demonstrating how coordination mechanisms can be specifically designed to handle unique characteristics of emerging markets. The framework's ability to process heterogeneous information sources while maintaining interpretability addresses a critical challenge in financial AI, where regulatory requirements and risk management practices demand explainable decision-making processes~\cite{arrieta2020explainable}. The modular agent architecture enables transparent attribution of predictions to specific analytical components, supporting regulatory compliance and risk assessment requirements.
 
 \subsection{Research Question Analysis}
 
@@ -973,13 +1036,12 @@ Furthermore, this research contributes to multi-agent systems theory by demonstr
 Our analysis demonstrates that no single coordination architecture is universally optimal; instead, architectural effectiveness is strictly dependent on the forecasting horizon.
 
 \paragraph{Medium-Term (14 Days): Ensemble Dominance.}
-For the standard tactical horizon, \textit{Ensemble Voting} emerged as the unequivocally superior architecture. It achieved the lowest Mean Absolute Percentage Error (MAPE) across major sectors, including 1.4\% for FPT, 1.5\% for VCS, and 4.0\% for VCB. These results validate the hypothesis that statistical aggregation best reconciles conflicting technical and fundamental signals during medium-term holding periods.
+For the standard tactical horizon, \textit{Ensemble Voting} architecture consistently demonstrated superior performance in medium-term predictions. It proved most effective at integrating and reconciling divergent signals from technical and fundamental agents, thereby delivering the most reliable and balanced forecasts during typical holding periods of moderate duration.
 
 \paragraph{Short-Term (3 Days): Stock-Specific Heterogeneity.}
-In short-term forecasting, performance varied substantially with sector volatility. The \textit{Hierarchical} architecture was most effective for high-volatility Real Estate stocks such as DXG, achieving a MAPE of 3.1\%. This suggests that a centralized \textit{Master Agent} is better suited to suppress speculative noise within the $T+2.5$ settlement window than a fully democratic voting mechanism.
-
+Short-term predictions exhibited pronounced heterogeneity across asset classes, particularly influenced by underlying volatility. The Hierarchical architecture emerged as particularly advantageous in high-volatility environments, where a centralized Master Agent effectively mitigated speculative noise and erratic fluctuations within tight settlement windows. In contrast, fully democratic voting mechanisms appeared less adept at suppressing such transient distortions.
 \paragraph{Long-Term (60 Days): Sector-Specific Specialization.}
-For strategic horizons, the optimal architecture diverged by industry. The \textit{Hierarchical} model excelled in the Banking sector (VCB), achieving an 8.9\% MAPE, reflecting the benefits of centralized oversight in highly regulated environments. Conversely, the \textit{Round Robin} architecture proved optimal for Industrial Construction stocks (VCS), with a 3.4\% MAPE, indicating that cyclical industries benefit from iterative, sequential refinement.
+For extended strategic horizons, the preferred architecture varied markedly by sector characteristics. The Hierarchical model showed clear advantages in highly regulated and structured domains (such as banking), benefiting from centralized oversight and coordinated decision-making. Conversely, the Round-Robin architecture proved more effective in cyclical and iterative industries (such as industrial construction), where sequential refinement and progressive agent specialization better captured long-range dynamics and regime evolution.
 
 \subsubsection{B. RQ2: Impact of Foundation Models (LLMs)}
 
@@ -1002,8 +1064,7 @@ These results challenge the notion of a universally superior LLM for financial f
 Our empirical findings confirm that \textit{Multi-Agent Systems} (MAS) significantly outperform both traditional LSTM baselines and Single-Agent LLM configurations, particularly within the volatility-prone Vietnamese stock market.
 
 \paragraph{vs. LSTM Baselines.}
-The LSTM models exhibit pronounced stochastic instability and amplitude distortion, frequently overshooting during bullish regimes and undershooting during bearish corrections. For instance, the LSTM predicted a collapse to approximately $\sim15{,}400$ VND for DXG, while the actual market price stabilized near $\sim17{,}500$ VND. Such behavior highlights the inability of purely data-driven recurrent models to adapt to regime shifts dominated by retail sentiment.
-
+The LSTM models exhibited significant stochastic instability and pronounced amplitude distortion. These models frequently overshot during bullish market regimes and undershot during bearish corrections. Such behavior underscores the inherent limitations of purely data-driven recurrent architectures in adapting to abrupt regime shifts, particularly those driven predominantly by retail investor sentiment.
 \paragraph{vs. Single-Agent LLMs.}
 While Single-Agent architectures performed adequately for relatively stable assets (e.g., VCS), they lacked robust error-correction mechanisms under high volatility. This limitation manifested as \textit{lag-induced inertia}, where predictions failed to adjust rapidly during abrupt regime transitions.
 
@@ -1026,7 +1087,7 @@ Third, the framework's performance during extreme market conditions—financial 
 
 \section{Conclusion}
 
-This study investigates the problem of stock price forecasting in Vietnam’s emerging and retail-dominated market through the validation of a specialized \textit{Multi-Agent} forecasting framework. Based on a comprehensive empirical evaluation conducted on four representative stocks spanning multiple sectors (VCB, FPT, DXG, and VCS), the study provides clear and structured answers to its guiding research questions.
+We investigate the problem of stock price forecasting in Vietnam’s emerging and retail-dominated market through the validation of a specialized \textit{Multi-Agent} forecasting framework. Based on a comprehensive empirical evaluation conducted on four representative stocks spanning multiple sectors (VCB, FPT, DXG, and VCS), the study provides clear and structured answers to its guiding research questions.
 
 First, in addressing \textbf{RQ1 (Architectural Effectiveness Across Horizons)}, the results demonstrate that no single coordination architecture is universally optimal across all forecasting horizons. Instead, architectural effectiveness is strongly horizon-dependent. For the medium-term horizon (14 days), \textit{Ensemble Voting} consistently delivers the most robust performance, achieving the lowest Mean Absolute Percentage Errors (MAPEs) across multiple stocks by effectively reconciling heterogeneous technical, fundamental, and sentiment-driven signals. In contrast, short-term forecasting (3 days), particularly for highly volatile assets, benefits from a \textit{Hierarchical} coordination mechanism, where centralized decision-making suppresses speculative noise within the $T+2.5$ settlement cycle. For long-term horizons (60 days), the optimal architecture diverges by sector, with \textit{Hierarchical} coordination proving effective for highly regulated industries such as banking, while \textit{Round Robin} refinement better captures cyclical dynamics in trend-driven sectors such as industrial construction.
 
