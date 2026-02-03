@@ -506,7 +506,7 @@
 \def\headName{}
 \def\@pubid{}
 \def\markboth#1#2{\def\leftmark{#1}\def\rightmark{#2}}
-\def\thevol{01}
+\def\thevol{02}
 \def\theyear{2026}
 \def\vol#1{\gdef\thevol{#1}}
 \def\year#1{\gdef\theyear{#1}}

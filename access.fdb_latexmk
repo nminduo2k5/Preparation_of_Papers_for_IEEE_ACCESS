@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex access"] 1768404253.70048 "access.aux" "access.bbl" "access" 1768404255.59362 2
+["bibtex access"] 1770125896.29331 "access.aux" "access.bbl" "access" 1770125897.67917 2
   "./IEEEtran.bst" 1765264410 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "./refs.bib" 1767331603 17480 0de5e84cb2911233d2c58e086fa1096d ""
-  "access.aux" 1768404245 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "access.aux" 1770125897 8192 1cd971413479ed9a5f3e41c1ec7a994e "pdflatex"
   (generated)
   "access.bbl"
   "access.blg"
   (rewritten before read)
-["pdflatex"] 1768404237.78761 "c:/Users/HP/Desktop/Preparation_of_Papers_for_IEEE_ACCESS/access.tex" "access.pdf" "access" 1768404249.61441 2
-  "C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1765289931 82507 a9eef8696c92627b87e9975edea03b2a ""
+["pdflatex"] 1770125876.6298 "c:/Users/HP/Desktop/Preparation_of_Papers_for_IEEE_ACCESS/access.tex" "access.pdf" "access" 1770125897.68025 2
+  "C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1769707285 89969 e95579120a3aa0ebc21d2737ca2ba701 ""
   "C:/Users/HP/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1763208920 24223672 cab1ce02d8b5b8612a652211b31243d3 ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmb7t.tfm" 1136747054 2172 fd0c924230362ff848a33632ed45dc23 ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmbi7t.tfm" 1136747054 2228 e564491c42a4540b5ebb710a75ff306c ""
@@ -91,9 +91,9 @@
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/tools/bm.sty" 1700599895 13231 2c742011581e2bf297e33520567d9464 ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "IEEEtran.cls" 1765264410 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "access.aux" 1768404245 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "access.bbl" 1768404254 0 d41d8cd98f00b204e9800998ecf8427e "bibtex access"
-  "access.tex" 1768404233 89581 81094981a88c134dd07cd5267d2352be ""
+  "access.aux" 1770125897 8192 1cd971413479ed9a5f3e41c1ec7a994e "pdflatex"
+  "access.bbl" 1770125897 0 d41d8cd98f00b204e9800998ecf8427e "bibtex access"
+  "access.tex" 1770125862 81274 ce8dd3804964da7c3dbd0d950f3049a9 ""
   "anh/emmain.png" 1766146293 5797976 581fde8b5c8a7348e7359ad707135538 ""
   "anh/hiemain.png" 1766145134 5053797 2f8aa1cfb1c27f874fc89dbb0c3cfb41 ""
   "anh/main/dxg.png" 1766203338 108227 41211b4826dc88a11247c4abb93a9e27 ""
@@ -115,8 +115,8 @@
   "anh/rq3/vcs.png" 1768224325 88859 f1a3ba56121ad558014307432961fe24 ""
   "anh/rrmain.png" 1766145577 4376534 dd6961439a46e167b29ff02a9a832d5f ""
   "bullet.png" 1765264410 430 52cae30161d5cfcd05478f00cc70e956 ""
-  "c:/Users/HP/Desktop/Preparation_of_Papers_for_IEEE_ACCESS/access.tex" 1768404233 89581 81094981a88c134dd07cd5267d2352be ""
-  "ieeeaccess.cls" 1767331868 50800 242ebdeb71cf9bb2d62828da391c58f7 ""
+  "c:/Users/HP/Desktop/Preparation_of_Papers_for_IEEE_ACCESS/access.tex" 1770125862 81274 ce8dd3804964da7c3dbd0d950f3049a9 ""
+  "ieeeaccess.cls" 1770040202 50800 b7fa1a3a0157bbf02cfb39659a053ccc ""
   "logo.png" 1765264410 9705 f6e56955b0b8a334759253caf7856307 ""
   "notaglinelogo.png" 1765264410 3150 09e11acc4d6224bb6d89a97a56b59fb4 ""
   "spotcolor.sty" 1765264410 2231 765ae5e8d6893fdf438e03d9be453864 ""

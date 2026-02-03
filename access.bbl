@@ -184,30 +184,9 @@ R.~J. Hyndman and A.~B. Koehler, ``Another look at measures of forecast
   accuracy,'' \emph{International Journal of Forecasting}, vol.~22, no.~4, pp.
   679--688, 2006.
 
-\bibitem{zhou2012ensemble}
-Z.-H. Zhou, \emph{Ensemble Methods: Foundations and Algorithms}.\hskip 1em plus
-  0.5em minus 0.4em\relax Chapman and Hall/CRC, 2012.
-
-\bibitem{breiman1996bagging}
-L.~Breiman, ``Bagging predictors,'' \emph{Machine Learning}, vol.~24, no.~2,
-  pp. 123--140, 1996.
-
 \bibitem{dietterich2000ensemble}
 T.~G. Dietterich, ``Ensemble methods in machine learning,'' \emph{International
   Workshop on Multiple Classifier Systems}, pp. 1--15, 2000.
-
-\bibitem{vo2019financial}
-X.~V. Vo, ``Financial market efficiency in emerging markets: Evidence from
-  vietnam,'' \emph{Finance Research Letters}, 2019.
-
-\bibitem{nguyen2021market}
-T.~Nguyen and M.~Tran, ``Market microstructure and retail trading in vietnam,''
-  \emph{Asian Economic Papers}, 2021.
-
-\bibitem{bekaert2007emerging}
-G.~Bekaert, C.~R. Harvey, C.~T. Lundblad, and S.~Siegel, ``The european union,
-  the euro, and equity market integration,'' \emph{Journal of Financial
-  Economics}, vol.~86, no.~3, pp. 606--644, 2007.
 
 \bibitem{campbell1997stock}
 J.~Y. Campbell, A.~W. Lo, and A.~C. MacKinlay, \emph{The econometrics of
@@ -233,10 +212,6 @@ P.~C. Tetlock, ``Giving content to investor sentiment: The role of media in the
 L.~K. Hansen and P.~Salamon, ``Neural network ensembles,'' \emph{IEEE
   Transactions on Pattern Analysis and Machine Intelligence}, vol.~12, no.~10,
   pp. 993--1001, 1990.
-
-\bibitem{harvey1995predictable}
-C.~R. Harvey, ``Predictable risk and returns in emerging markets,'' \emph{The
-  Review of Financial Studies}, vol.~8, no.~3, pp. 773--816, 1995.
 
 \bibitem{gama2014survey}
 J.~Gama, I.~Žliobaitė, A.~Bifet, M.~Pechenizkiy, and A.~Bouchachia, ``A

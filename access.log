@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.15)  14 JAN 2026 22:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.15)  3 FEB 2026 20:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -562,8 +562,8 @@ Overfull \hbox (9.2679pt too wide) in paragraph at lines 67--67
 Underfull \vbox (badness 7081) has occurred while \output is active []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 75--76
-[]\T1/times/n/n/10 Using deep learn-ing se-tups with multi-agent sys-tems
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+[]\T1/times/n/n/10 Integrating deep learn-ing with multi-agent sys-tems
  []
 
 
@@ -598,18 +598,18 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
  <./logo.png> <./bullet.png>]
-Underfull \hbox (badness 2469) in paragraph at lines 99--100
-\T1/times/n/n/10 cludes HOSE, HNX, and UP-CoM, re-mains struc-turally
+Underfull \hbox (badness 7099) in paragraph at lines 99--100
+[]\T1/times/n/n/10 In com-par-i-son, Viet-nam's stock mar-ket, com-pris-ing
  []
 
 <notaglinelogo.png, id=15, 169.38281pt x 42.91031pt>
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 113.
+Package pdftex.def Info: notaglinelogo.png  used on input line 112.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 113.
+(Font)              using `T1/formata/m/it' instead on input line 112.
 
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -632,25 +632,9 @@ Underfull \hbox (badness 1406) in paragraph at lines 123--124
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 129--130
-[]\T1/times/n/n/10 The cog-ni-tive in-tel-li-gence of the sys-tem is pow-ered
- []
-
-
-Underfull \hbox (badness 1478) in paragraph at lines 129--130
-\T1/times/n/n/10 by \T1/times/b/n/10 Google Gem-ini \T1/times/n/n/10 as the cor
-e Large Lan-guage Model
- []
-
-
-Underfull \hbox (badness 3428) in paragraph at lines 129--130
-\T1/times/n/n/10 sen-tial for pro-cess-ing com-plex fi-nan-cial nar-ra-tives an
-d
- []
-
-
-Underfull \hbox (badness 6412) in paragraph at lines 129--130
-\T1/times/n/n/10 multi-dimensional mar-ket data. The sys-tem's ar-chi-tec-
+Underfull \hbox (badness 1527) in paragraph at lines 129--130
+\T1/times/b/n/10 Google Gem-ini 2.0 Flash \T1/times/n/n/10 as the core Large La
+n-guage
  []
 
 <anh/overallmain.png, id=25, 2023.56pt x 2119.92pt>
@@ -686,9 +670,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [3]
-Underfull \hbox (badness 2469) in paragraph at lines 146--148
-[]\T1/times/b/n/10 InvestmentExpert Agent: \T1/times/n/n/10 Takes into con-sid-
-er-a-tion
+Underfull \hbox (badness 2343) in paragraph at lines 146--148
+\T1/times/b/n/10 Earn-ings Per Share growth (EPS)\T1/times/n/n/10 , and \T1/tim
+es/b/n/10 Debt-to-
+ []
+
+
+Underfull \hbox (badness 3302) in paragraph at lines 146--148
+\T1/times/b/n/10 Equity ra-tio\T1/times/n/n/10 . Through com-pre-hen-sive fun-d
+a-men-tal
  []
 
 
@@ -698,12 +688,7 @@ c up-
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 155--157
-\T1/times/n/n/10 and regime clas-si-fi-ca-tion, it gen-er-ates a con-tex-tual
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--192
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 \T1/times/n/n/10 The hi-er-ar-chi-cal ar-chi-tec-ture op-er-ates un-der a Mas-
  []
 
@@ -770,7 +755,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 File: anh/emmain.png Graphic file (type png)
 <use anh/emmain.png>
 Package pdftex.def Info: anh/emmain.png  used on input line 255.
-(pdftex.def)             Requested size: 218.39302pt x 142.26357pt.
+(pdftex.def)             Requested size: 218.39302pt x 170.69687pt.
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
 Package pdftex.def Info: notaglinelogo.png  used on input line 315.
@@ -1026,14 +1011,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 .png> <./anh/main/vcsmedium.png> <./anh/main/dxglong.png> <./anh/main/fptlong.p
 ng> <./anh/main/vcblong.png> <./anh/main/vcslong.png> <./anh/rq3/dxg.png> <./an
 h/rq3/fpt.png> <./anh/rq3/vcb.png> <./anh/rq3/vcs.png>]
+Underfull \hbox (badness 1389) in paragraph at lines 1007--1008
+\T1/times/n/n/10 pared to Single-Agent LLMs and LSTM base-lines. The
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 1011--1012
+\T1/times/n/n/10 sis-tent su-pe-ri-or-ity in medium-term fore-cast-ing (14-day)
+
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 1011--1012
+\T1/times/n/n/10 across mul-ti-ple stocks: FPT (5.7%), VCB (4.0%), VCS
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 1011--1012
+\T1/times/n/n/10 DXG (19.1%) and FPT (4.6%), Round Robin for VCS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1017
+\T1/times/n/n/10 This study pro-vides em-pir-i-cal ev-i-dence for horizon-
+ []
+
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 1015.
+Package pdftex.def Info: notaglinelogo.png  used on input line 1018.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
-
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 1015.
+(Font)              using `T1/formata/m/it' instead on input line 1018.
 
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1051,28 +1060,34 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [12]
-Underfull \hbox (badness 8056) in paragraph at lines 1018--1019
-[]\T1/times/n/n/10 Long-term pre-dic-tions (60-day hori-zon) demon-strate
+Underfull \hbox (badness 4981) in paragraph at lines 1027--1028
+\T1/times/n/n/10 Hierarchical ar-chi-tec-ture proved ad-van-ta-geous in high-
  []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 1020--1021
-\T1/times/n/n/10 in-ter-pre-ta-tion of un-struc-tured in-for-ma-tion sources^^V
-news
+Underfull \hbox (badness 2261) in paragraph at lines 1036--1037
+\T1/times/n/n/10 base-lines and Single-Agent LLM con-fig-u-ra-tions. LSTM
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 1028--1029
-[]\T1/times/n/n/10 The in-te-gra-tion of Large Lan-guage Mod-els with spe-
+Underfull \hbox (badness 1975) in paragraph at lines 1036--1037
+\T1/times/n/n/10 nounced am-pli-tude dis-tor-tion. Single-Agent ar-chi-tec-ture
+s
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 1056--1057
+\T1/times/n/n/10 (14 days), \T1/times/m/it/10 En-sem-ble Vot-ing \T1/times/n/n/
+10 con-sis-tently achieves ro-bust
  []
 
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 1045.
+(Font)              using `T1/formata/m/it' instead on input line 1057.
 
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 1045.
+Package pdftex.def Info: notaglinelogo.png  used on input line 1057.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1090,46 +1105,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [13]
-Underfull \hbox (badness 1484) in paragraph at lines 1048--1049
-\T1/times/n/n/10 The se-lec-tion of the un-der-ly-ing Large Lan-guage Model
- []
-
-
-Underfull \hbox (badness 1360) in paragraph at lines 1048--1049
-\T1/times/n/n/10 se-lec-tion is highly stock-specific and horizon-dependent,
- []
-
-
-Underfull \hbox (badness 1688) in paragraph at lines 1064--1065
-\T1/times/n/n/10 lines and Single-Agent LLM con-fig-u-ra-tions, par-tic-u-larly
-
- []
-
-File: notaglinelogo.png Graphic file (type png)
-<use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 1085.
-(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
-
-LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 1085.
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[14]
-Underfull \hbox (badness 1466) in paragraph at lines 1098--1099
+Underfull \hbox (badness 1466) in paragraph at lines 1062--1063
 []\T1/times/n/n/10 In sum-mary, this work con-tributes a \T1/times/m/it/10 hori
 zon-adaptive
  []
@@ -1159,30 +1135,6 @@ rminal/,
  []
 
 
-LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 103.
-
-File: notaglinelogo.png Graphic file (type png)
-<use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 103.
-(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[15]
-
 access.bbl:150: LaTeX Error: Unicode character ứ (U+1EE9)
                not set up for use with LaTeX.
 
@@ -1196,19 +1148,13 @@ l.150 {Tin nhanh Chứ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-)
-File: bullet.png Graphic file (type png)
-<use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 1107.
-(pdftex.def)             Requested size: 5.0pt x 14.6871pt.
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 1108.
+Package pdftex.def Info: notaglinelogo.png  used on input line 182.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
-
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 1108.
+(Font)              using `T1/formata/m/it' instead on input line 182.
 
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1225,7 +1171,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[16] (access.aux)
+[14])
+File: bullet.png Graphic file (type png)
+<use bullet.png>
+Package pdftex.def Info: bullet.png  used on input line 1071.
+(pdftex.def)             Requested size: 5.0pt x 14.6871pt.
+
+
+LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
+(Font)              using `T1/formata/m/it' instead on input line 1072.
+
+File: notaglinelogo.png Graphic file (type png)
+<use notaglinelogo.png>
+Package pdftex.def Info: notaglinelogo.png  used on input line 1072.
+(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[15
+
+] (access.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1236,13 +1213,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6522 strings out of 474485
- 110312 string characters out of 5745149
- 2009542 words of memory out of 5000000
- 28700 multiletter control sequences out of 15000+600000
+ 6516 strings out of 474485
+ 110195 string characters out of 5745149
+ 2008542 words of memory out of 5000000
+ 28694 multiletter control sequences out of 15000+600000
  638933 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,13n,131p,1617b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,13n,131p,1617b,569s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
 i10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmr10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
@@ -1251,9 +1228,9 @@ c/amsfonts/cm/cmsy7.pfb><./t1-formata-bold.pfb><./t1-formata-condmedium.pfb><./
 t1-formata-italic.pfb><./t1-formata-medium.pfb><./t1-formata-mediumitalic.pfb><
 ./t1-formata-regular.pfb><./t1-giovannistd-bookitalic.pfb><./t1-times-bold.pfb>
 <./t1-times-italic.pfb><./t1-times.pfb>
-Output written on access.pdf (16 pages, 20780916 bytes).
+Output written on access.pdf (15 pages, 20772678 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
+ 163 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  124 words of extra memory for PDF output out of 10000 (max. 10000000)
 
