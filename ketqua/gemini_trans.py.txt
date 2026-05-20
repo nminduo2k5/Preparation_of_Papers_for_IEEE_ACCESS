@@ -1,0 +1,526 @@
+K:\1\Preparation_of_Papers_for_IEEE_ACCESS\thongke>python gemini_trans.py
+================================================================================
+PERFORMANCE METRICS CALCULATION RESULTS
+================================================================================
+
+SHORT-TERM PERFORMANCE
+--------------------------------------------------
+
+CMG:
+  Hierarchical | MAE:  3.45 | RMSE:  3.98 | MAPE:  8.72%
+  RoundRobin   | MAE:  5.19 | RMSE:  5.27 | MAPE: 13.20%
+  Ensemble     | MAE:  3.02 | RMSE:  3.49 | MAPE:  7.88%
+  BEST         | Ensemble (MAPE: 7.88%)
+
+DGC:
+  Hierarchical | MAE:  4.10 | RMSE:  5.55 | MAPE:  4.41%
+  RoundRobin   | MAE:  4.50 | RMSE:  5.86 | MAPE:  4.85%
+  Ensemble     | MAE:  2.42 | RMSE:  2.83 | MAPE:  2.60%
+  BEST         | Ensemble (MAPE: 2.60%)
+
+DXG:
+  Hierarchical | MAE:  1.54 | RMSE:  1.83 | MAPE:  7.13%
+  RoundRobin   | MAE:  1.09 | RMSE:  1.41 | MAPE:  5.08%
+  Ensemble     | MAE:  0.27 | RMSE:  0.40 | MAPE:  1.28%
+  BEST         | Ensemble (MAPE: 1.28%)
+
+FPT:
+  Hierarchical | MAE:  2.87 | RMSE:  3.33 | MAPE:  2.90%
+  RoundRobin   | MAE:  3.61 | RMSE:  3.88 | MAPE:  3.66%
+  Ensemble     | MAE:  2.90 | RMSE:  3.36 | MAPE:  2.93%
+  BEST         | Hierarchical (MAPE: 2.90%)
+
+HPG:
+  Hierarchical | MAE:  0.83 | RMSE:  1.15 | MAPE:  2.87%
+  RoundRobin   | MAE:  0.79 | RMSE:  0.98 | MAPE:  2.77%
+  Ensemble     | MAE:  0.89 | RMSE:  1.17 | MAPE:  3.11%
+  BEST         | RoundRobin (MAPE: 2.77%)
+
+KDH:
+  Hierarchical | MAE:  1.62 | RMSE:  1.92 | MAPE:  4.73%
+  RoundRobin   | MAE:  1.23 | RMSE:  1.58 | MAPE:  3.57%
+  Ensemble     | MAE:  1.61 | RMSE:  1.84 | MAPE:  4.70%
+  BEST         | RoundRobin (MAPE: 3.57%)
+
+MBB:
+  Hierarchical | MAE:  0.64 | RMSE:  0.69 | MAPE:  2.49%
+  RoundRobin   | MAE:  1.02 | RMSE:  1.16 | MAPE:  3.97%
+  Ensemble     | MAE:  0.31 | RMSE:  0.48 | MAPE:  1.14%
+  BEST         | Ensemble (MAPE: 1.14%)
+
+MWG:
+  Hierarchical | MAE:  1.09 | RMSE:  1.27 | MAPE:  1.30%
+  RoundRobin   | MAE:  1.17 | RMSE:  1.31 | MAPE:  1.41%
+  Ensemble     | MAE:  1.13 | RMSE:  1.30 | MAPE:  1.35%
+  BEST         | Hierarchical (MAPE: 1.30%)
+
+TCB:
+  Hierarchical | MAE:  1.39 | RMSE:  1.51 | MAPE:  3.74%
+  RoundRobin   | MAE:  1.00 | RMSE:  1.23 | MAPE:  2.64%
+  Ensemble     | MAE:  1.09 | RMSE:  1.16 | MAPE:  2.90%
+  BEST         | RoundRobin (MAPE: 2.64%)
+
+VCB:
+  Hierarchical | MAE:  0.99 | RMSE:  1.36 | MAPE:  1.63%
+  RoundRobin   | MAE:  0.45 | RMSE:  0.67 | MAPE:  0.73%
+  Ensemble     | MAE:  0.46 | RMSE:  0.65 | MAPE:  0.74%
+  BEST         | RoundRobin (MAPE: 0.73%)
+
+VCS:
+  Hierarchical | MAE:  1.74 | RMSE:  1.79 | MAPE:  3.71%
+  RoundRobin   | MAE:  1.77 | RMSE:  1.83 | MAPE:  3.77%
+  Ensemble     | MAE:  1.80 | RMSE:  1.86 | MAPE:  3.85%
+  BEST         | Hierarchical (MAPE: 3.71%)
+
+VHM:
+  Hierarchical | MAE:  3.41 | RMSE:  4.16 | MAPE:  3.04%
+  RoundRobin   | MAE:  3.58 | RMSE:  4.47 | MAPE:  3.19%
+  Ensemble     | MAE:  2.97 | RMSE:  3.83 | MAPE:  2.60%
+  BEST         | Ensemble (MAPE: 2.60%)
+
+MEDIUM-TERM PERFORMANCE
+--------------------------------------------------
+
+CMG:
+  Hierarchical | MAE:  7.52 | RMSE:  7.58 | MAPE: 18.65%
+  RoundRobin   | MAE:  1.00 | RMSE:  1.14 | MAPE:  2.49%
+  Ensemble     | MAE:  2.10 | RMSE:  3.66 | MAPE:  5.15%
+  BEST         | RoundRobin (MAPE: 2.49%)
+
+DGC:
+  Hierarchical | MAE:  4.38 | RMSE:  4.59 | MAPE:  4.57%
+  RoundRobin   | MAE:  3.38 | RMSE:  3.72 | MAPE:  3.52%
+  Ensemble     | MAE:  2.65 | RMSE:  3.05 | MAPE:  2.75%
+  BEST         | Ensemble (MAPE: 2.75%)
+
+DXG:
+  Hierarchical | MAE:  0.96 | RMSE:  1.16 | MAPE:  4.63%
+  RoundRobin   | MAE:  2.29 | RMSE:  2.71 | MAPE: 10.32%
+  Ensemble     | MAE:  0.87 | RMSE:  1.02 | MAPE:  4.04%
+  BEST         | Ensemble (MAPE: 4.04%)
+
+FPT:
+  Hierarchical | MAE:  6.58 | RMSE:  8.27 | MAPE:  6.41%
+  RoundRobin   | MAE:  6.81 | RMSE:  8.60 | MAPE:  6.64%
+  Ensemble     | MAE:  1.42 | RMSE:  2.23 | MAPE:  1.40%
+  BEST         | Ensemble (MAPE: 1.40%)
+
+HPG:
+  Hierarchical | MAE:  1.33 | RMSE:  1.59 | MAPE:  4.69%
+  RoundRobin   | MAE:  1.23 | RMSE:  1.37 | MAPE:  4.41%
+  Ensemble     | MAE:  1.18 | RMSE:  1.54 | MAPE:  4.14%
+  BEST         | Ensemble (MAPE: 4.14%)
+
+KDH:
+  Hierarchical | MAE:  3.13 | RMSE:  3.93 | MAPE:  8.80%
+  RoundRobin   | MAE:  2.87 | RMSE:  3.25 | MAPE:  8.11%
+  Ensemble     | MAE:  1.05 | RMSE:  1.33 | MAPE:  3.00%
+  BEST         | Ensemble (MAPE: 3.00%)
+
+MBB:
+  Hierarchical | MAE:  1.14 | RMSE:  1.45 | MAPE:  4.62%
+  RoundRobin   | MAE:  1.54 | RMSE:  1.60 | MAPE:  6.27%
+  Ensemble     | MAE:  0.96 | RMSE:  1.07 | MAPE:  3.97%
+  BEST         | Ensemble (MAPE: 3.97%)
+
+MWG:
+  Hierarchical | MAE:  2.62 | RMSE:  3.24 | MAPE:  3.22%
+  RoundRobin   | MAE:  2.74 | RMSE:  3.34 | MAPE:  3.37%
+  Ensemble     | MAE:  2.42 | RMSE:  3.00 | MAPE:  2.98%
+  BEST         | Ensemble (MAPE: 2.98%)
+
+TCB:
+  Hierarchical | MAE:  2.24 | RMSE:  3.32 | MAPE:  6.35%
+  RoundRobin   | MAE:  3.50 | RMSE:  4.13 | MAPE:  9.99%
+  Ensemble     | MAE:  2.37 | RMSE:  3.41 | MAPE:  6.70%
+  BEST         | Hierarchical (MAPE: 6.35%)
+
+VCB:
+  Hierarchical | MAE:  1.65 | RMSE:  2.05 | MAPE:  2.62%
+  RoundRobin   | MAE:  1.78 | RMSE:  2.19 | MAPE:  2.84%
+  Ensemble     | MAE:  1.65 | RMSE:  2.04 | MAPE:  2.63%
+  BEST         | Hierarchical (MAPE: 2.62%)
+
+VCS:
+  Hierarchical | MAE:  2.73 | RMSE:  2.98 | MAPE:  5.74%
+  RoundRobin   | MAE:  1.17 | RMSE:  1.39 | MAPE:  2.41%
+  Ensemble     | MAE:  2.05 | RMSE:  2.31 | MAPE:  4.29%
+  BEST         | RoundRobin (MAPE: 2.41%)
+
+VHM:
+  Hierarchical | MAE:  4.87 | RMSE:  6.70 | MAPE:  4.85%
+  RoundRobin   | MAE:  2.96 | RMSE:  3.22 | MAPE:  2.93%
+  Ensemble     | MAE:  0.99 | RMSE:  1.31 | MAPE:  0.97%
+  BEST         | Ensemble (MAPE: 0.97%)
+
+LONG-TERM PERFORMANCE
+--------------------------------------------------
+
+CMG:
+  Hierarchical | MAE:  3.87 | RMSE:  4.38 | MAPE: 10.16%
+  RoundRobin   | MAE:  4.71 | RMSE:  5.42 | MAPE: 13.12%
+  Ensemble     | MAE:  2.73 | RMSE:  3.08 | MAPE:  7.64%
+  BEST         | Ensemble (MAPE: 7.64%)
+
+DGC:
+  Hierarchical | MAE:  0.80 | RMSE:  1.01 | MAPE:  1.05%
+  RoundRobin   | MAE:  2.33 | RMSE:  2.77 | MAPE:  2.65%
+  Ensemble     | MAE:  0.63 | RMSE:  0.80 | MAPE:  0.82%
+  BEST         | Ensemble (MAPE: 0.82%)
+
+DXG:
+  Hierarchical | MAE:  4.16 | RMSE:  4.55 | MAPE: 23.72%
+  RoundRobin   | MAE:  4.24 | RMSE:  4.68 | MAPE: 24.19%
+  Ensemble     | MAE:  3.91 | RMSE:  4.32 | MAPE: 22.37%
+  BEST         | Ensemble (MAPE: 22.37%)
+
+FPT:
+  Hierarchical | MAE:  1.94 | RMSE:  2.62 | MAPE:  2.06%
+  RoundRobin   | MAE:  2.12 | RMSE:  2.79 | MAPE:  2.25%
+  Ensemble     | MAE:  1.51 | RMSE:  2.19 | MAPE:  1.59%
+  BEST         | Ensemble (MAPE: 1.59%)
+
+HPG:
+  Hierarchical | MAE:  1.32 | RMSE:  1.65 | MAPE:  5.00%
+  RoundRobin   | MAE:  1.15 | RMSE:  1.59 | MAPE:  4.34%
+  Ensemble     | MAE:  1.00 | RMSE:  1.17 | MAPE:  3.76%
+  BEST         | Ensemble (MAPE: 3.76%)
+
+KDH:
+  Hierarchical | MAE:  2.77 | RMSE:  2.80 | MAPE:  8.42%
+  RoundRobin   | MAE:  2.72 | RMSE:  3.95 | MAPE:  8.36%
+  Ensemble     | MAE:  0.64 | RMSE:  0.78 | MAPE:  1.95%
+  BEST         | Ensemble (MAPE: 1.95%)
+
+MBB:
+  Hierarchical | MAE:  1.53 | RMSE:  1.68 | MAPE:  6.31%
+  RoundRobin   | MAE:  1.00 | RMSE:  1.61 | MAPE:  4.22%
+  Ensemble     | MAE:  0.71 | RMSE:  0.89 | MAPE:  2.92%
+  BEST         | Ensemble (MAPE: 2.92%)
+
+MWG:
+  Hierarchical | MAE:  4.69 | RMSE:  5.53 | MAPE:  5.86%
+  RoundRobin   | MAE:  3.86 | RMSE:  4.78 | MAPE:  4.83%
+  Ensemble     | MAE:  2.33 | RMSE:  2.54 | MAPE:  2.83%
+  BEST         | Ensemble (MAPE: 2.83%)
+
+TCB:
+  Hierarchical | MAE:  4.11 | RMSE:  4.66 | MAPE: 12.31%
+  RoundRobin   | MAE:  3.94 | RMSE:  4.36 | MAPE: 11.60%
+  Ensemble     | MAE:  4.97 | RMSE:  6.03 | MAPE: 15.03%
+  BEST         | RoundRobin (MAPE: 11.60%)
+
+VCB:
+  Hierarchical | MAE:  5.05 | RMSE:  5.89 | MAPE:  8.62%
+  RoundRobin   | MAE:  4.42 | RMSE:  5.25 | MAPE:  7.50%
+  Ensemble     | MAE:  3.87 | RMSE:  4.82 | MAPE:  6.55%
+  BEST         | Ensemble (MAPE: 6.55%)
+
+VCS:
+  Hierarchical | MAE:  1.22 | RMSE:  1.49 | MAPE:  2.80%
+  RoundRobin   | MAE:  1.75 | RMSE:  2.06 | MAPE:  4.00%
+  Ensemble     | MAE:  1.27 | RMSE:  1.47 | MAPE:  2.88%
+  BEST         | Hierarchical (MAPE: 2.80%)
+
+VHM:
+  Hierarchical | MAE:  8.18 | RMSE:  9.68 | MAPE:  8.32%
+  RoundRobin   | MAE:  6.25 | RMSE:  6.66 | MAPE:  6.35%
+  Ensemble     | MAE:  2.52 | RMSE:  2.75 | MAPE:  2.52%
+  BEST         | Ensemble (MAPE: 2.52%)
+
+================================================================================
+LATEX TABLE FORMAT
+================================================================================
+
+\subsubsection{Short-term Performance}
+\begin{table}[!h]
+\centering
+\caption{Average Short-term Performance of Prediction Architectures Across Stocks}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{c c c c c}
+\hline
+\textbf{Stock} & \textbf{Architecture} & \textbf{Avg MAE} & \textbf{Avg RMSE} & \textbf{Avg MAPE} \\
+\hline
+
+\multirow{3}{*}{\textbf{CMG}}
+& Ensemble Voting & \textbf{3.02} & \textbf{3.49} & \textbf{7.9\%} \\
+& Hierarchical    & 3.45 & 3.98 & 8.7\% \\
+& RoundRobin      & 5.19 & 5.27 & 13.2\% \\
+\hline
+
+\multirow{3}{*}{\textbf{DGC}}
+& Ensemble Voting & \textbf{2.42} & \textbf{2.83} & \textbf{2.6\%} \\
+& Hierarchical    & 4.10 & 5.55 & 4.4\% \\
+& RoundRobin      & 4.50 & 5.86 & 4.8\% \\
+\hline
+
+\multirow{3}{*}{\textbf{DXG}}
+& Ensemble Voting & \textbf{0.27} & \textbf{0.40} & \textbf{1.3\%} \\
+& RoundRobin      & 1.09 & 1.41 & 5.1\% \\
+& Hierarchical    & 1.54 & 1.83 & 7.1\% \\
+\hline
+
+\multirow{3}{*}{\textbf{FPT}}
+& Hierarchical    & \textbf{2.87} & \textbf{3.33} & \textbf{2.9\%} \\
+& Ensemble Voting & 2.90 & 3.36 & 2.9\% \\
+& RoundRobin      & 3.61 & 3.88 & 3.7\% \\
+\hline
+
+\multirow{3}{*}{\textbf{HPG}}
+& RoundRobin      & \textbf{0.79} & \textbf{0.98} & \textbf{2.8\%} \\
+& Hierarchical    & 0.83 & 1.15 & 2.9\% \\
+& Ensemble Voting & 0.89 & 1.17 & 3.1\% \\
+\hline
+
+\multirow{3}{*}{\textbf{KDH}}
+& RoundRobin      & \textbf{1.23} & \textbf{1.58} & \textbf{3.6\%} \\
+& Ensemble Voting & 1.61 & 1.84 & 4.7\% \\
+& Hierarchical    & 1.62 & 1.92 & 4.7\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MBB}}
+& Ensemble Voting & \textbf{0.31} & \textbf{0.48} & \textbf{1.1\%} \\
+& Hierarchical    & 0.64 & 0.69 & 2.5\% \\
+& RoundRobin      & 1.02 & 1.16 & 4.0\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MWG}}
+& Hierarchical    & \textbf{1.09} & \textbf{1.27} & \textbf{1.3\%} \\
+& Ensemble Voting & 1.13 & 1.30 & 1.4\% \\
+& RoundRobin      & 1.17 & 1.31 & 1.4\% \\
+\hline
+
+\multirow{3}{*}{\textbf{TCB}}
+& RoundRobin      & \textbf{1.00} & \textbf{1.23} & \textbf{2.6\%} \\
+& Ensemble Voting & 1.09 & 1.16 & 2.9\% \\
+& Hierarchical    & 1.39 & 1.51 & 3.7\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCB}}
+& RoundRobin      & \textbf{0.45} & \textbf{0.67} & \textbf{0.7\%} \\
+& Ensemble Voting & 0.46 & 0.65 & 0.7\% \\
+& Hierarchical    & 0.99 & 1.36 & 1.6\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCS}}
+& Hierarchical    & \textbf{1.74} & \textbf{1.79} & \textbf{3.7\%} \\
+& RoundRobin      & 1.77 & 1.83 & 3.8\% \\
+& Ensemble Voting & 1.80 & 1.86 & 3.8\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VHM}}
+& Ensemble Voting & \textbf{2.97} & \textbf{3.83} & \textbf{2.6\%} \\
+& Hierarchical    & 3.41 & 4.16 & 3.0\% \\
+& RoundRobin      & 3.58 & 4.47 & 3.2\% \\
+\hline
+
+\end{tabular}
+}
+\end{table}
+
+\subsubsection{Medium-term Performance}
+\begin{table}[!h]
+\centering
+\caption{Average Medium-term Performance of Prediction Architectures Across Stocks}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{c c c c c}
+\hline
+\textbf{Stock} & \textbf{Architecture} & \textbf{Avg MAE} & \textbf{Avg RMSE} & \textbf{Avg MAPE} \\
+\hline
+
+\multirow{3}{*}{\textbf{CMG}}
+& RoundRobin      & \textbf{1.00} & \textbf{1.14} & \textbf{2.5\%} \\
+& Ensemble Voting & 2.10 & 3.66 & 5.2\% \\
+& Hierarchical    & 7.52 & 7.58 & 18.7\% \\
+\hline
+
+\multirow{3}{*}{\textbf{DGC}}
+& Ensemble Voting & \textbf{2.65} & \textbf{3.05} & \textbf{2.8\%} \\
+& RoundRobin      & 3.38 & 3.72 & 3.5\% \\
+& Hierarchical    & 4.38 & 4.59 & 4.6\% \\
+\hline
+
+\multirow{3}{*}{\textbf{DXG}}
+& Ensemble Voting & \textbf{0.87} & \textbf{1.02} & \textbf{4.0\%} \\
+& Hierarchical    & 0.96 & 1.16 & 4.6\% \\
+& RoundRobin      & 2.29 & 2.71 & 10.3\% \\
+\hline
+
+\multirow{3}{*}{\textbf{FPT}}
+& Ensemble Voting & \textbf{1.42} & \textbf{2.23} & \textbf{1.4\%} \\
+& Hierarchical    & 6.58 & 8.27 & 6.4\% \\
+& RoundRobin      & 6.81 & 8.60 & 6.6\% \\
+\hline
+
+\multirow{3}{*}{\textbf{HPG}}
+& Ensemble Voting & \textbf{1.18} & \textbf{1.54} & \textbf{4.1\%} \\
+& RoundRobin      & 1.23 & 1.37 & 4.4\% \\
+& Hierarchical    & 1.33 & 1.59 & 4.7\% \\
+\hline
+
+\multirow{3}{*}{\textbf{KDH}}
+& Ensemble Voting & \textbf{1.05} & \textbf{1.33} & \textbf{3.0\%} \\
+& RoundRobin      & 2.87 & 3.25 & 8.1\% \\
+& Hierarchical    & 3.13 & 3.93 & 8.8\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MBB}}
+& Ensemble Voting & \textbf{0.96} & \textbf{1.07} & \textbf{4.0\%} \\
+& Hierarchical    & 1.14 & 1.45 & 4.6\% \\
+& RoundRobin      & 1.54 & 1.60 & 6.3\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MWG}}
+& Ensemble Voting & \textbf{2.42} & \textbf{3.00} & \textbf{3.0\%} \\
+& Hierarchical    & 2.62 & 3.24 & 3.2\% \\
+& RoundRobin      & 2.74 & 3.34 & 3.4\% \\
+\hline
+
+\multirow{3}{*}{\textbf{TCB}}
+& Hierarchical    & \textbf{2.24} & \textbf{3.32} & \textbf{6.4\%} \\
+& Ensemble Voting & 2.37 & 3.41 & 6.7\% \\
+& RoundRobin      & 3.50 & 4.13 & 10.0\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCB}}
+& Hierarchical    & \textbf{1.65} & \textbf{2.05} & \textbf{2.6\%} \\
+& Ensemble Voting & 1.65 & 2.04 & 2.6\% \\
+& RoundRobin      & 1.78 & 2.19 & 2.8\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCS}}
+& RoundRobin      & \textbf{1.17} & \textbf{1.39} & \textbf{2.4\%} \\
+& Ensemble Voting & 2.05 & 2.31 & 4.3\% \\
+& Hierarchical    & 2.73 & 2.98 & 5.7\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VHM}}
+& Ensemble Voting & \textbf{0.99} & \textbf{1.31} & \textbf{1.0\%} \\
+& RoundRobin      & 2.96 & 3.22 & 2.9\% \\
+& Hierarchical    & 4.87 & 6.70 & 4.8\% \\
+\hline
+
+\end{tabular}
+}
+\end{table}
+
+\subsubsection{Long-term Performance}
+\begin{table}[!h]
+\centering
+\caption{Average Long-term Performance of Prediction Architectures Across Stocks}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{c c c c c}
+\hline
+\textbf{Stock} & \textbf{Architecture} & \textbf{Avg MAE} & \textbf{Avg RMSE} & \textbf{Avg MAPE} \\
+\hline
+
+\multirow{3}{*}{\textbf{CMG}}
+& Ensemble Voting & \textbf{2.73} & \textbf{3.08} & \textbf{7.6\%} \\
+& Hierarchical    & 3.87 & 4.38 & 10.2\% \\
+& RoundRobin      & 4.71 & 5.42 & 13.1\% \\
+\hline
+
+\multirow{3}{*}{\textbf{DGC}}
+& Ensemble Voting & \textbf{0.63} & \textbf{0.80} & \textbf{0.8\%} \\
+& Hierarchical    & 0.80 & 1.01 & 1.1\% \\
+& RoundRobin      & 2.33 & 2.77 & 2.6\% \\
+\hline
+
+\multirow{3}{*}{\textbf{DXG}}
+& Ensemble Voting & \textbf{3.91} & \textbf{4.32} & \textbf{22.4\%} \\
+& Hierarchical    & 4.16 & 4.55 & 23.7\% \\
+& RoundRobin      & 4.24 & 4.68 & 24.2\% \\
+\hline
+
+\multirow{3}{*}{\textbf{FPT}}
+& Ensemble Voting & \textbf{1.51} & \textbf{2.19} & \textbf{1.6\%} \\
+& Hierarchical    & 1.94 & 2.62 & 2.1\% \\
+& RoundRobin      & 2.12 & 2.79 & 2.2\% \\
+\hline
+
+\multirow{3}{*}{\textbf{HPG}}
+& Ensemble Voting & \textbf{1.00} & \textbf{1.17} & \textbf{3.8\%} \\
+& RoundRobin      & 1.15 & 1.59 & 4.3\% \\
+& Hierarchical    & 1.32 & 1.65 & 5.0\% \\
+\hline
+
+\multirow{3}{*}{\textbf{KDH}}
+& Ensemble Voting & \textbf{0.64} & \textbf{0.78} & \textbf{1.9\%} \\
+& RoundRobin      & 2.72 & 3.95 & 8.4\% \\
+& Hierarchical    & 2.77 & 2.80 & 8.4\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MBB}}
+& Ensemble Voting & \textbf{0.71} & \textbf{0.89} & \textbf{2.9\%} \\
+& RoundRobin      & 1.00 & 1.61 & 4.2\% \\
+& Hierarchical    & 1.53 & 1.68 & 6.3\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MWG}}
+& Ensemble Voting & \textbf{2.33} & \textbf{2.54} & \textbf{2.8\%} \\
+& RoundRobin      & 3.86 & 4.78 & 4.8\% \\
+& Hierarchical    & 4.69 & 5.53 & 5.9\% \\
+\hline
+
+\multirow{3}{*}{\textbf{TCB}}
+& RoundRobin      & \textbf{3.94} & \textbf{4.36} & \textbf{11.6\%} \\
+& Hierarchical    & 4.11 & 4.66 & 12.3\% \\
+& Ensemble Voting & 4.97 & 6.03 & 15.0\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCB}}
+& Ensemble Voting & \textbf{3.87} & \textbf{4.82} & \textbf{6.5\%} \\
+& RoundRobin      & 4.42 & 5.25 & 7.5\% \\
+& Hierarchical    & 5.05 & 5.89 & 8.6\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCS}}
+& Hierarchical    & \textbf{1.22} & \textbf{1.49} & \textbf{2.8\%} \\
+& Ensemble Voting & 1.27 & 1.47 & 2.9\% \\
+& RoundRobin      & 1.75 & 2.06 & 4.0\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VHM}}
+& Ensemble Voting & \textbf{2.52} & \textbf{2.75} & \textbf{2.5\%} \\
+& RoundRobin      & 6.25 & 6.66 & 6.4\% \\
+& Hierarchical    & 8.18 & 9.68 & 8.3\% \\
+\hline
+
+\end{tabular}
+}
+\end{table}
+
+================================================================================
+OVERALL ARCHITECTURE AVERAGES ACROSS ALL STOCKS (LLM: Gemini 2.0 Flash)
+================================================================================
+
+SHORT-TERM GLOBAL AVERAGES:
+-----------------------------------------------------------------
+Architecture    | Avg MAE    | Avg RMSE   | Avg MAPE
+-----------------------------------------------------------------
+Hierarchical    | 1.97       | 2.38       | 3.89     %
+RoundRobin      | 2.12       | 2.47       | 4.07     %
+Ensemble        | 1.57       | 1.86       | 2.92     %
+-----------------------------------------------------------------
+
+MEDIUM-TERM GLOBAL AVERAGES:
+-----------------------------------------------------------------
+Architecture    | Avg MAE    | Avg RMSE   | Avg MAPE
+-----------------------------------------------------------------
+Hierarchical    | 3.26       | 3.91       | 6.26     %
+RoundRobin      | 2.61       | 3.06       | 5.27     %
+Ensemble        | 1.64       | 2.17       | 3.50     %
+-----------------------------------------------------------------
+
+LONG-TERM GLOBAL AVERAGES:
+-----------------------------------------------------------------
+Architecture    | Avg MAE    | Avg RMSE   | Avg MAPE
+-----------------------------------------------------------------
+Hierarchical    | 3.30       | 3.83       | 7.88     %
+RoundRobin      | 3.21       | 3.83       | 7.78     %
+Ensemble        | 2.17       | 2.57       | 5.90     %
+-----------------------------------------------------------------
+
+================================================================================
+CALCULATION COMPLETE!
+================================================================================

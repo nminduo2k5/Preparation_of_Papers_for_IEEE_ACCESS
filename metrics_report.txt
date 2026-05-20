@@ -1,0 +1,534 @@
+Successfully processed test2.tex
+Loaded 108 keys for GPT-4o.
+Successfully processed test3.tex
+Loaded 108 keys for Llama 3.1:8b.
+Successfully processed test4.tex
+Loaded 108 keys for Gemini 2.0.
+================================================================================
+DYNAMIC PERFORMANCE METRICS CALCULATION COMPLETE
+================================================================================
+Total calculated combinations: 324
+
+================================================================================
+RESEARCH QUESTION 1 (RQ1) ANALYSIS
+================================================================================
+Average MAPE (%) of Coordination Architectures across all Stocks and LLMs:
+-----------------------------------------------------------------
+Horizon      | Hierarchical   | Round Robin    | Ensemble Voting
+-----------------------------------------------------------------
+Short        |         3.45% |         3.32% |         3.11%
+Medium       |         6.06% |         5.96% |         5.90%
+Long         |         9.64% |        10.17% |         9.92%
+-----------------------------------------------------------------
+
+================================================================================
+RESEARCH QUESTION 2 (RQ2) ANALYSIS
+================================================================================
+Average MAPE (%) of underlying LLMs across all Stocks and Architectures:
+-------------------------------------------------------
+Horizon      | Llama 3.1:8b   | GPT-4o       | Gemini 2.0  
+-------------------------------------------------------
+Short        |       3.27% |       3.31% |       3.29%
+Medium       |       6.22% |       5.64% |       6.06%
+Long         |       9.95% |      10.28% |       9.51%
+-------------------------------------------------------
+
+================================================================================
+LATEX HORIZON-SPECIFIC COMPARISON TABLES (llm_comparison.tex style)
+================================================================================
+
+% SHORT-TERM COMPARISON TABLE
+\begin{table}[h!]
+\centering
+\caption{Short-term Performance Comparison Across LLMs (Best values in bold)}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{c|c|ccc|ccc|ccc}
+\toprule
+\multirow{2}{*}{\textbf{Stock}} & \multirow{2}{*}{\textbf{Architecture}} & 
+\multicolumn{3}{c|}{\textbf{Llama 3.1:8b}} & 
+\multicolumn{3}{c|}{\textbf{GPT-4o}} & 
+\multicolumn{3}{c}{\textbf{Google Gemini 2.0}} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8} \cmidrule(lr){9-11}
+& & MAE & RMSE & MAPE & MAE & RMSE & MAPE & MAE & RMSE & MAPE \\
+\midrule
+
+\multirow{3}{*}{\textbf{CMG}}
+& Hierarchical & 1.03 & 1.37 & \textbf{2.6\%} & \textbf{1.01} & \textbf{1.08} & 2.6\% & 1.29 & 1.78 & 3.2\% \\
+& Round Robin & 1.14 & 1.26 & 3.0\% & 1.20 & 1.73 & 2.9\% & \textbf{0.99} & \textbf{1.12} & \textbf{2.6\%} \\
+& Ensemble & 0.89 & 0.99 & 2.2\% & \textbf{0.40} & \textbf{0.46} & \textbf{1.0\%} & 1.10 & 1.32 & 2.8\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{DGC}}
+& Hierarchical & 2.00 & 2.13 & 2.1\% & 3.23 & 3.28 & 3.4\% & \textbf{1.34} & \textbf{1.81} & \textbf{1.4\%} \\
+& Round Robin & \textbf{1.29} & \textbf{1.70} & \textbf{1.4\%} & 1.81 & 2.29 & 1.9\% & 2.09 & 2.97 & 2.3\% \\
+& Ensemble & 3.31 & 4.06 & 3.6\% & \textbf{1.89} & \textbf{2.37} & \textbf{2.0\%} & 3.14 & 3.55 & 3.4\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{DXG}}
+& Hierarchical & \textbf{0.55} & \textbf{0.90} & \textbf{2.3\%} & 1.75 & 2.08 & 8.1\% & 0.82 & 0.93 & 3.8\% \\
+& Round Robin & 1.13 & \textbf{1.16} & 5.2\% & 1.04 & 1.34 & 4.8\% & \textbf{0.92} & 1.22 & \textbf{4.0\%} \\
+& Ensemble & 0.97 & 1.09 & 4.3\% & 1.86 & 1.93 & 8.4\% & \textbf{0.79} & \textbf{0.85} & \textbf{3.5\%} \\
+\midrule
+
+\multirow{3}{*}{\textbf{FPT}}
+& Hierarchical & 2.92 & \textbf{3.29} & 3.0\% & 3.64 & 4.08 & 3.8\% & \textbf{2.44} & 3.53 & \textbf{2.5\%} \\
+& Round Robin & 3.09 & \textbf{3.52} & 3.1\% & 2.86 & 3.56 & 2.9\% & \textbf{2.83} & 3.86 & \textbf{2.9\%} \\
+& Ensemble & 2.97 & 3.68 & 3.0\% & \textbf{1.57} & \textbf{1.83} & \textbf{1.7\%} & 3.38 & 4.45 & 3.4\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{HPG}}
+& Hierarchical & \textbf{1.39} & \textbf{1.66} & \textbf{5.0\%} & 2.37 & 3.24 & 8.2\% & 1.80 & 2.45 & 6.3\% \\
+& Round Robin & \textbf{1.10} & \textbf{1.24} & \textbf{3.9\%} & 1.46 & 2.14 & 5.0\% & 1.22 & 1.35 & 4.4\% \\
+& Ensemble & 1.12 & 1.52 & 3.9\% & \textbf{0.53} & \textbf{0.71} & \textbf{1.9\%} & 1.03 & 1.15 & 3.7\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{KDH}}
+& Hierarchical & \textbf{1.35} & \textbf{1.49} & \textbf{3.9\%} & 1.55 & 2.14 & 4.5\% & 1.88 & 2.40 & 5.6\% \\
+& Round Robin & 1.95 & \textbf{2.22} & 5.7\% & \textbf{1.77} & 2.79 & \textbf{5.2\%} & 2.03 & 2.35 & 5.9\% \\
+& Ensemble & 2.07 & 2.73 & 6.1\% & 1.39 & 1.96 & 4.1\% & \textbf{0.96} & \textbf{1.19} & \textbf{2.8\%} \\
+\midrule
+
+\multirow{3}{*}{\textbf{MBB}}
+& Hierarchical & \textbf{0.83} & \textbf{1.25} & \textbf{3.3\%} & 1.07 & 1.33 & 4.3\% & 1.21 & 1.36 & 4.8\% \\
+& Round Robin & 1.55 & 1.63 & 6.0\% & 0.97 & \textbf{1.07} & 3.8\% & \textbf{0.91} & 1.14 & \textbf{3.6\%} \\
+& Ensemble & \textbf{0.58} & \textbf{0.68} & \textbf{2.3\%} & 0.73 & 0.88 & 2.7\% & 1.81 & 2.24 & 7.0\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{MWG}}
+& Hierarchical & 1.61 & 2.02 & 1.9\% & 1.67 & \textbf{1.88} & 2.0\% & \textbf{1.55} & 2.04 & \textbf{1.9\%} \\
+& Round Robin & 1.31 & 1.51 & 1.5\% & 1.61 & 2.05 & 1.9\% & \textbf{1.04} & \textbf{1.25} & \textbf{1.2\%} \\
+& Ensemble & 2.34 & 3.27 & 2.8\% & \textbf{1.01} & \textbf{1.03} & \textbf{1.2\%} & 1.50 & 1.84 & 1.8\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{TCB}}
+& Hierarchical & 1.89 & 2.59 & 5.0\% & 1.83 & \textbf{1.99} & 4.9\% & \textbf{1.46} & 2.06 & \textbf{4.0\%} \\
+& Round Robin & \textbf{0.73} & \textbf{0.82} & \textbf{2.0\%} & 1.85 & 2.14 & 5.0\% & 1.23 & 1.25 & 3.3\% \\
+& Ensemble & 2.19 & 2.79 & 6.0\% & \textbf{1.39} & \textbf{1.90} & \textbf{3.8\%} & 2.10 & 2.44 & 5.7\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{VCB}}
+& Hierarchical & 1.03 & 1.72 & 1.7\% & \textbf{0.89} & \textbf{1.01} & \textbf{1.4\%} & 1.23 & 1.51 & 2.0\% \\
+& Round Robin & \textbf{0.48} & \textbf{0.65} & \textbf{0.8\%} & 0.66 & 0.68 & 1.1\% & 0.82 & 0.87 & 1.3\% \\
+& Ensemble & 1.05 & 1.21 & 1.7\% & \textbf{0.57} & \textbf{0.73} & \textbf{0.9\%} & 0.64 & 0.84 & 1.0\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{VCS}}
+& Hierarchical & 1.34 & 1.50 & 2.9\% & \textbf{1.04} & 1.25 & \textbf{2.2\%} & 1.08 & \textbf{1.23} & 2.3\% \\
+& Round Robin & 1.06 & 1.15 & 2.3\% & \textbf{0.57} & \textbf{0.65} & \textbf{1.2\%} & 0.94 & 1.21 & 2.0\% \\
+& Ensemble & \textbf{0.81} & \textbf{1.01} & \textbf{1.7\%} & 1.16 & 1.24 & 2.5\% & 1.08 & 1.25 & 2.3\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{VHM}}
+& Hierarchical & 3.50 & 4.43 & 3.1\% & \textbf{2.18} & 3.38 & \textbf{1.9\%} & 2.53 & \textbf{3.27} & 2.2\% \\
+& Round Robin & 7.95 & 8.96 & 7.1\% & \textbf{4.36} & 6.30 & \textbf{3.8\%} & 5.13 & \textbf{6.24} & 4.5\% \\
+& Ensemble & \textbf{1.74} & \textbf{1.85} & \textbf{1.6\%} & 2.56 & 2.77 & 2.2\% & 3.72 & 4.53 & 3.3\% \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+% MEDIUM-TERM COMPARISON TABLE
+\begin{table}[h!]
+\centering
+\caption{Medium-term Performance Comparison Across LLMs (Best values in bold)}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{c|c|ccc|ccc|ccc}
+\toprule
+\multirow{2}{*}{\textbf{Stock}} & \multirow{2}{*}{\textbf{Architecture}} & 
+\multicolumn{3}{c|}{\textbf{Llama 3.1:8b}} & 
+\multicolumn{3}{c|}{\textbf{GPT-4o}} & 
+\multicolumn{3}{c}{\textbf{Google Gemini 2.0}} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8} \cmidrule(lr){9-11}
+& & MAE & RMSE & MAPE & MAE & RMSE & MAPE & MAE & RMSE & MAPE \\
+\midrule
+
+\multirow{3}{*}{\textbf{CMG}}
+& Hierarchical & 1.62 & 2.08 & 4.0\% & 2.78 & 3.52 & 6.8\% & \textbf{1.40} & \textbf{1.56} & \textbf{3.5\%} \\
+& Round Robin & 1.58 & 1.94 & 3.9\% & \textbf{1.20} & \textbf{1.38} & \textbf{3.0\%} & 2.19 & 3.05 & 5.4\% \\
+& Ensemble & 1.90 & 2.80 & 4.7\% & \textbf{0.89} & \textbf{1.15} & \textbf{2.2\%} & 1.84 & 1.96 & 4.6\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{DGC}}
+& Hierarchical & 4.04 & 5.86 & 4.2\% & \textbf{2.12} & \textbf{2.81} & \textbf{2.2\%} & 2.52 & 3.60 & 2.7\% \\
+& Round Robin & \textbf{2.20} & \textbf{2.60} & \textbf{2.3\%} & 4.54 & 5.67 & 4.8\% & 2.54 & 2.69 & 2.7\% \\
+& Ensemble & 4.26 & 4.98 & 4.4\% & \textbf{1.76} & \textbf{1.97} & \textbf{1.9\%} & 2.94 & 3.76 & 3.1\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{DXG}}
+& Hierarchical & \textbf{0.53} & \textbf{0.57} & \textbf{2.5\%} & 1.01 & 1.14 & 4.7\% & 2.04 & 2.23 & 9.4\% \\
+& Round Robin & 0.75 & \textbf{0.88} & 3.6\% & \textbf{0.73} & 0.97 & \textbf{3.5\%} & 1.02 & 1.18 & 4.7\% \\
+& Ensemble & \textbf{0.90} & 1.23 & \textbf{4.0\%} & 1.12 & 1.18 & 5.3\% & 1.03 & \textbf{1.18} & 4.7\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{FPT}}
+& Hierarchical & 7.05 & 8.01 & 6.9\% & 4.93 & \textbf{5.86} & 4.8\% & \textbf{4.90} & 6.57 & \textbf{4.8\%} \\
+& Round Robin & 7.30 & \textbf{9.64} & 7.1\% & \textbf{6.17} & 11.27 & \textbf{6.0\%} & 8.77 & 11.04 & 8.6\% \\
+& Ensemble & 6.97 & 10.31 & 6.8\% & \textbf{6.19} & \textbf{8.63} & \textbf{6.0\%} & 7.29 & 10.98 & 7.1\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{HPG}}
+& Hierarchical & 2.25 & 3.34 & 7.7\% & \textbf{0.81} & \textbf{0.99} & \textbf{3.0\%} & 2.23 & 3.13 & 7.7\% \\
+& Round Robin & 1.32 & 1.57 & 4.7\% & 0.92 & 1.34 & 3.2\% & \textbf{0.82} & \textbf{0.95} & \textbf{2.9\%} \\
+& Ensemble & 2.29 & 2.96 & 8.3\% & \textbf{1.38} & \textbf{1.85} & \textbf{4.8\%} & 2.47 & 3.03 & 8.6\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{KDH}}
+& Hierarchical & 4.30 & 5.01 & 12.1\% & 3.21 & \textbf{3.31} & 9.1\% & \textbf{2.29} & 3.91 & \textbf{6.5\%} \\
+& Round Robin & \textbf{1.92} & \textbf{2.16} & \textbf{5.4\%} & 2.09 & 2.86 & 6.0\% & 3.63 & 4.33 & 10.3\% \\
+& Ensemble & \textbf{1.37} & \textbf{1.65} & \textbf{3.9\%} & 1.89 & 2.88 & 5.3\% & 3.09 & 3.29 & 8.7\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{MBB}}
+& Hierarchical & 1.79 & \textbf{2.13} & 7.3\% & 1.69 & 2.63 & 6.9\% & \textbf{1.55} & 2.36 & \textbf{6.4\%} \\
+& Round Robin & 2.74 & 3.82 & 11.3\% & 2.99 & 3.47 & 12.2\% & \textbf{1.86} & \textbf{1.89} & \textbf{7.6\%} \\
+& Ensemble & \textbf{1.67} & \textbf{1.87} & \textbf{6.7\%} & 2.21 & 2.64 & 9.1\% & 2.03 & 3.20 & 8.4\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{MWG}}
+& Hierarchical & 2.25 & 2.76 & 2.8\% & 2.15 & 3.17 & 2.7\% & \textbf{1.48} & \textbf{1.95} & \textbf{1.8\%} \\
+& Round Robin & 3.37 & 5.12 & 4.2\% & \textbf{1.62} & \textbf{1.90} & \textbf{2.0\%} & 2.53 & 3.70 & 3.1\% \\
+& Ensemble & \textbf{1.16} & \textbf{1.52} & \textbf{1.4\%} & 1.92 & 2.28 & 2.3\% & 1.57 & 2.30 & 2.0\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{TCB}}
+& Hierarchical & 5.51 & 6.84 & 15.7\% & 2.49 & 2.76 & 7.0\% & \textbf{1.36} & \textbf{1.43} & \textbf{3.8\%} \\
+& Round Robin & \textbf{2.05} & \textbf{3.04} & \textbf{5.7\%} & 3.84 & 4.71 & 10.8\% & 3.79 & 4.64 & 10.6\% \\
+& Ensemble & \textbf{1.86} & \textbf{2.51} & \textbf{5.3\%} & 3.80 & 4.56 & 10.8\% & 2.40 & 3.21 & 6.7\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{VCB}}
+& Hierarchical & \textbf{1.09} & \textbf{1.27} & \textbf{1.7\%} & 1.74 & 2.33 & 2.7\% & 2.66 & 3.17 & 4.2\% \\
+& Round Robin & 2.57 & 2.67 & 4.1\% & \textbf{1.41} & \textbf{1.74} & \textbf{2.2\%} & 1.71 & 2.79 & 2.6\% \\
+& Ensemble & 3.07 & 3.49 & 4.9\% & \textbf{1.76} & \textbf{1.99} & \textbf{2.8\%} & 2.63 & 2.87 & 4.3\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{VCS}}
+& Hierarchical & 2.42 & 2.73 & 5.1\% & 2.25 & 2.53 & 4.7\% & \textbf{1.83} & \textbf{2.05} & \textbf{3.9\%} \\
+& Round Robin & 2.05 & 2.47 & 4.3\% & \textbf{1.65} & \textbf{1.98} & \textbf{3.4\%} & 1.74 & 2.18 & 3.7\% \\
+& Ensemble & \textbf{1.54} & \textbf{1.82} & \textbf{3.2\%} & 2.93 & 3.31 & 6.1\% & 1.80 & 2.28 & 3.7\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{VHM}}
+& Hierarchical & 13.46 & 18.43 & 13.2\% & 13.45 & \textbf{15.53} & 13.2\% & \textbf{12.66} & 17.06 & \textbf{12.4\%} \\
+& Round Robin & \textbf{11.82} & \textbf{15.08} & \textbf{11.6\%} & 13.36 & 18.60 & 13.1\% & 14.38 & 17.57 & 14.1\% \\
+& Ensemble & 19.33 & 25.54 & 18.9\% & \textbf{8.46} & \textbf{13.20} & \textbf{8.5\%} & 13.15 & 16.34 & 13.0\% \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+% LONG-TERM COMPARISON TABLE
+\begin{table}[h!]
+\centering
+\caption{Long-term Performance Comparison Across LLMs (Best values in bold)}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{c|c|ccc|ccc|ccc}
+\toprule
+\multirow{2}{*}{\textbf{Stock}} & \multirow{2}{*}{\textbf{Architecture}} & 
+\multicolumn{3}{c|}{\textbf{Llama 3.1:8b}} & 
+\multicolumn{3}{c|}{\textbf{GPT-4o}} & 
+\multicolumn{3}{c}{\textbf{Google Gemini 2.0}} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8} \cmidrule(lr){9-11}
+& & MAE & RMSE & MAPE & MAE & RMSE & MAPE & MAE & RMSE & MAPE \\
+\midrule
+
+\multirow{3}{*}{\textbf{CMG}}
+& Hierarchical & 2.66 & 2.85 & 7.4\% & 2.76 & 3.38 & 7.7\% & \textbf{2.45} & \textbf{2.67} & \textbf{6.9\%} \\
+& Round Robin & 3.39 & 3.77 & 9.3\% & 3.49 & 4.58 & 9.8\% & \textbf{2.56} & \textbf{3.10} & \textbf{7.2\%} \\
+& Ensemble & 3.65 & 4.17 & 10.3\% & \textbf{3.03} & \textbf{4.09} & \textbf{8.6\%} & 3.58 & 4.09 & 10.1\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{DGC}}
+& Hierarchical & \textbf{6.80} & \textbf{11.51} & \textbf{9.4\%} & 9.46 & 13.12 & 13.0\% & 13.38 & 18.04 & 18.8\% \\
+& Round Robin & 19.20 & 25.66 & 26.9\% & 13.41 & 18.08 & 18.9\% & \textbf{12.38} & \textbf{17.08} & \textbf{17.2\%} \\
+& Ensemble & \textbf{8.19} & 13.18 & \textbf{11.5\%} & 8.93 & \textbf{12.72} & 12.0\% & 17.36 & 23.06 & 24.3\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{DXG}}
+& Hierarchical & 3.21 & 4.75 & 19.0\% & \textbf{1.79} & \textbf{2.02} & \textbf{9.8\%} & 3.98 & 5.48 & 23.1\% \\
+& Round Robin & 3.57 & 4.20 & 20.7\% & 3.86 & 5.42 & 22.8\% & \textbf{2.01} & \textbf{2.55} & \textbf{11.0\%} \\
+& Ensemble & 4.06 & 4.38 & 23.0\% & 4.19 & 4.31 & 23.2\% & \textbf{2.54} & \textbf{2.79} & \textbf{13.6\%} \\
+\midrule
+
+\multirow{3}{*}{\textbf{FPT}}
+& Hierarchical & 3.61 & 3.88 & 3.7\% & \textbf{1.37} & \textbf{1.58} & \textbf{1.4\%} & 2.75 & 3.55 & 2.9\% \\
+& Round Robin & 4.19 & 4.66 & 4.3\% & 4.82 & 5.69 & 5.0\% & \textbf{1.85} & \textbf{2.21} & \textbf{2.0\%} \\
+& Ensemble & \textbf{3.12} & 3.72 & \textbf{3.3\%} & 3.30 & \textbf{3.46} & 3.4\% & 3.20 & 3.64 & 3.3\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{HPG}}
+& Hierarchical & 1.50 & 2.46 & 5.7\% & \textbf{0.64} & \textbf{0.72} & \textbf{2.4\%} & 0.76 & 0.94 & 2.9\% \\
+& Round Robin & 1.54 & 1.84 & 5.8\% & 1.39 & 2.34 & 5.3\% & \textbf{1.07} & \textbf{1.12} & \textbf{4.0\%} \\
+& Ensemble & \textbf{0.22} & \textbf{0.25} & \textbf{0.8\%} & 0.81 & 1.18 & 3.1\% & 0.98 & 1.42 & 3.7\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{KDH}}
+& Hierarchical & 2.50 & 4.27 & 8.2\% & 1.41 & 1.91 & 4.5\% & \textbf{1.38} & \textbf{1.46} & \textbf{4.2\%} \\
+& Round Robin & \textbf{1.17} & \textbf{1.30} & \textbf{3.6\%} & 2.08 & 3.67 & 6.9\% & 1.59 & 1.70 & 4.8\% \\
+& Ensemble & 2.36 & 3.05 & 7.6\% & 2.22 & 3.24 & 7.2\% & \textbf{1.46} & \textbf{1.72} & \textbf{4.4\%} \\
+\midrule
+
+\multirow{3}{*}{\textbf{MBB}}
+& Hierarchical & 3.21 & 3.69 & 13.4\% & 3.86 & 5.08 & 16.3\% & \textbf{1.63} & \textbf{2.31} & \textbf{6.8\%} \\
+& Round Robin & \textbf{1.93} & \textbf{2.60} & \textbf{8.1\%} & 2.61 & 3.48 & 11.0\% & 2.79 & 3.54 & 11.7\% \\
+& Ensemble & 4.51 & 6.06 & 18.9\% & 2.76 & \textbf{3.23} & 11.5\% & \textbf{2.73} & 4.35 & \textbf{11.5\%} \\
+\midrule
+
+\multirow{3}{*}{\textbf{MWG}}
+& Hierarchical & 4.22 & \textbf{4.93} & 5.2\% & 4.99 & 7.02 & 6.3\% & \textbf{4.08} & 5.19 & \textbf{5.0\%} \\
+& Round Robin & 2.69 & 3.82 & 3.4\% & \textbf{1.99} & \textbf{2.03} & \textbf{2.4\%} & 4.25 & 5.79 & 5.3\% \\
+& Ensemble & 4.62 & 6.30 & 5.8\% & 5.09 & 6.46 & 6.4\% & \textbf{2.40} & \textbf{2.92} & \textbf{2.9\%} \\
+\midrule
+
+\multirow{3}{*}{\textbf{TCB}}
+& Hierarchical & \textbf{4.22} & \textbf{4.88} & \textbf{12.6\%} & 7.23 & 8.09 & 21.9\% & 9.20 & 11.02 & 27.9\% \\
+& Round Robin & \textbf{4.38} & \textbf{6.25} & \textbf{13.3\%} & 6.69 & 7.24 & 20.1\% & 6.84 & 9.69 & 21.0\% \\
+& Ensemble & \textbf{6.11} & \textbf{6.34} & \textbf{18.1\%} & 6.55 & 6.83 & 19.6\% & 7.18 & 7.68 & 21.5\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{VCB}}
+& Hierarchical & 6.98 & 9.38 & 12.1\% & 8.75 & 11.78 & 14.8\% & \textbf{4.60} & \textbf{7.96} & \textbf{7.6\%} \\
+& Round Robin & \textbf{4.14} & \textbf{4.52} & \textbf{7.2\%} & 5.07 & 6.60 & 8.6\% & 6.53 & 8.17 & 11.1\% \\
+& Ensemble & \textbf{2.34} & \textbf{3.08} & \textbf{4.0\%} & 4.77 & 7.39 & 8.0\% & 3.96 & 4.94 & 6.9\% \\
+\midrule
+
+\multirow{3}{*}{\textbf{VCS}}
+& Hierarchical & \textbf{1.82} & \textbf{2.15} & \textbf{4.1\%} & 2.40 & 2.94 & 5.3\% & 2.20 & 3.00 & 4.9\% \\
+& Round Robin & 1.82 & \textbf{1.91} & 4.0\% & 2.18 & 2.79 & 5.0\% & \textbf{1.58} & 2.44 & \textbf{3.6\%} \\
+& Ensemble & 1.47 & 1.67 & 3.3\% & 1.88 & 2.62 & 4.3\% & \textbf{1.31} & \textbf{1.39} & \textbf{3.0\%} \\
+\midrule
+
+\multirow{3}{*}{\textbf{VHM}}
+& Hierarchical & 11.22 & 13.03 & 11.4\% & 10.55 & \textbf{10.95} & 10.6\% & \textbf{9.65} & 12.66 & \textbf{9.9\%} \\
+& Round Robin & 24.54 & 34.21 & 25.6\% & \textbf{8.02} & \textbf{9.22} & \textbf{8.2\%} & 11.11 & 11.58 & 11.3\% \\
+& Ensemble & 6.89 & 8.59 & 7.0\% & 23.87 & 30.85 & 24.6\% & \textbf{6.29} & \textbf{6.72} & \textbf{6.4\%} \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+================================================================================
+LATEX COMPACT ALL-IN-ONE PERFORMANCE TABLE (compact_performance_table.tex style)
+================================================================================
+\begin{table*}[!h]
+\centering
+\caption{Performance Comparison Across Forecasting Horizons and LLMs}
+\label{tab:full_performance_all}
+\setlength{\tabcolsep}{1.5pt}
+\renewcommand{\arraystretch}{0.9}
+\tiny
+\resizebox{0.95\textwidth}{!}{
+\begin{tabular}{c|c|c|ccc|ccc|ccc}
+\toprule
+\multirow{2}{*}{\textbf{Horizon}} &
+\multirow{2}{*}{\textbf{Stock}} &
+\multirow{2}{*}{\textbf{Arch}} &
+\multicolumn{3}{c|}{\textbf{Llama 3.1:8b}} &
+\multicolumn{3}{c|}{\textbf{GPT-4o}} &
+\multicolumn{3}{c}{\textbf{Gemini 2.0}} \\
+\cmidrule(lr){4-6} \cmidrule(lr){7-9} \cmidrule(lr){10-12}
+& & & MAE & RMSE & MAPE & MAE & RMSE & MAPE & MAE & RMSE & MAPE \\
+\midrule
+
+% SHORT
+\multirow{36}{*}{\rotatebox{90}{\textbf{Short}}}
+& \multirow{3}{*}{CMG}
+& & H & 1.03 & 1.37 & \textbf{2.6} & \textbf{1.01} & \textbf{1.08} & 2.6 & 1.29 & 1.78 & 3.2 \\
+& & R & 1.14 & 1.26 & 3.0 & 1.20 & 1.73 & 2.9 & \textbf{0.99} & \textbf{1.12} & \textbf{2.6} \\
+& & E & 0.89 & 0.99 & 2.2 & \textbf{0.40} & \textbf{0.46} & \textbf{1.0} & 1.10 & 1.32 & 2.8 \\
+
+& \multirow{3}{*}{DGC}
+& & H & 2.00 & 2.13 & 2.1 & 3.23 & 3.28 & 3.4 & \textbf{1.34} & \textbf{1.81} & \textbf{1.4} \\
+& & R & \textbf{1.29} & \textbf{1.70} & \textbf{1.4} & 1.81 & 2.29 & 1.9 & 2.09 & 2.97 & 2.3 \\
+& & E & 3.31 & 4.06 & 3.6 & \textbf{1.89} & \textbf{2.37} & \textbf{2.0} & 3.14 & 3.55 & 3.4 \\
+
+& \multirow{3}{*}{DXG}
+& & H & \textbf{0.55} & \textbf{0.90} & \textbf{2.3} & 1.75 & 2.08 & 8.1 & 0.82 & 0.93 & 3.8 \\
+& & R & 1.13 & \textbf{1.16} & 5.2 & 1.04 & 1.34 & 4.8 & \textbf{0.92} & 1.22 & \textbf{4.0} \\
+& & E & 0.97 & 1.09 & 4.3 & 1.86 & 1.93 & 8.4 & \textbf{0.79} & \textbf{0.85} & \textbf{3.5} \\
+
+& \multirow{3}{*}{FPT}
+& & H & 2.92 & \textbf{3.29} & 3.0 & 3.64 & 4.08 & 3.8 & \textbf{2.44} & 3.53 & \textbf{2.5} \\
+& & R & 3.09 & \textbf{3.52} & 3.1 & 2.86 & 3.56 & 2.9 & \textbf{2.83} & 3.86 & \textbf{2.9} \\
+& & E & 2.97 & 3.68 & 3.0 & \textbf{1.57} & \textbf{1.83} & \textbf{1.7} & 3.38 & 4.45 & 3.4 \\
+
+& \multirow{3}{*}{HPG}
+& & H & \textbf{1.39} & \textbf{1.66} & \textbf{5.0} & 2.37 & 3.24 & 8.2 & 1.80 & 2.45 & 6.3 \\
+& & R & \textbf{1.10} & \textbf{1.24} & \textbf{3.9} & 1.46 & 2.14 & 5.0 & 1.22 & 1.35 & 4.4 \\
+& & E & 1.12 & 1.52 & 3.9 & \textbf{0.53} & \textbf{0.71} & \textbf{1.9} & 1.03 & 1.15 & 3.7 \\
+
+& \multirow{3}{*}{KDH}
+& & H & \textbf{1.35} & \textbf{1.49} & \textbf{3.9} & 1.55 & 2.14 & 4.5 & 1.88 & 2.40 & 5.6 \\
+& & R & 1.95 & \textbf{2.22} & 5.7 & \textbf{1.77} & 2.79 & \textbf{5.2} & 2.03 & 2.35 & 5.9 \\
+& & E & 2.07 & 2.73 & 6.1 & 1.39 & 1.96 & 4.1 & \textbf{0.96} & \textbf{1.19} & \textbf{2.8} \\
+
+& \multirow{3}{*}{MBB}
+& & H & \textbf{0.83} & \textbf{1.25} & \textbf{3.3} & 1.07 & 1.33 & 4.3 & 1.21 & 1.36 & 4.8 \\
+& & R & 1.55 & 1.63 & 6.0 & 0.97 & \textbf{1.07} & 3.8 & \textbf{0.91} & 1.14 & \textbf{3.6} \\
+& & E & \textbf{0.58} & \textbf{0.68} & \textbf{2.3} & 0.73 & 0.88 & 2.7 & 1.81 & 2.24 & 7.0 \\
+
+& \multirow{3}{*}{MWG}
+& & H & 1.61 & 2.02 & 1.9 & 1.67 & \textbf{1.88} & 2.0 & \textbf{1.55} & 2.04 & \textbf{1.9} \\
+& & R & 1.31 & 1.51 & 1.5 & 1.61 & 2.05 & 1.9 & \textbf{1.04} & \textbf{1.25} & \textbf{1.2} \\
+& & E & 2.34 & 3.27 & 2.8 & \textbf{1.01} & \textbf{1.03} & \textbf{1.2} & 1.50 & 1.84 & 1.8 \\
+
+& \multirow{3}{*}{TCB}
+& & H & 1.89 & 2.59 & 5.0 & 1.83 & \textbf{1.99} & 4.9 & \textbf{1.46} & 2.06 & \textbf{4.0} \\
+& & R & \textbf{0.73} & \textbf{0.82} & \textbf{2.0} & 1.85 & 2.14 & 5.0 & 1.23 & 1.25 & 3.3 \\
+& & E & 2.19 & 2.79 & 6.0 & \textbf{1.39} & \textbf{1.90} & \textbf{3.8} & 2.10 & 2.44 & 5.7 \\
+
+& \multirow{3}{*}{VCB}
+& & H & 1.03 & 1.72 & 1.7 & \textbf{0.89} & \textbf{1.01} & \textbf{1.4} & 1.23 & 1.51 & 2.0 \\
+& & R & \textbf{0.48} & \textbf{0.65} & \textbf{0.8} & 0.66 & 0.68 & 1.1 & 0.82 & 0.87 & 1.3 \\
+& & E & 1.05 & 1.21 & 1.7 & \textbf{0.57} & \textbf{0.73} & \textbf{0.9} & 0.64 & 0.84 & 1.0 \\
+
+& \multirow{3}{*}{VCS}
+& & H & 1.34 & 1.50 & 2.9 & \textbf{1.04} & 1.25 & \textbf{2.2} & 1.08 & \textbf{1.23} & 2.3 \\
+& & R & 1.06 & 1.15 & 2.3 & \textbf{0.57} & \textbf{0.65} & \textbf{1.2} & 0.94 & 1.21 & 2.0 \\
+& & E & \textbf{0.81} & \textbf{1.01} & \textbf{1.7} & 1.16 & 1.24 & 2.5 & 1.08 & 1.25 & 2.3 \\
+
+& \multirow{3}{*}{VHM}
+& & H & 3.50 & 4.43 & 3.1 & \textbf{2.18} & 3.38 & \textbf{1.9} & 2.53 & \textbf{3.27} & 2.2 \\
+& & R & 7.95 & 8.96 & 7.1 & \textbf{4.36} & 6.30 & \textbf{3.8} & 5.13 & \textbf{6.24} & 4.5 \\
+& & E & \textbf{1.74} & \textbf{1.85} & \textbf{1.6} & 2.56 & 2.77 & 2.2 & 3.72 & 4.53 & 3.3 \\
+
+\midrule
+
+% MEDIUM
+\multirow{36}{*}{\rotatebox{90}{\textbf{Medium}}}
+& \multirow{3}{*}{CMG}
+& & H & 1.62 & 2.08 & 4.0 & 2.78 & 3.52 & 6.8 & \textbf{1.40} & \textbf{1.56} & \textbf{3.5} \\
+& & R & 1.58 & 1.94 & 3.9 & \textbf{1.20} & \textbf{1.38} & \textbf{3.0} & 2.19 & 3.05 & 5.4 \\
+& & E & 1.90 & 2.80 & 4.7 & \textbf{0.89} & \textbf{1.15} & \textbf{2.2} & 1.84 & 1.96 & 4.6 \\
+
+& \multirow{3}{*}{DGC}
+& & H & 4.04 & 5.86 & 4.2 & \textbf{2.12} & \textbf{2.81} & \textbf{2.2} & 2.52 & 3.60 & 2.7 \\
+& & R & \textbf{2.20} & \textbf{2.60} & \textbf{2.3} & 4.54 & 5.67 & 4.8 & 2.54 & 2.69 & 2.7 \\
+& & E & 4.26 & 4.98 & 4.4 & \textbf{1.76} & \textbf{1.97} & \textbf{1.9} & 2.94 & 3.76 & 3.1 \\
+
+& \multirow{3}{*}{DXG}
+& & H & \textbf{0.53} & \textbf{0.57} & \textbf{2.5} & 1.01 & 1.14 & 4.7 & 2.04 & 2.23 & 9.4 \\
+& & R & 0.75 & \textbf{0.88} & 3.6 & \textbf{0.73} & 0.97 & \textbf{3.5} & 1.02 & 1.18 & 4.7 \\
+& & E & \textbf{0.90} & 1.23 & \textbf{4.0} & 1.12 & 1.18 & 5.3 & 1.03 & \textbf{1.18} & 4.7 \\
+
+& \multirow{3}{*}{FPT}
+& & H & 7.05 & 8.01 & 6.9 & 4.93 & \textbf{5.86} & 4.8 & \textbf{4.90} & 6.57 & \textbf{4.8} \\
+& & R & 7.30 & \textbf{9.64} & 7.1 & \textbf{6.17} & 11.27 & \textbf{6.0} & 8.77 & 11.04 & 8.6 \\
+& & E & 6.97 & 10.31 & 6.8 & \textbf{6.19} & \textbf{8.63} & \textbf{6.0} & 7.29 & 10.98 & 7.1 \\
+
+& \multirow{3}{*}{HPG}
+& & H & 2.25 & 3.34 & 7.7 & \textbf{0.81} & \textbf{0.99} & \textbf{3.0} & 2.23 & 3.13 & 7.7 \\
+& & R & 1.32 & 1.57 & 4.7 & 0.92 & 1.34 & 3.2 & \textbf{0.82} & \textbf{0.95} & \textbf{2.9} \\
+& & E & 2.29 & 2.96 & 8.3 & \textbf{1.38} & \textbf{1.85} & \textbf{4.8} & 2.47 & 3.03 & 8.6 \\
+
+& \multirow{3}{*}{KDH}
+& & H & 4.30 & 5.01 & 12.1 & 3.21 & \textbf{3.31} & 9.1 & \textbf{2.29} & 3.91 & \textbf{6.5} \\
+& & R & \textbf{1.92} & \textbf{2.16} & \textbf{5.4} & 2.09 & 2.86 & 6.0 & 3.63 & 4.33 & 10.3 \\
+& & E & \textbf{1.37} & \textbf{1.65} & \textbf{3.9} & 1.89 & 2.88 & 5.3 & 3.09 & 3.29 & 8.7 \\
+
+& \multirow{3}{*}{MBB}
+& & H & 1.79 & \textbf{2.13} & 7.3 & 1.69 & 2.63 & 6.9 & \textbf{1.55} & 2.36 & \textbf{6.4} \\
+& & R & 2.74 & 3.82 & 11.3 & 2.99 & 3.47 & 12.2 & \textbf{1.86} & \textbf{1.89} & \textbf{7.6} \\
+& & E & \textbf{1.67} & \textbf{1.87} & \textbf{6.7} & 2.21 & 2.64 & 9.1 & 2.03 & 3.20 & 8.4 \\
+
+& \multirow{3}{*}{MWG}
+& & H & 2.25 & 2.76 & 2.8 & 2.15 & 3.17 & 2.7 & \textbf{1.48} & \textbf{1.95} & \textbf{1.8} \\
+& & R & 3.37 & 5.12 & 4.2 & \textbf{1.62} & \textbf{1.90} & \textbf{2.0} & 2.53 & 3.70 & 3.1 \\
+& & E & \textbf{1.16} & \textbf{1.52} & \textbf{1.4} & 1.92 & 2.28 & 2.3 & 1.57 & 2.30 & 2.0 \\
+
+& \multirow{3}{*}{TCB}
+& & H & 5.51 & 6.84 & 15.7 & 2.49 & 2.76 & 7.0 & \textbf{1.36} & \textbf{1.43} & \textbf{3.8} \\
+& & R & \textbf{2.05} & \textbf{3.04} & \textbf{5.7} & 3.84 & 4.71 & 10.8 & 3.79 & 4.64 & 10.6 \\
+& & E & \textbf{1.86} & \textbf{2.51} & \textbf{5.3} & 3.80 & 4.56 & 10.8 & 2.40 & 3.21 & 6.7 \\
+
+& \multirow{3}{*}{VCB}
+& & H & \textbf{1.09} & \textbf{1.27} & \textbf{1.7} & 1.74 & 2.33 & 2.7 & 2.66 & 3.17 & 4.2 \\
+& & R & 2.57 & 2.67 & 4.1 & \textbf{1.41} & \textbf{1.74} & \textbf{2.2} & 1.71 & 2.79 & 2.6 \\
+& & E & 3.07 & 3.49 & 4.9 & \textbf{1.76} & \textbf{1.99} & \textbf{2.8} & 2.63 & 2.87 & 4.3 \\
+
+& \multirow{3}{*}{VCS}
+& & H & 2.42 & 2.73 & 5.1 & 2.25 & 2.53 & 4.7 & \textbf{1.83} & \textbf{2.05} & \textbf{3.9} \\
+& & R & 2.05 & 2.47 & 4.3 & \textbf{1.65} & \textbf{1.98} & \textbf{3.4} & 1.74 & 2.18 & 3.7 \\
+& & E & \textbf{1.54} & \textbf{1.82} & \textbf{3.2} & 2.93 & 3.31 & 6.1 & 1.80 & 2.28 & 3.7 \\
+
+& \multirow{3}{*}{VHM}
+& & H & 13.46 & 18.43 & 13.2 & 13.45 & \textbf{15.53} & 13.2 & \textbf{12.66} & 17.06 & \textbf{12.4} \\
+& & R & \textbf{11.82} & \textbf{15.08} & \textbf{11.6} & 13.36 & 18.60 & 13.1 & 14.38 & 17.57 & 14.1 \\
+& & E & 19.33 & 25.54 & 18.9 & \textbf{8.46} & \textbf{13.20} & \textbf{8.5} & 13.15 & 16.34 & 13.0 \\
+
+\midrule
+
+% LONG
+\multirow{36}{*}{\rotatebox{90}{\textbf{Long}}}
+& \multirow{3}{*}{CMG}
+& & H & 2.66 & 2.85 & 7.4 & 2.76 & 3.38 & 7.7 & \textbf{2.45} & \textbf{2.67} & \textbf{6.9} \\
+& & R & 3.39 & 3.77 & 9.3 & 3.49 & 4.58 & 9.8 & \textbf{2.56} & \textbf{3.10} & \textbf{7.2} \\
+& & E & 3.65 & 4.17 & 10.3 & \textbf{3.03} & \textbf{4.09} & \textbf{8.6} & 3.58 & 4.09 & 10.1 \\
+
+& \multirow{3}{*}{DGC}
+& & H & \textbf{6.80} & \textbf{11.51} & \textbf{9.4} & 9.46 & 13.12 & 13.0 & 13.38 & 18.04 & 18.8 \\
+& & R & 19.20 & 25.66 & 26.9 & 13.41 & 18.08 & 18.9 & \textbf{12.38} & \textbf{17.08} & \textbf{17.2} \\
+& & E & \textbf{8.19} & 13.18 & \textbf{11.5} & 8.93 & \textbf{12.72} & 12.0 & 17.36 & 23.06 & 24.3 \\
+
+& \multirow{3}{*}{DXG}
+& & H & 3.21 & 4.75 & 19.0 & \textbf{1.79} & \textbf{2.02} & \textbf{9.8} & 3.98 & 5.48 & 23.1 \\
+& & R & 3.57 & 4.20 & 20.7 & 3.86 & 5.42 & 22.8 & \textbf{2.01} & \textbf{2.55} & \textbf{11.0} \\
+& & E & 4.06 & 4.38 & 23.0 & 4.19 & 4.31 & 23.2 & \textbf{2.54} & \textbf{2.79} & \textbf{13.6} \\
+
+& \multirow{3}{*}{FPT}
+& & H & 3.61 & 3.88 & 3.7 & \textbf{1.37} & \textbf{1.58} & \textbf{1.4} & 2.75 & 3.55 & 2.9 \\
+& & R & 4.19 & 4.66 & 4.3 & 4.82 & 5.69 & 5.0 & \textbf{1.85} & \textbf{2.21} & \textbf{2.0} \\
+& & E & \textbf{3.12} & 3.72 & \textbf{3.3} & 3.30 & \textbf{3.46} & 3.4 & 3.20 & 3.64 & 3.3 \\
+
+& \multirow{3}{*}{HPG}
+& & H & 1.50 & 2.46 & 5.7 & \textbf{0.64} & \textbf{0.72} & \textbf{2.4} & 0.76 & 0.94 & 2.9 \\
+& & R & 1.54 & 1.84 & 5.8 & 1.39 & 2.34 & 5.3 & \textbf{1.07} & \textbf{1.12} & \textbf{4.0} \\
+& & E & \textbf{0.22} & \textbf{0.25} & \textbf{0.8} & 0.81 & 1.18 & 3.1 & 0.98 & 1.42 & 3.7 \\
+
+& \multirow{3}{*}{KDH}
+& & H & 2.50 & 4.27 & 8.2 & 1.41 & 1.91 & 4.5 & \textbf{1.38} & \textbf{1.46} & \textbf{4.2} \\
+& & R & \textbf{1.17} & \textbf{1.30} & \textbf{3.6} & 2.08 & 3.67 & 6.9 & 1.59 & 1.70 & 4.8 \\
+& & E & 2.36 & 3.05 & 7.6 & 2.22 & 3.24 & 7.2 & \textbf{1.46} & \textbf{1.72} & \textbf{4.4} \\
+
+& \multirow{3}{*}{MBB}
+& & H & 3.21 & 3.69 & 13.4 & 3.86 & 5.08 & 16.3 & \textbf{1.63} & \textbf{2.31} & \textbf{6.8} \\
+& & R & \textbf{1.93} & \textbf{2.60} & \textbf{8.1} & 2.61 & 3.48 & 11.0 & 2.79 & 3.54 & 11.7 \\
+& & E & 4.51 & 6.06 & 18.9 & 2.76 & \textbf{3.23} & 11.5 & \textbf{2.73} & 4.35 & \textbf{11.5} \\
+
+& \multirow{3}{*}{MWG}
+& & H & 4.22 & \textbf{4.93} & 5.2 & 4.99 & 7.02 & 6.3 & \textbf{4.08} & 5.19 & \textbf{5.0} \\
+& & R & 2.69 & 3.82 & 3.4 & \textbf{1.99} & \textbf{2.03} & \textbf{2.4} & 4.25 & 5.79 & 5.3 \\
+& & E & 4.62 & 6.30 & 5.8 & 5.09 & 6.46 & 6.4 & \textbf{2.40} & \textbf{2.92} & \textbf{2.9} \\
+
+& \multirow{3}{*}{TCB}
+& & H & \textbf{4.22} & \textbf{4.88} & \textbf{12.6} & 7.23 & 8.09 & 21.9 & 9.20 & 11.02 & 27.9 \\
+& & R & \textbf{4.38} & \textbf{6.25} & \textbf{13.3} & 6.69 & 7.24 & 20.1 & 6.84 & 9.69 & 21.0 \\
+& & E & \textbf{6.11} & \textbf{6.34} & \textbf{18.1} & 6.55 & 6.83 & 19.6 & 7.18 & 7.68 & 21.5 \\
+
+& \multirow{3}{*}{VCB}
+& & H & 6.98 & 9.38 & 12.1 & 8.75 & 11.78 & 14.8 & \textbf{4.60} & \textbf{7.96} & \textbf{7.6} \\
+& & R & \textbf{4.14} & \textbf{4.52} & \textbf{7.2} & 5.07 & 6.60 & 8.6 & 6.53 & 8.17 & 11.1 \\
+& & E & \textbf{2.34} & \textbf{3.08} & \textbf{4.0} & 4.77 & 7.39 & 8.0 & 3.96 & 4.94 & 6.9 \\
+
+& \multirow{3}{*}{VCS}
+& & H & \textbf{1.82} & \textbf{2.15} & \textbf{4.1} & 2.40 & 2.94 & 5.3 & 2.20 & 3.00 & 4.9 \\
+& & R & 1.82 & \textbf{1.91} & 4.0 & 2.18 & 2.79 & 5.0 & \textbf{1.58} & 2.44 & \textbf{3.6} \\
+& & E & 1.47 & 1.67 & 3.3 & 1.88 & 2.62 & 4.3 & \textbf{1.31} & \textbf{1.39} & \textbf{3.0} \\
+
+& \multirow{3}{*}{VHM}
+& & H & 11.22 & 13.03 & 11.4 & 10.55 & \textbf{10.95} & 10.6 & \textbf{9.65} & 12.66 & \textbf{9.9} \\
+& & R & 24.54 & 34.21 & 25.6 & \textbf{8.02} & \textbf{9.22} & \textbf{8.2} & 11.11 & 11.58 & 11.3 \\
+& & E & 6.89 & 8.59 & 7.0 & 23.87 & 30.85 & 24.6 & \textbf{6.29} & \textbf{6.72} & \textbf{6.4} \\
+
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table*}
+
+================================================================================
+METRICS COMPUTATION AND LATEX GENERATION SUCCESSFUL
+================================================================================

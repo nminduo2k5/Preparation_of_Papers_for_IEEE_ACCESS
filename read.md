@@ -21,3 +21,11 @@ pdflatex -interaction=nonstopmode -file-line-error access.tex
 
 fpt 01/09 -> 04/09 
 fpt 01/09 -> 15/09 , 31/10
+
+
+LLM Family	LSTM (Base)	Transformer (Base)
+Gemini 2.0 Flash	update_table0.py (đọc test6.tex)	update_table0_5.py (đọc test5.tex)
+GPT-4o	update_table0_1.py (đọc test7.tex)	update_table1.py (đọc test2.tex)
+LLaMA-3	update_table2.py (đọc test3.tex)	update_table3.py (đọc test4.tex)
+
+[text](access.pdf)

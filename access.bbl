@@ -106,6 +106,16 @@ S.-H. Chen, C.-L. Chang, and Y.-R. Du, ``Agent-based economic models and
   econometrics,'' \emph{The Knowledge Engineering Review}, vol.~27, no.~2, pp.
   187--219, 2012.
 
+\bibitem{olfati2007consensus}
+R.~Olfati-Saber, J.~A. Fax, and R.~M. Murray, ``Consensus and cooperation in
+  networked multi-agent systems,'' \emph{Proceedings of the IEEE}, vol.~95,
+  no.~1, pp. 215--233, 2007.
+
+\bibitem{ren2005consensus}
+W.~Ren and R.~W. Beard, ``Consensus seeking in multiagent systems under
+  dynamically changing interaction topologies,'' \emph{IEEE Transactions on
+  Automatic Control}, vol.~50, no.~5, pp. 655--661, 2005.
+
 \bibitem{tesfatsion2006}
 L.~Tesfatsion and K.~L. Judd, \emph{Handbook of Computational Economics:
   Agent-Based Computational Economics}.\hskip 1em plus 0.5em minus 0.4em\relax
@@ -126,19 +136,31 @@ Q.~H. Pham and V.~N. Le, ``Stock price prediction in vietnam using hybrid lstm
   deep learning model,'' \emph{Computational Economics}, vol.~61, no.~2, pp.
   451--472, 2023.
 
-\bibitem{opera2023}
-S.-V. Oprea, A.~Bâra, A.-I. Andreescu, and M.~P. Cristescu, ``Conceptual
-  architecture of a blockchain solution for e-voting in elections at the
-  university level,'' \emph{IEEE Access}, vol.~11, pp. 18\,461--18\,474, 2023.
+\bibitem{vnstock2023}
+T.~Vu, ``vnstock: {V}ietnamese stock data library for {P}ython,''
+  \url{https://github.com/thinh-vu/vnstock}, 2023, accessed: 2025-01-01.
 
-\bibitem{McAndrew2021}
-T.~McAndrew \emph{et~al.}, ``Adaptively stacking ensembles for influenza
-  forecasting,'' \emph{PLoS ONE}, vol.~16, p. e0248111, 2021.
+\bibitem{hochreiter1997long}
+S.~Hochreiter and J.~Schmidhuber, ``Long short-term memory,'' \emph{Neural
+  Computation}, vol.~9, no.~8, pp. 1735--1780, 1997.
 
-\bibitem{Lu2023}
-J.~Lu, Y.~Fang, and W.~Han, ``A novel adaptive-weight ensemble surrogate model
-  based on distance and mixture error,'' \emph{PLOS ONE}, vol.~18, no.~10, p.
-  e0293318, 2023.
+\bibitem{vaswani2017attention}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
+  {\L}.~Kaiser, and I.~Polosukhin, ``Attention is all you need,'' in
+  \emph{Advances in Neural Information Processing Systems}, vol.~30.\hskip 1em
+  plus 0.5em minus 0.4em\relax Curran Associates, 2017.
+
+\bibitem{wilder1978new}
+J.~W. Wilder, \emph{New Concepts in Technical Trading Systems}.\hskip 1em plus
+  0.5em minus 0.4em\relax Greensboro, NC: Trend Research, 1978.
+
+\bibitem{appel2005technical}
+G.~Appel, \emph{Technical Analysis: Power Tools for Active Investors}.\hskip
+  1em plus 0.5em minus 0.4em\relax Upper Saddle River, NJ: FT Press, 2005.
+
+\bibitem{bollinger2002bollinger}
+J.~Bollinger, \emph{Bollinger on Bollinger Bands}.\hskip 1em plus 0.5em minus
+  0.4em\relax New York, NY: McGraw-Hill, 2002.
 
 \bibitem{li2022}
 J.~Li, X.~Zhang, and Z.~Liu, ``Hybrid ensemble learning for financial
@@ -183,6 +205,20 @@ T.~Chai and R.~R. Draxler, ``Root mean square error (rmse) or mean absolute
 R.~J. Hyndman and A.~B. Koehler, ``Another look at measures of forecast
   accuracy,'' \emph{International Journal of Forecasting}, vol.~22, no.~4, pp.
   679--688, 2006.
+
+\bibitem{diebold1995comparing}
+F.~X. Diebold and R.~S. Mariano, ``Comparing predictive accuracy,''
+  \emph{Journal of Business \& Economic Statistics}, vol.~13, no.~3, pp.
+  253--263, 1995.
+
+\bibitem{almgren2001optimal}
+R.~Almgren and N.~Chriss, ``Optimal execution of portfolio transactions,''
+  \emph{Journal of Risk}, vol.~3, pp. 5--40, 2001.
+
+\bibitem{magdon2004maxdrawdown}
+M.~Magdon-Ismail, A.~F. Atiya, A.~Pratap, and Y.~S. Abu-Mostafa, ``On the
+  maximum drawdown of a brownian motion,'' \emph{Journal of Applied
+  Probability}, vol.~41, no.~1, pp. 147--161, 2004.
 
 \bibitem{dietterich2000ensemble}
 T.~G. Dietterich, ``Ensemble methods in machine learning,'' \emph{International

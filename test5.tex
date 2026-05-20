@@ -1,0 +1,633 @@
+\clearpage
+\onecolumn
+
+{
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
+\scriptsize
+\begin{longtable}{llcc|cccc|cccc|cccc}
+\caption{Comparison of Short-term, Medium-term, and Long-term Forecasts Across Architectures and Stocks (LLM: Google Gemini 2.0 Flash, Transformer Baseline)}
+\label{tab:full_forecast_2} \\
+\toprule
+\multirow{2}{*}{\textbf{Stock}} &
+\multirow{2}{*}{\textbf{Architecture}} &
+\multicolumn{2}{c|}{\textbf{Start}} &
+\multicolumn{4}{c|}{\textbf{Short-term}} &
+\multicolumn{4}{c|}{\textbf{Medium-term}} &
+\multicolumn{4}{c}{\textbf{Long-term}} \\
+\cmidrule(lr){3-4}
+\cmidrule(lr){5-8}
+\cmidrule(lr){9-12}
+\cmidrule(lr){13-16}
+& &
+\textbf{Date} & \textbf{Price} &
+\textbf{End Date} & \textbf{Pred} & \textbf{Act} & \textbf{Gap} &
+\textbf{End Date} & \textbf{Pred} & \textbf{Act} & \textbf{Gap} &
+\textbf{End Date} & \textbf{Pred} & \textbf{Act} & \textbf{Gap} \\
+\midrule
+\endfirsthead
+
+\multicolumn{16}{c}%
+{{\tablename\ \thetable{} -- continued from previous page}} \\
+\toprule
+\multirow{2}{*}{\textbf{Stock}} &
+\multirow{2}{*}{\textbf{Architecture}} &
+\multicolumn{2}{c|}{\textbf{Start}} &
+\multicolumn{4}{c|}{\textbf{Short-term}} &
+\multicolumn{4}{c|}{\textbf{Medium-term}} &
+\multicolumn{4}{c}{\textbf{Long-term}} \\
+\cmidrule(lr){3-4}
+\cmidrule(lr){5-8}
+\cmidrule(lr){9-12}
+\cmidrule(lr){13-16}
+& &
+\textbf{Date} & \textbf{Price} &
+\textbf{End Date} & \textbf{Pred} & \textbf{Act} & \textbf{Gap} &
+\textbf{End Date} & \textbf{Pred} & \textbf{Act} & \textbf{Gap} &
+\textbf{End Date} & \textbf{Pred} & \textbf{Act} & \textbf{Gap} \\
+\midrule
+\endhead
+
+\midrule \multicolumn{16}{r}{{Continued on next page}} \\
+\endfoot
+
+\endlastfoot
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ===================== DXG ======================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{12}{*}{\textbf{DXG}} 
+& \textbf{Hierarchical}
+& 31/08 & 22.8 & 03/09 & 23.0 & 24 & \textcolor{green}{\(\uparrow\)+1.00} & 14/09 & 23.31 & 24.05 & \textcolor{green}{\(\uparrow\)+0.74} & 30/10 & 23.86 & 21.2 & \textcolor{red}{\(\downarrow\)-2.66} \\
+
+& 
+& 16/10 & 22.45 & 19/10 & 21.69 & 22.6 & \textcolor{red}{\(\downarrow\)-0.91} & 30/10 & 20.94 & 21.2 & \textcolor{green}{\(\uparrow\)+0.26} & 15/12 & 23.61 & 16.3 & \textcolor{red}{\(\downarrow\)-7.31} \\
+
+& 
+& 21/10 & 20.0 & 24/10 & 19.89 & 20.9 & \textcolor{red}{\(\downarrow\)-1.01} & 04/11 & 18.13 & 20.15 & \textcolor{red}{\(\downarrow\)-2.02} & 20/12 & 20.92 & 17.8 & \textcolor{red}{\(\downarrow\)-3.12} \\
+
+&
+& 22/10 & 20.5 & 25/10 & 17.66 & 20.9 & \textcolor{red}{\(\downarrow\)-3.24} & 05/11 & 20.94 & 20.1 & \textcolor{red}{\(\downarrow\)-0.84} & 21/12 & 21.35 & 17.8 & \textcolor{red}{\(\downarrow\)-3.55} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Round Robin}
+& 31/08 & 22.8 & 03/09 & 23.07 & 24 & \textcolor{green}{\(\uparrow\)+0.93} & 14/09 & 19.38 & 24.05 & \textcolor{red}{\(\downarrow\)-4.67} & 30/10 & 24.01 & 21.2 & \textcolor{red}{\(\downarrow\)-2.81} \\
+
+&
+& 16/10 & 22.45 & 19/10 & 22.77 & 22.6 & \textcolor{green}{\(\uparrow\)+0.17} & 30/10 & 23.1 & 21.2 & \textcolor{red}{\(\downarrow\)-1.90} & 15/12 & 23.92 & 16.3 & \textcolor{red}{\(\downarrow\)-7.62} \\
+
+&
+& 21/10 & 20.0 & 24/10 & 20.17 & 20.9 & \textcolor{green}{\(\uparrow\)+0.73} & 04/11 & 18.34 & 20.15 & \textcolor{red}{\(\downarrow\)-1.81} & 20/12 & 20.74 & 17.8 & \textcolor{red}{\(\downarrow\)-2.94} \\
+
+&
+& 22/10 & 20.5 & 25/10 & 18.35 & 20.9 & \textcolor{red}{\(\downarrow\)-2.55} & 05/11 & 20.89 & 20.1 & \textcolor{red}{\(\downarrow\)-0.79} & 21/12 & 21.4 & 17.8 & \textcolor{red}{\(\downarrow\)-3.60} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Ensemble}
+& 31/08 & 22.8 & 03/09 & 23.97 & 24 & \textcolor{green}{\(\uparrow\)+0.03} & 14/09 & 23.18 & 24.05 & \textcolor{green}{\(\uparrow\)+0.87} & 30/10 & 23.58 & 21.2 & \textcolor{red}{\(\downarrow\)-2.38} \\
+
+&
+& 16/10 & 22.45 & 19/10 & 22.65 & 22.6 & \textcolor{green}{\(\uparrow\)+0.05} & 30/10 & 22.91 & 21.2 & \textcolor{red}{\(\downarrow\)-1.71} & 15/12 & 23.33 & 16.3 & \textcolor{red}{\(\downarrow\)-7.03} \\
+
+&
+& 21/10 & 20.0 & 24/10 & 20.15 & 20.9 & \textcolor{green}{\(\uparrow\)+0.75} & 04/11 & 20.36 & 20.15 & \textcolor{green}{\(\uparrow\)+0.21} & 20/12 & 20.66 & 17.8 & \textcolor{red}{\(\downarrow\)-2.86} \\
+
+&
+& 22/10 & 20.5 & 25/10 & 20.65 & 20.9 & \textcolor{green}{\(\uparrow\)+0.25} & 05/11 & 20.79 & 20.1 & \textcolor{red}{\(\downarrow\)-0.69} & 21/12 & 21.19 & 17.8 & \textcolor{red}{\(\downarrow\)-3.39} \\
+\midrule
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ===================== FPT ======================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{12}{*}{\textbf{FPT}} 
+& \textbf{Hierarchical}
+& 01/09 & 101.6 & 04/09 & 101.09 & 105 & \textcolor{red}{\(\downarrow\)-3.91} & 15/09 & 101.91 & 101.9 & \textcolor{green}{\(\uparrow\)+0.01} & 31/10 & 103.71 & 103.9 & \textcolor{green}{\(\uparrow\)+0.19} \\
+
+&
+& 16/10 & 89.8 & 19/10 & 89.47 & 88.1 & \textcolor{green}{\(\uparrow\)+1.37} & 30/10 & 90.01 & 102.7 & \textcolor{green}{\(\uparrow\)+12.69} & 15/12 & 91.69 & 93.8 & \textcolor{green}{\(\uparrow\)+2.11} \\
+
+&
+& 21/10 & 93 & 24/10 & 92.61 & 97.7 & \textcolor{red}{\(\downarrow\)-5.09} & 04/11 & 93.36 & 103.3 & \textcolor{green}{\(\uparrow\)+9.94} & 20/12 & 94.59 & 93.9 & \textcolor{green}{\(\uparrow\)+0.69} \\
+
+&
+& 22/10 & 97 & 25/10 & 96.6 & 97.7 & \textcolor{red}{\(\downarrow\)-1.10} & 05/11 & 97.22 & 100.9 & \textcolor{green}{\(\uparrow\)+3.68} & 21/12 & 98.65 & 93.9 & \textcolor{red}{\(\downarrow\)-4.75} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Round Robin}
+& 01/09 & 101.6 & 04/09 & 101.16 & 105 & \textcolor{red}{\(\downarrow\)-3.84} & 15/09 & 102.01 & 101.9 & \textcolor{green}{\(\uparrow\)+0.11} & 31/10 & 104.16 & 103.9 & \textcolor{green}{\(\uparrow\)+0.26} \\
+
+&
+& 16/10 & 89.8 & 19/10 & 89.35 & 88.1 & \textcolor{green}{\(\uparrow\)+1.25} & 30/10 & 89.19 & 102.7 & \textcolor{red}{\(\downarrow\)-13.51} & 15/12 & 90.96 & 93.8 & \textcolor{green}{\(\uparrow\)+2.84} \\
+
+&
+& 21/10 & 93 & 24/10 & 92.59 & 97.7 & \textcolor{red}{\(\downarrow\)-5.11} & 04/11 & 93.29 & 103.3 & \textcolor{green}{\(\uparrow\)+10.01} & 20/12 & 94.52 & 93.9 & \textcolor{green}{\(\uparrow\)+0.62} \\
+
+&
+& 22/10 & 97 & 25/10 & 93.48 & 97.7 & \textcolor{red}{\(\downarrow\)-4.22} & 05/11 & 97.28 & 100.9 & \textcolor{green}{\(\uparrow\)+3.62} & 21/12 & 98.65 & 93.9 & \textcolor{red}{\(\downarrow\)-4.75} \\
+\cmidrule(lr){2-16}
+
+
+
+& \textbf{Ensemble}
+& 01/09 & 101.6 & 04/09 & 101.08 & 105 & \textcolor{red}{\(\downarrow\)-3.92} & 15/09 & 101.63 & 101.9 & \textcolor{green}{\(\uparrow\)+0.27} & 31/10 & 103.14 & 103.9 & \textcolor{green}{\(\uparrow\)+0.76} \\
+
+&
+& 16/10 & 89.8 & 19/10 & 89.37 & 88.1 & \textcolor{green}{\(\uparrow\)+1.27} & 30/10 & 101.88 & 102.7 & \textcolor{green}{\(\uparrow\)+0.82} & 15/12 & 93.09 & 93.8 & \textcolor{green}{\(\uparrow\)+0.71} \\
+
+&
+& 21/10 & 93 & 24/10 & 92.53 & 97.7 & \textcolor{red}{\(\downarrow\)-5.17} & 04/11 & 103.09 & 103.3 & \textcolor{green}{\(\uparrow\)+0.21} & 20/12 & 94.23 & 93.9 & \textcolor{green}{\(\uparrow\)+0.33} \\
+
+&
+& 22/10 & 97 & 25/10 & 96.48 & 97.7 & \textcolor{red}{\(\downarrow\)-1.22} & 05/11 & 96.52 & 100.9 & \textcolor{red}{\(\downarrow\)-4.38} & 21/11 & 98.15 & 93.9 & \textcolor{red}{\(\downarrow\)-4.25} \\
+\midrule
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ===================== VCB ======================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{12}{*}{\textbf{VCB}} 
+& \textbf{Hierarchical}
+& 30/08 & 68.6 & 02/09 & 68.37 & 68.6 & \textcolor{red}{\(\downarrow\)-0.23} & 13/09 & 68.7 & 65.8 & \textcolor{red}{\(\downarrow\)-2.90} & 29/10 & 69.41 & 60.7 & \textcolor{red}{\(\downarrow\)-8.71} \\
+
+&
+& 16/10 & 62.9 & 19/10 & 63.19 & 61.9 & \textcolor{red}{\(\downarrow\)-1.29} & 30/10 & 63.43 & 60.6 & \textcolor{red}{\(\downarrow\)-2.83} & 15/12 & 64.05 & 56.8 & \textcolor{red}{\(\downarrow\)-7.25} \\
+
+&
+& 21/10 & 59.3 & 24/10 & 59.56 & 59.5 & \textcolor{green}{\(\uparrow\)+0.06} & 04/11 & 59.87 & 60.1 & \textcolor{green}{\(\uparrow\)+0.23} & 20/12 & 60.44 & 57.5 & \textcolor{red}{\(\downarrow\)-2.94} \\
+
+&
+& 22/10 & 59.6 & 25/10 & 61.88 & 59.5 & \textcolor{red}{\(\downarrow\)-2.38} & 05/11 & 60.18 & 60.8 & \textcolor{green}{\(\uparrow\)+0.62} & 21/12 & 58.79 & 57.5 & \textcolor{green}{\(\uparrow\)+1.29} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Round Robin}
+& 30/08 & 68.6 & 02/09 & 68.44 & 68.6 & \textcolor{red}{\(\downarrow\)-0.16} & 13/09 & 68.89 & 65.8 & \textcolor{red}{\(\downarrow\)-3.09} & 29/10 & 69.99 & 60.7 & \textcolor{red}{\(\downarrow\)-9.29} \\
+
+&
+& 16/10 & 62.9 & 19/10 & 63.19 & 61.9 & \textcolor{red}{\(\downarrow\)-1.29} & 30/10 & 63.6 & 60.6 & \textcolor{red}{\(\downarrow\)-3.00} & 15/12 & 54.31 & 56.8 & \textcolor{green}{\(\uparrow\)+2.49} \\
+
+&
+& 21/10 & 59.3 & 24/10 & 59.53 & 59.5 & \textcolor{green}{\(\uparrow\)+0.03} & 04/11 & 59.79 & 60.1 & \textcolor{green}{\(\uparrow\)+0.31} & 20/12 & 60.37 & 57.5 & \textcolor{red}{\(\downarrow\)-2.87} \\
+
+&
+& 22/10 & 59.6 & 25/10 & 59.82 & 59.5 & \textcolor{red}{\(\downarrow\)-0.32} & 05/11 & 60.08 & 60.8 & \textcolor{green}{\(\uparrow\)+0.72} & 21/12 & 60.55 & 57.5 & \textcolor{red}{\(\downarrow\)-3.05} \\
+\cmidrule(lr){2-16}
+
+& \textbf{Ensemble}
+& 30/08 & 68.6 & 02/09 & 68.36 & 68.6 & \textcolor{red}{\(\downarrow\)-0.24} & 13/09 & 68.66 & 65.8 & \textcolor{red}{\(\downarrow\)-2.86} & 29/10 & 69.33 & 60.7 & \textcolor{red}{\(\downarrow\)-8.63} \\
+
+&
+& 16/10 & 62.9 & 19/10 & 63.14 & 61.9 & \textcolor{red}{\(\downarrow\)-1.24} & 30/10 & 63.41 & 60.6 & \textcolor{red}{\(\downarrow\)-2.81} & 15/12 & 55.87 & 56.8 & \textcolor{green}{\(\uparrow\)+0.93} \\
+
+&
+& 21/10 & 59.3 & 24/10 & 59.52 & 59.5 & \textcolor{green}{\(\uparrow\)+0.02} & 04/11 & 59.86 & 60.1 & \textcolor{green}{\(\uparrow\)+0.24} & 20/12 & 60.25 & 57.5 & \textcolor{red}{\(\downarrow\)-2.75} \\
+
+&
+& 22/10 & 59.6 & 25/10 & 59.83 & 59.5 & \textcolor{red}{\(\downarrow\)-0.33} & 05/11 & 60.11 & 60.8 & \textcolor{green}{\(\uparrow\)+0.69} & 21/12 & 60.69 & 57.5 & \textcolor{red}{\(\downarrow\)-3.19} \\
+\midrule
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ===================== VCS ======================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{12}{*}{\textbf{VCS}} 
+& \textbf{Hierarchical}
+& 30/08 & 48.8 & 02/09 & 47.26 & 48.8 & \textcolor{red}{\(\downarrow\)-1.54} & 13/09 & 47.72 & 50 & \textcolor{red}{\(\downarrow\)-2.28} & 29/10 & 48.32 & 47.6 & \textcolor{green}{\(\uparrow\)+0.72} \\
+
+&
+& 16/10 & 47.2 & 19/10 & 45.67 & 46.8 & \textcolor{green}{\(\uparrow\)+1.13} & 30/10 & 46.07 & 47.4 & \textcolor{red}{\(\downarrow\)-1.33} & 15/12 & 46.59 & 46.5 & \textcolor{green}{\(\uparrow\)+0.09} \\
+
+&
+& 21/10 & 45.5 & 24/10 & 44.06 & 46.2 & \textcolor{red}{\(\downarrow\)-2.14} & 04/11 & 44.37 & 47.1 & \textcolor{red}{\(\downarrow\)-2.73} & 20/12 & 44.97 & 43 & \textcolor{green}{\(\uparrow\)+1.97} \\
+
+&
+& 22/10 & 45.5 & 25/10 & 44.05 & 46.2 & \textcolor{red}{\(\downarrow\)-2.15} & 05/11 & 42.31 & 46.9 & \textcolor{red}{\(\downarrow\)-4.59} & 21/12 & 45.11 & 43 & \textcolor{green}{\(\uparrow\)+2.11} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Round Robin}
+& 30/08 & 48.8 & 02/09 & 47.23 & 48.8 & \textcolor{red}{\(\downarrow\)-1.57} & 13/09 & 47.58 & 50 & \textcolor{red}{\(\downarrow\)-2.42} & 29/10 & 48.05 & 47.6 & \textcolor{green}{\(\uparrow\)+0.45} \\
+
+&
+& 16/10 & 47.2 & 19/10 & 45.71 & 46.8 & \textcolor{green}{\(\uparrow\)+1.09} & 30/10 & 47.99 & 47.4 & \textcolor{green}{\(\uparrow\)+0.59} & 15/12 & 47.39 & 46.5 & \textcolor{red}{\(\downarrow\)-0.89} \\
+
+&
+& 21/10 & 45.5 & 24/10 & 43.98 & 46.2 & \textcolor{red}{\(\downarrow\)-2.22} & 04/11 & 48.21 & 47.1 & \textcolor{green}{\(\uparrow\)+1.11} & 20/12 & 45.88 & 43 & \textcolor{red}{\(\downarrow\)-2.88} \\
+
+&
+& 22/10 & 45.5 & 25/10 & 44.01 & 46.2 & \textcolor{red}{\(\downarrow\)-2.19} & 05/11 & 46.33 & 46.9 & \textcolor{green}{\(\uparrow\)+0.57} & 21/12 & 45.77 & 43 & \textcolor{red}{\(\downarrow\)-2.77} \\
+\cmidrule(lr){2-16}
+
+
+
+& \textbf{Ensemble}
+& 30/08 & 48.8 & 02/09 & 47.19 & 48.8 & \textcolor{red}{\(\downarrow\)-1.61} & 13/09 & 52.54 & 50 & \textcolor{green}{\(\uparrow\)+2.54} & 29/10 & 48.86 & 47.6 & \textcolor{red}{\(\downarrow\)-1.26} \\
+
+&
+& 16/10 & 47.2 & 19/10 & 45.64 & 46.8 & \textcolor{green}{\(\uparrow\)+1.16} & 30/10 & 47.16 & 47.4 & \textcolor{red}{\(\downarrow\)-0.24} & 15/12 & 46.57 & 46.5 & \textcolor{green}{\(\uparrow\)+0.07} \\
+
+&
+& 21/10 & 45.5 & 24/10 & 43.99 & 46.2 & \textcolor{red}{\(\downarrow\)-2.21} & 04/11 & 44.28 & 47.1 & \textcolor{red}{\(\downarrow\)-2.82} & 20/12 & 44.85 & 43 & \textcolor{green}{\(\uparrow\)+1.85} \\
+
+&
+& 22/10 & 45.5 & 25/10 & 43.97 & 46.2 & \textcolor{red}{\(\downarrow\)-2.23} & 05/11 & 44.28 & 46.9 & \textcolor{red}{\(\downarrow\)-2.62} & 21/12 & 44.9 & 43 & \textcolor{green}{\(\uparrow\)+1.90} \\
+\midrule
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ===================== HPG ======================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{12}{*}{\textbf{HPG}} 
+& \textbf{Hierarchical}
+& 01/09 & 27.5 & 04/09 & 27.67 & 29.85 & \textcolor{green}{\(\uparrow\)+2.18} & 15/09 & 27.83 & 30.35 & \textcolor{green}{\(\uparrow\)+2.52} & 31/10 & 28.17 & 26.7 & \textcolor{red}{\(\downarrow\)-1.47} \\
+
+& 
+& 16/10 & 28.25 & 19/10 & 28.44 & 28 & \textcolor{red}{\(\downarrow\)-0.44} & 30/10 & 28.68 & 26.9 & \textcolor{red}{\(\downarrow\)-1.78} & 15/12 & 29.12 & 26.25 & \textcolor{red}{\(\downarrow\)-2.87} \\
+
+& 
+& 21/10 & 26.8 & 24/10 & 26.94 & 26.4 & \textcolor{red}{\(\downarrow\)-0.54} & 04/11 & 27.1 & 26.75 & \textcolor{red}{\(\downarrow\)-0.35} & 20/12 & 26.42 & 26.7 & \textcolor{green}{\(\uparrow\)+0.28} \\
+
+&
+& 22/10 & 26.7 & 25/10 & 26.55 & 26.4 & \textcolor{green}{\(\uparrow\)+0.15} & 05/11 & 26.97 & 26.3 & \textcolor{red}{\(\downarrow\)-0.67} & 21/12 & 27.37 & 26.7 & \textcolor{red}{\(\downarrow\)-0.67} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Round Robin}
+& 01/09 & 27.5 & 04/09 & 28.84 & 29.85 & \textcolor{green}{\(\uparrow\)+1.01} & 15/09 & 28.84 & 30.35 & \textcolor{green}{\(\uparrow\)+1.51} & 31/10 & 26.41 & 26.7 & \textcolor{green}{\(\uparrow\)+0.29} \\
+
+& 
+& 16/10 & 28.25 & 19/10 & 29.63 & 28 & \textcolor{red}{\(\downarrow\)-1.63} & 30/10 & 29.01 & 26.9 & \textcolor{red}{\(\downarrow\)-2.11} & 15/12 & 29.3 & 26.25 & \textcolor{red}{\(\downarrow\)-3.05} \\
+
+& 
+& 21/10 & 26.8 & 24/10 & 26.29 & 26.4 & \textcolor{green}{\(\uparrow\)+0.11} & 04/11 & 26.06 & 26.75 & \textcolor{green}{\(\uparrow\)+0.69} & 20/12 & 27.41 & 26.7 & \textcolor{red}{\(\downarrow\)-0.71} \\
+
+&
+& 22/10 & 26.7 & 25/10 & 26.79 & 26.4 & \textcolor{red}{\(\downarrow\)-0.39} & 05/11 & 26.89 & 26.3 & \textcolor{red}{\(\downarrow\)-0.59} & 21/12 & 27.23 & 26.7 & \textcolor{red}{\(\downarrow\)-0.53} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Ensemble}
+& 01/09 & 27.5 & 04/09 & 27.65 & 29.85& \textcolor{green}{\(\uparrow\)+2.20} & 15/09 & 27.8 & 30.35 & \textcolor{green}{\(\uparrow\)+2.55} & 31/10 & 28.11 & 26.7 & \textcolor{red}{\(\downarrow\)-1.41} \\
+
+& 
+& 16/10 & 28.25 & 19/10 & 28.4 & 28 & \textcolor{red}{\(\downarrow\)-0.40} & 30/10 & 28.58 & 26.9 & \textcolor{red}{\(\downarrow\)-1.68} & 15/12 & 27.98 & 26.25 & \textcolor{green}{\(\uparrow\)+1.73} \\
+
+& 
+& 21/10 & 26.8 & 24/10 & 26.93 & 26.4 & \textcolor{red}{\(\downarrow\)-0.53} & 04/11 & 27.06 & 26.75 & \textcolor{red}{\(\downarrow\)-0.31} & 20/12 & 26.5 & 26.7 & \textcolor{green}{\(\uparrow\)+0.20} \\
+
+&
+& 22/10 & 26.7 & 25/10 & 26.83 & 26.4 & \textcolor{red}{\(\downarrow\)-0.43} & 05/11 & 26.5 & 26.3 & \textcolor{green}{\(\uparrow\)+0.20} & 21/12 & 27.35 & 26.7 & \textcolor{red}{\(\downarrow\)-0.65} \\
+\midrule
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ===================== TCB ======================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{12}{*}{\textbf{TCB}} 
+& \textbf{Ensemble}
+& 01/09 & 39.6 & 04/09 & 38.78 & 39.6 & \textcolor{red}{\(\downarrow\)-0.82} & 15/09 & 39.03 & 39 & \textcolor{green}{\(\uparrow\)+0.03} & 31/10 & 39.43 & 35.1 & \textcolor{green}{\(\uparrow\)+4.33} \\
+
+&
+& 16/10 & 41.25 & 19/10 & 41.5 & 40.65 & \textcolor{red}{\(\downarrow\)-0.85} & 30/10 & 41.77 & 35.7 & \textcolor{red}{\(\downarrow\)-6.07} & 15/12 & 42.14 & 32 & \textcolor{red}{\(\downarrow\)-10.14} \\
+
+&
+& 21/10 & 37.65 & 24/10 & 37.88 & 36.1 & \textcolor{red}{\(\downarrow\)-1.78} & 04/11 & 38.08 & 35 & \textcolor{red}{\(\downarrow\)-3.08} & 20/12 & 38.43 & 33.6 & \textcolor{red}{\(\downarrow\)-4.83} \\
+
+&
+& 22/10 & 38 & 25/10 & 35.2 & 36.1 & \textcolor{green}{\(\uparrow\)+0.90} & 05/11 & 34.41 & 34.1 & \textcolor{green}{\(\uparrow\)+0.31} & 21/12 & 33.02 & 33.6 & \textcolor{green}{\(\uparrow\)+0.58} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Hierarchical}
+& 01/09 & 39.6 & 04/09 & 38.84 & 39.6 & \textcolor{red}{\(\downarrow\)-0.76} & 15/09 & 39.09 & 39 & \textcolor{green}{\(\uparrow\)+0.09} & 31/10 & 39.68 & 35.1 & \textcolor{red}{\(\downarrow\)-4.58} \\
+
+&
+& 16/10 & 41.25 & 19/10 & 41.52 & 40.65 & \textcolor{red}{\(\downarrow\)-0.87} & 30/10 & 41.85 & 35.7 & \textcolor{red}{\(\downarrow\)-6.15} & 15/12 & 38.43 & 32 & \textcolor{green}{\(\uparrow\)+6.43} \\
+
+&
+& 21/10 & 37.65 & 24/10 & 37.88 & 36.1 & \textcolor{red}{\(\downarrow\)-1.78} & 04/11 & 35.23 & 35 & \textcolor{green}{\(\uparrow\)+0.23} & 20/12 & 38.52 & 33.6 & \textcolor{red}{\(\downarrow\)-4.92} \\
+
+&
+& 22/10 & 38 & 25/10 & 38.25 & 36.1 & \textcolor{red}{\(\downarrow\)-2.15} & 05/11 & 36.59 & 34.1 & \textcolor{green}{\(\uparrow\)+2.49} & 21/12 & 34.09 & 33.6 & \textcolor{green}{\(\uparrow\)+0.49} \\
+\cmidrule(lr){2-16}
+
+
+
+& \textbf{RoundRobin}
+& 01/09 & 39.6 & 04/09 & 38.85 & 39.6 & \textcolor{red}{\(\downarrow\)-0.75} & 15/09 & 39.23 & 39 & \textcolor{green}{\(\uparrow\)+0.23} & 31/10 & 39.88 & 35.1 & \textcolor{red}{\(\downarrow\)-4.78} \\
+
+&
+& 16/10 & 41.25 & 19/10 & 41.54 & 40.65 & \textcolor{red}{\(\downarrow\)-0.89} & 30/10 & 41.97 & 35.7 & \textcolor{red}{\(\downarrow\)-6.27} & 15/12 & 32.71 & 32 & \textcolor{green}{\(\uparrow\)+0.71} \\
+
+&
+& 21/10 & 37.65 & 24/10 & 36.27 & 36.1 & \textcolor{green}{\(\uparrow\)+0.17} & 04/11 & 38.12 & 35 & \textcolor{red}{\(\downarrow\)-3.12} & 20/12 & 38.6 & 33.6 & \textcolor{red}{\(\downarrow\)-5.00} \\
+
+&
+& 22/10 & 38 & 25/10 & 38.27 & 36.1 & \textcolor{red}{\(\downarrow\)-2.17} & 05/11 & 38.49 & 34.1 & \textcolor{red}{\(\downarrow\)-4.39} & 21/12 & 38.87 & 33.6 & \textcolor{red}{\(\downarrow\)-5.27} \\
+\midrule
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ===================== VHM ======================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{12}{*}{\textbf{VHM}} 
+& \textbf{Hierarchical}
+& 01/09 & 104.5 & 04/09 & 105.28 & 102.3 & \textcolor{red}{\(\downarrow\)-2.98} & 15/09 & 106.31 & 104.5 & \textcolor{red}{\(\downarrow\)-1.81} & 31/10 & 97.97 & 99.2 & \textcolor{green}{\(\uparrow\)+1.23} \\
+
+&
+& 16/10 & 122 & 19/10 & 123.23 & 116 & \textcolor{red}{\(\downarrow\)-7.23} & 30/10 & 104.43 & 104 & \textcolor{green}{\(\uparrow\)+0.43} & 15/12 & 107.0 & 93.9 & \textcolor{green}{\(\uparrow\)+13.10} \\
+
+&
+& 21/10 & 110.9 & 24/10 & 111.77 & 114.5 & \textcolor{green}{\(\uparrow\)+2.73} & 04/11 & 112.53 & 100.2 & \textcolor{red}{\(\downarrow\)-12.33} & 20/12 & 114.76 & 101.5 & \textcolor{red}{\(\downarrow\)-13.26} \\
+
+&
+& 22/10 & 113 & 25/10 & 113.8 & 114.5 & \textcolor{green}{\(\uparrow\)+0.70} & 05/11 & 104.52 & 99.6 & \textcolor{green}{\(\uparrow\)+4.92} & 21/12 & 106.61 & 101.5 & \textcolor{green}{\(\uparrow\)+5.11} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Round Robin}
+& 01/09 & 104.5 & 04/09 & 105.54 & 102.3 & \textcolor{red}{\(\downarrow\)-3.24} & 15/09 & 106.72 & 104.5 & \textcolor{red}{\(\downarrow\)-2.22} & 31/10 & 108.85 & 99.2 & \textcolor{red}{\(\downarrow\)-9.65} \\
+
+&
+& 16/10 & 122 & 19/10 & 123.89 & 116 & \textcolor{red}{\(\downarrow\)-7.89} & 30/10 & 105.79 & 104 & \textcolor{green}{\(\uparrow\)+1.79} & 15/12 & 100.95 & 93.9 & \textcolor{green}{\(\uparrow\)+7.05} \\
+
+&
+& 21/10 & 110.9 & 24/10 & 111.92 & 114.5 & \textcolor{green}{\(\uparrow\)+2.58} & 04/11 & 103.0 & 100.2 & \textcolor{green}{\(\uparrow\)+2.80} & 20/12 & 105.22 & 101.5 & \textcolor{green}{\(\uparrow\)+3.72} \\
+
+&
+& 22/10 & 113 & 25/10 & 113.88 & 114.5 & \textcolor{green}{\(\uparrow\)+0.62} & 05/11 & 104.64 & 99.6 & \textcolor{green}{\(\uparrow\)+5.04} & 21/12 & 106.08 & 101.5 & \textcolor{green}{\(\uparrow\)+4.58} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Ensemble}
+& 01/09 & 104.5 & 04/09 & 101.14 & 102.3 & \textcolor{green}{\(\uparrow\)+1.16} & 15/09 & 106.03 & 104.5 & \textcolor{red}{\(\downarrow\)-1.53} & 31/10 & 97.62 & 99.2 & \textcolor{green}{\(\uparrow\)+1.58} \\
+
+&
+& 16/10 & 122 & 19/10 & 122.91 & 116 & \textcolor{red}{\(\downarrow\)-6.91} & 30/10 & 103.8 & 104 & \textcolor{green}{\(\uparrow\)+0.20} & 15/12 & 95.53 & 93.9 & \textcolor{green}{\(\uparrow\)+1.63} \\
+
+&
+& 21/10 & 110.9 & 24/10 & 111.53 & 114.5 & \textcolor{green}{\(\uparrow\)+2.97} & 04/11 & 102.32 & 100.2 & \textcolor{green}{\(\uparrow\)+2.12} & 20/12 & 104.03 & 101.5 & \textcolor{green}{\(\uparrow\)+2.53} \\
+
+&
+& 22/10 & 113 & 25/10 & 113.67 & 114.5 & \textcolor{green}{\(\uparrow\)+0.83} & 05/11 & 99.5 & 99.6 & \textcolor{green}{\(\uparrow\)+0.10} & 21/12 & 105.83 & 101.5 & \textcolor{green}{\(\uparrow\)+4.33} \\
+\midrule
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ===================== MWG ======================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{12}{*}{\textbf{MWG}} 
+& \textbf{Hierarchical}
+& 01/09 & 78 & 04/09 & 78.54 & 77.5 & \textcolor{red}{\(\downarrow\)-1.04} & 15/09 & 79.14 & 79.5 & \textcolor{green}{\(\uparrow\)+0.36} & 31/10 & 80.53 & 82.6 & \textcolor{green}{\(\uparrow\)+2.07} \\
+
+&
+& 16/10 & 78.54 & 19/10 & 85.09 & 84.5 & \textcolor{green}{\(\uparrow\)+0.59} & 30/10 & 85.93 & 83.9 & \textcolor{green}{\(\uparrow\)+2.03} & 15/12 & 87.25 & 77.7 & \textcolor{red}{\(\downarrow\)-9.55} \\
+
+&
+& 21/10 & 83 & 24/10 & 83.53 & 85.7 & \textcolor{green}{\(\uparrow\)+2.17} & 04/11 & 84.26 & 81.8 & \textcolor{red}{\(\downarrow\)-2.46} & 20/12 & 85.63 & 82.9 & \textcolor{red}{\(\downarrow\)-2.73} \\
+
+&
+& 22/10 & 84.5 & 25/10 & 85.15 & 85.7 & \textcolor{green}{\(\uparrow\)+0.55} & 05/11 & 85.82 & 80.2 & \textcolor{red}{\(\downarrow\)-5.62} & 21/12 & 87.32 & 82.9 & \textcolor{red}{\(\downarrow\)-4.42} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Round Robin}
+& 01/09 & 78 & 04/09 & 78.8 & 77.5 & \textcolor{red}{\(\downarrow\)-1.30} & 15/09 & 79.76 & 79.5 & \textcolor{green}{\(\uparrow\)+0.26} & 31/10 & 81.67 & 82.6 & \textcolor{green}{\(\uparrow\)+0.93} \\
+
+&
+& 16/10 & 84.5 & 19/10 & 85.31 & 84.5 & \textcolor{red}{\(\downarrow\)-0.81} & 30/10 & 86.44 & 83.9 & \textcolor{red}{\(\downarrow\)-2.54} & 15/12 & 85.75 & 77.7 & \textcolor{red}{\(\downarrow\)-8.05} \\
+
+&
+& 21/10 & 83 & 24/10 & 83.63 & 85.7 & \textcolor{green}{\(\uparrow\)+2.07} & 04/11 & 84.31 & 81.8 & \textcolor{red}{\(\downarrow\)-2.51} & 20/12 & 81.22 & 82.9 & \textcolor{green}{\(\uparrow\)+1.68} \\
+
+&
+& 22/10 & 84.5 & 25/10 & 85.2 & 85.7 & \textcolor{green}{\(\uparrow\)+0.50} & 05/11 & 85.85 & 80.2 & \textcolor{red}{\(\downarrow\)-5.65} & 21/12 & 87.7 & 82.9 & \textcolor{red}{\(\downarrow\)-4.80} \\
+\cmidrule(lr){2-16}
+
+
+
+
+& \textbf{Ensemble}
+& 01/09 & 78 & 04/09 & 78.49 & 77.5 & \textcolor{red}{\(\downarrow\)-0.99} & 15/09 & 79.0 & 79.5 & \textcolor{green}{\(\uparrow\)+0.50} & 31/10 & 80.38 & 82.6 & \textcolor{green}{\(\uparrow\)+2.22} \\
+
+&
+& 16/10 & 84.5 & 19/10 & 85.06 & 84.5 & \textcolor{red}{\(\downarrow\)-0.56} & 30/10 & 85.64 & 83.9 & \textcolor{red}{\(\downarrow\)-1.74} & 15/12 & 76.79 & 77.7 & \textcolor{green}{\(\uparrow\)+0.91} \\
+
+&
+& 21/10 & 83 & 24/10 & 83.48 & 85.7 & \textcolor{green}{\(\uparrow\)+2.22} & 04/11 & 83.92 & 81.8 & \textcolor{red}{\(\downarrow\)-2.12} & 20/12 & 85.31 & 82.9 & \textcolor{red}{\(\downarrow\)-2.41} \\
+
+&
+& 22/10 & 84.5 & 25/10 & 84.95 & 85.7 & \textcolor{green}{\(\uparrow\)+0.75} & 05/11 & 85.52 & 80.2 & \textcolor{red}{\(\downarrow\)-5.32} & 21/12 & 86.68 & 82.9 & \textcolor{red}{\(\downarrow\)-3.78} \\
+
+
+
+
+\midrule
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ===================== CMG ======================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{12}{*}{\textbf{CMG}} 
+& \textbf{Hierarchical}
+& 01/09 & 40.3 & 04/09 & 36.08 & 41.85 & \textcolor{red}{\(\downarrow\)-5.77} & 15/09 & 34.13 & 40.8 & \textcolor{red}{\(\downarrow\)-6.67} & 31/10 & 49.31 & 41.9 & \textcolor{green}{\(\uparrow\)+7.41} \\
+
+& 
+& 16/10 & 38 & 19/10 & 34.0 & 37.3 & \textcolor{green}{\(\uparrow\)+3.30} & 30/10 & 32.06 & 41.3 & \textcolor{red}{\(\downarrow\)-9.24} & 15/12 & 37.64 & 35.1 & \textcolor{green}{\(\uparrow\)+2.54} \\
+
+& 
+& 21/10 & 38.4 & 24/10 & 34.38 & 38.75 & \textcolor{red}{\(\downarrow\)-4.37} & 04/11 & 32.52 & 39.6 & \textcolor{red}{\(\downarrow\)-7.08} & 20/12 & 37.93 & 35.2 & \textcolor{green}{\(\uparrow\)+2.73} \\
+
+&
+& 22/10 & 38.5 & 25/10 & 39.12 & 38.75 & \textcolor{green}{\(\uparrow\)+0.37} & 05/11 & 32.22 & 39.3 & \textcolor{red}{\(\downarrow\)-7.08} & 21/12 & 38.0 & 35.2 & \textcolor{green}{\(\uparrow\)+2.80} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Round Robin}
+& 01/09 & 40.3 & 04/09 & 35.39 & 41.85 & \textcolor{red}{\(\downarrow\)-6.46} & 15/09 & 41.18 & 40.8 & \textcolor{green}{\(\uparrow\)+0.38} & 31/10 & 39.31 & 41.9 & \textcolor{red}{\(\downarrow\)-2.59} \\
+
+& 
+& 16/10 & 38 & 19/10 & 33.39 & 37.3 & \textcolor{green}{\(\uparrow\)+3.91} & 30/10 & 39.46 & 41.3 & \textcolor{green}{\(\uparrow\)+1.84} & 15/12 & 27.64 & 35.1 & \textcolor{green}{\(\uparrow\)+7.46} \\
+
+& 
+& 21/10 & 38.4 & 24/10 & 33.52 & 38.75 & \textcolor{red}{\(\downarrow\)-5.23} & 04/11 & 38.88 & 39.6 & \textcolor{green}{\(\uparrow\)+0.72} & 20/12 & 27.93 & 35.2 & \textcolor{green}{\(\uparrow\)+7.27} \\
+
+&
+& 22/10 & 38.5 & 25/10 & 33.57 & 38.75 & \textcolor{red}{\(\downarrow\)-5.18} & 05/11 & 38.22 & 39.3 & \textcolor{red}{\(\downarrow\)-1.08} & 21/12 & 36.74 & 35.2 & \textcolor{green}{\(\uparrow\)+1.54} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Ensemble}
+& 01/09 & 40.3 & 04/09 & 41.94 & 41.85 & \textcolor{green}{\(\uparrow\)+0.09} & 15/09 & 33.51 & 40.8 & \textcolor{red}{\(\downarrow\)-7.29} & 31/10 & 42.88 & 41.9 & \textcolor{green}{\(\uparrow\)+0.98} \\
+
+& 
+& 16/10 & 38 & 19/10 & 33.97 & 37.3 & \textcolor{green}{\(\uparrow\)+3.33} & 30/10 & 41.94 & 41.3 & \textcolor{green}{\(\uparrow\)+0.64} & 15/12 & 36.78 & 35.1 & \textcolor{green}{\(\uparrow\)+1.68} \\
+
+& 
+& 21/10 & 38.4 & 24/10 & 34.36 & 38.75 & \textcolor{red}{\(\downarrow\)-4.39} & 04/11 & 39.42 & 39.6 & \textcolor{green}{\(\uparrow\)+0.18} & 20/12 & 39.52 & 35.2 & \textcolor{red}{\(\downarrow\)-4.32} \\
+
+&
+& 22/10 & 38.5 & 25/10 & 34.47 & 38.75 & \textcolor{red}{\(\downarrow\)-4.28} & 05/11 & 39.59 & 39.3 & \textcolor{green}{\(\uparrow\)+0.29} & 21/12 & 39.13 & 35.2 & \textcolor{red}{\(\downarrow\)-3.93} \\
+\midrule
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ===================== KDH======================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{12}{*}{\textbf{KDH}} 
+& \textbf{Hierarchical}
+& 01/09 & 36.5 & 04/09 & 35.84 & 36.75 & \textcolor{red}{\(\downarrow\)-0.91} & 15/09 & 33.52 & 34.85 & \textcolor{green}{\(\uparrow\)+1.33} & 31/10 & 39.2 & 35.85 & \textcolor{red}{\(\downarrow\)-3.35} \\
+
+&
+& 16/10 & 34.2 & 19/10 & 33.59 & 33.9 & \textcolor{green}{\(\uparrow\)+0.31} & 30/10 & 31.46 & 35.85 & \textcolor{red}{\(\downarrow\)-4.39} & 15/12 & 27.36 & 29.6 & \textcolor{green}{\(\uparrow\)+2.24} \\
+
+&
+& 21/10 & 31.75 & 24/10 & 31.19 & 33.8 & \textcolor{red}{\(\downarrow\)-2.61} & 04/11 & 29.22 & 35.6 & \textcolor{red}{\(\downarrow\)-6.38} & 20/12 & 35.21 & 32.65 & \textcolor{green}{\(\uparrow\)+2.56} \\
+
+&
+& 22/10 & 32.2 & 25/10 & 31.16 & 33.8 & \textcolor{red}{\(\downarrow\)-2.64} & 05/11 & 34.52 & 34.95 & \textcolor{green}{\(\uparrow\)+0.43} & 21/12 & 35.56 & 32.65 & \textcolor{green}{\(\uparrow\)+2.91} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Round Robin}
+& 01/09 & 36.5 & 04/09 & 35.53 & 36.75 & \textcolor{red}{\(\downarrow\)-1.22} & 15/09 & 32.2 & 34.85 & \textcolor{green}{\(\uparrow\)+2.65} & 31/10 & 35.88 & 35.85 & \textcolor{green}{\(\uparrow\)+0.03} \\
+
+&
+& 16/10 & 34.2 & 19/10 & 33.12 & 33.9 & \textcolor{green}{\(\uparrow\)+0.78} & 30/10 & 30.45 & 35.85 & \textcolor{red}{\(\downarrow\)-5.40} & 15/12 & 29.12 & 29.6 & \textcolor{green}{\(\uparrow\)+0.48} \\
+
+&
+& 21/10 & 31.75 & 24/10 & 33.67 & 33.8 & \textcolor{green}{\(\uparrow\)+0.13} & 04/11 & 37.01 & 35.6 & \textcolor{green}{\(\uparrow\)+1.41} & 20/12 & 25.4 & 32.65 & \textcolor{red}{\(\downarrow\)-7.25} \\
+
+&
+& 22/10 & 32.2 & 25/10 & 31.0 & 33.8 & \textcolor{red}{\(\downarrow\)-2.80} & 05/11 & 36.98 & 34.95 & \textcolor{green}{\(\uparrow\)+2.03} & 21/12 & 35.76 & 32.65 & \textcolor{green}{\(\uparrow\)+3.11} \\
+\cmidrule(lr){2-16}
+
+
+
+& \textbf{Ensemble}
+& 01/09 & 36.5 & 04/09 & 35.62 & 36.75 & \textcolor{red}{\(\downarrow\)-1.13} & 15/09 & 32.59 & 34.85 & \textcolor{green}{\(\uparrow\)+2.26} & 31/10 & 35.32 & 35.85 & \textcolor{green}{\(\uparrow\)+0.53} \\
+
+&
+& 16/10 & 34.2 & 19/10 & 33.48 & 33.9 & \textcolor{green}{\(\uparrow\)+0.42} & 30/10 & 35.96 & 35.85 & \textcolor{green}{\(\uparrow\)+0.11} & 15/12 & 30.02 & 29.6 & \textcolor{green}{\(\uparrow\)+0.42} \\
+
+&
+& 21/10 & 31.75 & 24/10 & 31.12 & 33.8 & \textcolor{red}{\(\downarrow\)-2.68} & 04/11 & 36.9 & 35.6 & \textcolor{green}{\(\uparrow\)+1.30} & 20/12 & 34.05 & 32.65 & \textcolor{green}{\(\uparrow\)+1.40} \\
+
+&
+& 22/10 & 32.2 & 25/10 & 31.58 & 33.8 & \textcolor{red}{\(\downarrow\)-2.22} & 05/11 & 34.41 & 34.95 & \textcolor{green}{\(\uparrow\)+0.54} & 21/12 & 32.85 & 32.65 & \textcolor{green}{\(\uparrow\)+0.20} \\
+\midrule
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ===================== DGC ======================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{12}{*}{\textbf{DGC}} 
+& \textbf{Hierarchical}
+& 01/09 & 98.2 & 04/09 & 99.9 & 99.3 & \textcolor{green}{\(\uparrow\)+0.60} & 15/09 & 94.33 & 99.5 & \textcolor{red}{\(\downarrow\)-5.17} & 31/10 & 95.27 & 96 & \textcolor{green}{\(\uparrow\)+0.73} \\
+
+&
+& 16/10 & 95 & 19/10 & 88.47 & 93.2 & \textcolor{green}{\(\uparrow\)+4.73} & 30/10 & 99.7 & 93.6 & \textcolor{red}{\(\downarrow\)-6.10} & 15/12 & 92.82 & 93 & \textcolor{green}{\(\uparrow\)+0.18} \\
+
+&
+& 21/10 & 89.2 & 24/10 & 82.43 & 92.4 & \textcolor{red}{\(\downarrow\)-9.97} & 04/11 & 92.19 & 94.6 & \textcolor{green}{\(\uparrow\)+2.41} & 20/12 & 68.37 & 70.2 & \textcolor{green}{\(\uparrow\)+1.83} \\
+
+&
+& 22/10 & 91 & 25/10 & 93.48 & 92.4 & \textcolor{green}{\(\uparrow\)+1.08} & 05/11 & 91.18 & 95 & \textcolor{green}{\(\uparrow\)+3.82} & 21/12 & 69.75 & 70.2 & \textcolor{green}{\(\uparrow\)+0.45} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Round Robin}
+& 01/09 & 98.2 & 04/09 & 98.86 & 99.3 & \textcolor{green}{\(\uparrow\)+0.44} & 15/09 & 95.27 & 99.5 & \textcolor{red}{\(\downarrow\)-4.23} & 31/10 & 100.02 & 96 & \textcolor{red}{\(\downarrow\)-4.02} \\
+
+&
+& 16/10 & 95 & 19/10 & 86.2 & 93.2 & \textcolor{green}{\(\uparrow\)+7.00} & 30/10 & 92.82 & 93.6 & \textcolor{green}{\(\uparrow\)+0.78} & 15/12 & 96.33 & 93 & \textcolor{red}{\(\downarrow\)-3.33} \\
+
+&
+& 21/10 & 89.2 & 24/10 & 91.14 & 92.4 & \textcolor{green}{\(\uparrow\)+1.26} & 04/11 & 98.37 & 94.6 & \textcolor{green}{\(\uparrow\)+3.77} & 20/12 & 68.37 & 70.2 & \textcolor{green}{\(\uparrow\)+1.83} \\
+
+&
+& 22/10 & 91 & 25/10 & 83.09 & 92.4 & \textcolor{red}{\(\downarrow\)-9.31} & 05/11 & 99.75 & 95 & \textcolor{green}{\(\uparrow\)+4.75} & 21/12 & 70.35 & 70.2 & \textcolor{green}{\(\uparrow\)+0.15} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Ensemble}
+& 01/09 & 98.2 & 04/09 & 99.03 & 99.3 & \textcolor{green}{\(\uparrow\)+0.27} & 15/09 & 94.86 & 99.5 & \textcolor{red}{\(\downarrow\)-4.64} & 31/10 & 95.27 & 96 & \textcolor{green}{\(\uparrow\)+0.73} \\
+
+&
+& 16/10 & 95 & 19/10 & 88.79 & 93.2 & \textcolor{green}{\(\uparrow\)+4.41} & 30/10 & 91.06 & 93.6 & \textcolor{green}{\(\uparrow\)+2.54} & 15/12 & 92.82 & 93 & \textcolor{green}{\(\uparrow\)+0.18} \\
+
+&
+& 21/10 & 89.2 & 24/10 & 94.61 & 92.4 & \textcolor{green}{\(\uparrow\)+2.21} & 04/11 & 91.57 & 94.6 & \textcolor{green}{\(\uparrow\)+3.03} & 20/12 & 69.98 & 70.2 & \textcolor{green}{\(\uparrow\)+0.22} \\
+
+&
+& 22/10 & 91 & 25/10 & 89.62 & 92.4 & \textcolor{red}{\(\downarrow\)-2.78} & 05/11 & 94.59 & 95 & \textcolor{green}{\(\uparrow\)+0.41} & 21/12 & 71.6 & 70.2 & \textcolor{green}{\(\uparrow\)+1.40} \\
+\midrule
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ===================== MBB ======================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{12}{*}{\textbf{MBB}} 
+& \textbf{Hierarchical}
+& 01/09 & 27.75 & 04/09 & 28.87 & 28.25 & \textcolor{green}{\(\uparrow\)+0.62} & 15/09 & 28.23 & 26.85 & \textcolor{red}{\(\downarrow\)-1.38} & 31/10 & 24.22 & 23.6 & \textcolor{green}{\(\uparrow\)+0.62} \\
+
+&
+& 16/10 & 27.2 & 19/10 & 27.41 & 27.1 & \textcolor{red}{\(\downarrow\)-0.31} & 30/10 & 23.43 & 23.95 & \textcolor{green}{\(\uparrow\)+0.52} & 15/12 & 22.19 & 23.75 & \textcolor{green}{\(\uparrow\)+1.56} \\
+
+&
+& 21/10 & 25.3 & 24/10 & 24.98 & 24.45 & \textcolor{green}{\(\uparrow\)+0.58} & 04/11 & 24.19 & 23.9 & \textcolor{green}{\(\uparrow\)+0.19} & 21/12 & 27.22 & 24.7 & \textcolor{red}{\(\downarrow\)-2.52} \\
+
+&
+& 22/10 & 25.45 & 25/10 & 23.41 & 24.45 & \textcolor{green}{\(\uparrow\)+0.99} & 05/11 & 21.42 & 23.9 & \textcolor{green}{\(\uparrow\)+2.48} & 21/12 & 26.14 & 24.7 & \textcolor{red}{\(\downarrow\)-1.44} \\
+\cmidrule(lr){2-16}
+
+
+& \textbf{Round Robin}
+& 01/09 & 27.75 & 04/09 & 29.43 & 28.25 & \textcolor{green}{\(\uparrow\)+1.18} & 15/09 & 28.42 & 26.85 & \textcolor{red}{\(\downarrow\)-1.57} & 31/10 & 20.43 & 23.6 & \textcolor{green}{\(\uparrow\)+3.17} \\
+
+&
+& 16/10 & 27.2 & 19/10 & 27.35 & 27.1 & \textcolor{red}{\(\downarrow\)-0.25} & 30/10 & 22.94 & 23.95 & \textcolor{green}{\(\uparrow\)+1.01} & 15/12 & 24.14 & 23.75 & \textcolor{green}{\(\uparrow\)+0.39} \\
+
+&
+& 21/10 & 25.3 & 24/10 & 25.21 & 24.4 & \textcolor{green}{\(\uparrow\)+0.81} & 04/11 & 26.13 & 24 & \textcolor{red}{\(\downarrow\)-2.13} & 20/12 & 24.43 & 24.7 & \textcolor{green}{\(\uparrow\)+0.27} \\
+
+&
+& 22/10 & 25.45 & 25/10 & 26.22 & 24.4 & \textcolor{red}{\(\downarrow\)-1.82} & 05/11 & 22.43 & 23.9 & \textcolor{green}{\(\uparrow\)+1.47} & 21/12 & 24.88 & 24.7 & \textcolor{green}{\(\uparrow\)+0.18} \\
+\cmidrule(lr){2-16}
+
+
+
+& \textbf{Ensemble}
+& 01/09 & 27.75 & 04/09 & 28.35 & 28.25 & \textcolor{green}{\(\uparrow\)+0.10} & 15/09 & 27.11 & 26.85 & \textcolor{green}{\(\uparrow\)+0.26} & 31/10 & 24.22 & 23.6 & \textcolor{green}{\(\uparrow\)+0.62} \\
+
+&
+& 16/10 & 27.2 & 19/10 & 26.15 & 27.1 & \textcolor{green}{\(\uparrow\)+0.95} & 30/10 & 23.14 & 23.95 & \textcolor{green}{\(\uparrow\)+0.81} & 15/12 & 23.42 & 23.75 & \textcolor{green}{\(\uparrow\)+0.33} \\
+
+&
+& 21/10 & 25.3 & 24/10 & 24.3 & 24.4 & \textcolor{green}{\(\uparrow\)+0.10} & 04/11 & 25.25 & 24 & \textcolor{green}{\(\uparrow\)+1.25} & 20/12 & 26.31 & 24.7 & \textcolor{red}{\(\downarrow\)-1.61} \\
+
+&
+& 22/10 & 25.45 & 25/10 & 24.47 & 24.4 & \textcolor{green}{\(\uparrow\)+0.07} & 05/11 & 22.39 & 23.9 & \textcolor{green}{\(\uparrow\)+1.51} & 21/12 & 24.98 & 24.7 & \textcolor{green}{\(\uparrow\)+0.28} \\
+
+
+\bottomrule
+\end{longtable}
+}

@@ -1,0 +1,237 @@
+python llama_lstm.py
+<truncated 291 lines>
+\multirow{3}{*}{\textbf{TCB}}
+& RoundRobin      & \textbf{0.73} & \textbf{0.82} & \textbf{2.0\%} \\
+& Hierarchical    & 1.89 & 2.59 & 5.0\% \\
+& Ensemble Voting & 2.19 & 2.79 & 6.0\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCB}}
+& RoundRobin      & \textbf{0.48} & \textbf{0.65} & \textbf{0.8\%} \\
+& Hierarchical    & 1.03 & 1.72 & 1.7\% \\
+& Ensemble Voting & 1.05 & 1.21 & 1.7\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCS}}
+& Ensemble Voting & \textbf{0.81} & \textbf{1.01} & \textbf{1.7\%} \\
+& RoundRobin      & 1.06 & 1.15 & 2.3\% \\
+& Hierarchical    & 1.34 & 1.50 & 2.9\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VHM}}
+& Ensemble Voting & \textbf{1.74} & \textbf{1.85} & \textbf{1.6\%} \\
+& Hierarchical    & 3.50 & 4.43 & 3.1\% \\
+& RoundRobin      & 7.95 & 8.96 & 7.1\% \\
+\hline
+
+\end{tabular}
+}
+\end{table}
+
+\subsubsection{Medium-term Performance}
+\begin{table}[!h]
+\centering
+\caption{Average Medium-term Performance of Prediction Architectures Across Stocks}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{c c c c c}
+\hline
+\textbf{Stock} & \textbf{Architecture} & \textbf{Avg MAE} & \textbf{Avg RMSE} & \textbf{Avg MAPE} \\
+\hline
+
+\multirow{3}{*}{\textbf{CMG}}
+& RoundRobin      & \textbf{1.58} & \textbf{1.94} & \textbf{3.9\%} \\
+& Hierarchical    & 1.62 & 2.08 & 4.0\% \\
+& Ensemble Voting & 1.90 & 2.80 & 4.7\% \\
+\hline
+
+\multirow{3}{*}{\textbf{DGC}}
+& RoundRobin      & \textbf{2.20} & \textbf{2.60} & \textbf{2.3\%} \\
+& Hierarchical    & 4.04 & 5.86 & 4.2\% \\
+& Ensemble Voting & 4.26 & 4.98 & 4.4\% \\
+\hline
+
+\multirow{3}{*}{\textbf{DXG}}
+& Hierarchical    & \textbf{0.53} & \textbf{0.57} & \textbf{2.5\%} \\
+& RoundRobin      & 0.74 & 0.88 & 3.5\% \\
+& Ensemble Voting & 0.90 & 1.23 & 4.0\% \\
+\hline
+
+\multirow{3}{*}{\textbf{FPT}}
+& Ensemble Voting & \textbf{6.97} & \textbf{10.31} & \textbf{6.8\%} \\
+& Hierarchical    & 7.05 & 8.01 & 6.9\% \\
+& RoundRobin      & 7.30 & 9.64 & 7.1\% \\
+\hline
+
+\multirow{3}{*}{\textbf{HPG}}
+& RoundRobin      & \textbf{1.32} & \textbf{1.57} & \textbf{4.7\%} \\
+& Hierarchical    & 2.25 & 3.34 & 7.7\% \\
+& Ensemble Voting & 2.29 & 2.96 & 8.3\% \\
+\hline
+
+\multirow{3}{*}{\textbf{KDH}}
+& Ensemble Voting & \textbf{1.37} & \textbf{1.65} & \textbf{3.9\%} \\
+& RoundRobin      & 1.92 & 2.16 & 5.4\% \\
+& Hierarchical    & 4.30 & 5.01 & 12.1\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MBB}}
+& Ensemble Voting & \textbf{1.67} & \textbf{1.87} & \textbf{6.7\%} \\
+& Hierarchical    & 1.79 & 2.13 & 7.3\% \\
+& RoundRobin      & 2.74 & 3.82 & 11.3\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MWG}}
+& Ensemble Voting & \textbf{1.16} & \textbf{1.52} & \textbf{1.4\%} \\
+& Hierarchical    & 2.25 & 2.76 & 2.8\% \\
+& RoundRobin      & 3.37 & 5.12 & 4.2\% \\
+\hline
+
+\multirow{3}{*}{\textbf{TCB}}
+& Ensemble Voting & \textbf{1.86} & \textbf{2.51} & \textbf{5.3\%} \\
+& RoundRobin      & 2.05 & 3.04 & 5.7\% \\
+& Hierarchical    & 5.51 & 6.84 & 15.7\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCB}}
+& Hierarchical    & \textbf{1.09} & \textbf{1.27} & \textbf{1.7\%} \\
+& RoundRobin      & 2.57 & 2.67 & 4.1\% \\
+& Ensemble Voting & 3.07 & 3.49 & 4.9\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCS}}
+& Ensemble Voting & \textbf{1.54} & \textbf{1.82} & \textbf{3.2\%} \\
+& RoundRobin      & 2.05 & 2.47 & 4.3\% \\
+& Hierarchical    & 2.42 & 2.73 & 5.1\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VHM}}
+& RoundRobin      & \textbf{11.82} & \textbf{15.08} & \textbf{11.6\%} \\
+& Hierarchical    & 13.46 & 18.43 & 13.2\% \\
+& Ensemble Voting & 19.33 & 25.54 & 18.9\% \\
+\hline
+
+\end{tabular}
+}
+\end{table}
+
+\subsubsection{Long-term Performance}
+\begin{table}[!h]
+\centering
+\caption{Average Long-term Performance of Prediction Architectures Across Stocks}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{c c c c c}
+\hline
+\textbf{Stock} & \textbf{Architecture} & \textbf{Avg MAE} & \textbf{Avg RMSE} & \textbf{Avg MAPE} \\
+\hline
+
+\multirow{3}{*}{\textbf{CMG}}
+& Hierarchical    & \textbf{2.66} & \textbf{2.85} & \textbf{7.4\%} \\
+& RoundRobin      & 3.39 & 3.77 & 9.3\% \\
+& Ensemble Voting & 3.65 & 4.17 & 10.3\% \\
+\hline
+
+\multirow{3}{*}{\textbf{DGC}}
+& Hierarchical    & \textbf{6.80} & \textbf{11.51} & \textbf{9.4\%} \\
+& Ensemble Voting & 8.19 & 13.18 & 11.5\% \\
+& RoundRobin      & 19.20 & 25.66 & 26.9\% \\
+\hline
+
+\multirow{3}{*}{\textbf{DXG}}
+& Hierarchical    & \textbf{3.21} & \textbf{4.75} & \textbf{19.0\%} \\
+& RoundRobin      & 3.57 & 4.20 & 20.7\% \\
+& Ensemble Voting & 4.06 & 4.38 & 23.0\% \\
+\hline
+
+\multirow{3}{*}{\textbf{FPT}}
+& Ensemble Voting & \textbf{3.12} & \textbf{3.72} & \textbf{3.3\%} \\
+& Hierarchical    & 3.61 & 3.88 & 3.7\% \\
+& RoundRobin      & 4.19 & 4.66 & 4.3\% \\
+\hline
+
+\multirow{3}{*}{\textbf{HPG}}
+& Ensemble Voting & \textbf{0.22} & \textbf{0.25} & \textbf{0.8\%} \\
+& Hierarchical    & 1.50 & 2.46 & 5.7\% \\
+& RoundRobin      & 1.54 & 1.84 & 5.8\% \\
+\hline
+
+\multirow{3}{*}{\textbf{KDH}}
+& RoundRobin      & \textbf{1.17} & \textbf{1.30} & \textbf{3.6\%} \\
+& Ensemble Voting & 2.36 & 3.05 & 7.6\% \\
+& Hierarchical    & 2.50 & 4.27 & 8.2\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MBB}}
+& RoundRobin      & \textbf{1.93} & \textbf{2.60} & \textbf{8.1\%} \\
+& Hierarchical    & 3.21 & 3.69 & 13.4\% \\
+& Ensemble Voting & 4.51 & 6.06 & 18.9\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MWG}}
+& RoundRobin      & \textbf{2.69} & \textbf{3.82} & \textbf{3.4\%} \\
+& Hierarchical    & 4.22 & 4.93 & 5.2\% \\
+& Ensemble Voting & 4.62 & 6.30 & 5.8\% \\
+\hline
+
+\multirow{3}{*}{\textbf{TCB}}
+& Hierarchical    & \textbf{4.22} & \textbf{4.88} & \textbf{12.6\%} \\
+& RoundRobin      & 4.38 & 6.25 & 13.3\% \\
+& Ensemble Voting & 6.11 & 6.34 & 18.1\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCB}}
+& Ensemble Voting & \textbf{2.34} & \textbf{3.08} & \textbf{4.0\%} \\
+& RoundRobin      & 4.14 & 4.52 & 7.2\% \\
+& Hierarchical    & 6.98 & 9.38 & 12.1\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VCS}}
+& Ensemble Voting & \textbf{1.47} & \textbf{1.67} & \textbf{3.3\%} \\
+& RoundRobin      & 1.82 & 1.91 & 4.0\% \\
+& Hierarchical    & 1.82 & 2.15 & 4.1\% \\
+\hline
+
+\multirow{3}{*}{\textbf{VHM}}
+& Ensemble Voting & \textbf{6.89} & \textbf{8.59} & \textbf{7.0\%} \\
+& Hierarchical    & 11.22 & 13.03 & 11.4\% \\
+& RoundRobin      & 24.54 & 34.21 & 25.6\% \\
+\hline
+
+\end{tabular}
+}
+\end{table}
+
+================================================================================
+OVERALL ARCHITECTURE AVERAGES ACROSS ALL STOCKS (LLM: Llama-3.1-8B)
+================================================================================
+
+SHORT-TERM GLOBAL AVERAGES:
+-----------------------------------------------------------------
+Architecture    | Avg MAE    | Avg RMSE   | Avg MAPE  
+-----------------------------------------------------------------
+Hierarchical    | 1.62       | 2.03       | 3.07     %
+RoundRobin      | 1.90       | 2.15       | 3.49     %
+Ensemble        | 1.67       | 2.07       | 3.26     %
+-----------------------------------------------------------------
+
+MEDIUM-TERM GLOBAL AVERAGES:
+-----------------------------------------------------------------
+Architecture    | Avg MAE    | Avg RMSE   | Avg MAPE  
+-----------------------------------------------------------------
+Hierarchical    | 3.86       | 4.92       | 6.94     %
+RoundRobin      | 3.30       | 4.25       | 5.69     %
+Ensemble        | 3.86       | 5.06       | 6.03     %
+-----------------------------------------------------------------
+
+LONG-TERM GLOBAL AVERAGES:
+-----------------------------------------------------------------
+Architecture    | Avg MAE    | Avg RMSE   | Avg MAPE  
+-----------------------------------------------------------------
+Hierarchical    | 4.33       | 5.65       | 9.35     %
+RoundRobin      | 6.05       | 7.89       | 11.02    %
+Ensemble        | 3.96       | 5.07       | 9.47     %
+-----------------------------------------------------------------
+
+================================================================================
+CALCULATION COMPLETE!
+================================================================================
+I will search for the main
