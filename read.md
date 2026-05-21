@@ -29,3 +29,12 @@ GPT-4o	update_table0_1.py (đọc test7.tex)	update_table1.py (đọc test2.tex)
 LLaMA-3	update_table2.py (đọc test3.tex)	update_table3.py (đọc test4.tex)
 
 [text](access.pdf)
+
+
+Vị trí bảng phụ lục (Appendix)	Nội dung cấu hình Mô hình & Baseline (Caption)	Kết quả
+Cặp 1	Dòng 592	Dòng 5305	LLM: Google Gemini 2.0 Flash, LSTM Baseline	Khớp 100%
+Cặp 2	Dòng 1225	Dòng 5938	LLM: Google Gemini 2.0 Flash, Transformer Baseline	Khớp 100%
+Cặp 3	Dòng 1862	Dòng 6575	LLM: GPT-4o, LSTM Baseline	Khớp 100%
+Cặp 4	Dòng 2503	Dòng 7216	LLM: GPT-4o, Transformer Baseline	Khớp 100%
+Cặp 5	Dòng 3142	Dòng 7855	LLM: Llama, LSTM Baseline	Khớp 100%
+Cặp 6	Dòng 3781	Dòng 8494	LLM: Llama, Transformer Baseline	Khớp 100%

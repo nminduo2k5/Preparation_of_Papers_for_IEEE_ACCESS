@@ -1,9 +1,257 @@
-python llama_lstm.py
-<truncated 291 lines>
-\multirow{3}{*}{\textbf{TCB}}
-& RoundRobin      & \textbf{0.73} & \textbf{0.82} & \textbf{2.0\%} \\
-& Hierarchical    & 1.89 & 2.59 & 5.0\% \\
-& Ensemble Voting & 2.19 & 2.79 & 6.0\% \\
+K:\1\Preparation_of_Papers_for_IEEE_ACCESS\thongke>python llama_lstm.py
+================================================================================
+PERFORMANCE METRICS CALCULATION RESULTS
+================================================================================
+
+SHORT-TERM PERFORMANCE
+--------------------------------------------------
+
+DXG:
+  Hierarchical | MAE:  0.55 | RMSE:  0.90 | MAPE:  2.33%
+  RoundRobin   | MAE:  1.13 | RMSE:  1.16 | MAPE:  5.16%
+  Ensemble     | MAE:  0.97 | RMSE:  1.09 | MAPE:  4.30%
+  BEST         | Hierarchical (MAPE: 2.33%)
+
+FPT:
+  Hierarchical | MAE:  2.92 | RMSE:  3.29 | MAPE:  3.03%
+  RoundRobin   | MAE:  3.09 | RMSE:  3.52 | MAPE:  3.12%
+  Ensemble     | MAE:  2.97 | RMSE:  3.68 | MAPE:  2.98%
+  BEST         | Ensemble (MAPE: 2.98%)
+
+VCB:
+  Hierarchical | MAE:  1.03 | RMSE:  1.72 | MAPE:  1.66%
+  RoundRobin   | MAE:  0.48 | RMSE:  0.65 | MAPE:  0.77%
+  Ensemble     | MAE:  1.05 | RMSE:  1.21 | MAPE:  1.68%
+  BEST         | RoundRobin (MAPE: 0.77%)
+
+VCS:
+  Hierarchical | MAE:  1.34 | RMSE:  1.50 | MAPE:  2.86%
+  RoundRobin   | MAE:  1.06 | RMSE:  1.15 | MAPE:  2.28%
+  Ensemble     | MAE:  0.81 | RMSE:  1.01 | MAPE:  1.74%
+  BEST         | Ensemble (MAPE: 1.74%)
+
+HPG:
+  Hierarchical | MAE:  1.39 | RMSE:  1.66 | MAPE:  4.98%
+  RoundRobin   | MAE:  1.10 | RMSE:  1.24 | MAPE:  3.89%
+  Ensemble     | MAE:  1.12 | RMSE:  1.52 | MAPE:  3.88%
+  BEST         | Ensemble (MAPE: 3.88%)
+
+TCB:
+  Hierarchical | MAE:  1.89 | RMSE:  2.59 | MAPE:  5.04%
+  RoundRobin   | MAE:  0.73 | RMSE:  0.82 | MAPE:  1.96%
+  Ensemble     | MAE:  2.19 | RMSE:  2.79 | MAPE:  5.98%
+  BEST         | RoundRobin (MAPE: 1.96%)
+
+VHM:
+  Hierarchical | MAE:  3.50 | RMSE:  4.43 | MAPE:  3.15%
+  RoundRobin   | MAE:  7.95 | RMSE:  8.96 | MAPE:  7.13%
+  Ensemble     | MAE:  1.74 | RMSE:  1.85 | MAPE:  1.57%
+  BEST         | Ensemble (MAPE: 1.57%)
+
+MWG:
+  Hierarchical | MAE:  1.61 | RMSE:  2.02 | MAPE:  1.90%
+  RoundRobin   | MAE:  1.31 | RMSE:  1.51 | MAPE:  1.54%
+  Ensemble     | MAE:  2.34 | RMSE:  3.27 | MAPE:  2.77%
+  BEST         | RoundRobin (MAPE: 1.54%)
+
+CMG:
+  Hierarchical | MAE:  1.03 | RMSE:  1.37 | MAPE:  2.56%
+  RoundRobin   | MAE:  1.14 | RMSE:  1.26 | MAPE:  2.95%
+  Ensemble     | MAE:  0.89 | RMSE:  0.99 | MAPE:  2.24%
+  BEST         | Ensemble (MAPE: 2.24%)
+
+KDH:
+  Hierarchical | MAE:  1.35 | RMSE:  1.49 | MAPE:  3.94%
+  RoundRobin   | MAE:  1.95 | RMSE:  2.22 | MAPE:  5.71%
+  Ensemble     | MAE:  2.07 | RMSE:  2.73 | MAPE:  6.13%
+  BEST         | Hierarchical (MAPE: 3.94%)
+
+DGC:
+  Hierarchical | MAE:  2.00 | RMSE:  2.13 | MAPE:  2.14%
+  RoundRobin   | MAE:  1.29 | RMSE:  1.70 | MAPE:  1.39%
+  Ensemble     | MAE:  3.31 | RMSE:  4.06 | MAPE:  3.57%
+  BEST         | RoundRobin (MAPE: 1.39%)
+
+MBB:
+  Hierarchical | MAE:  0.83 | RMSE:  1.25 | MAPE:  3.29%
+  RoundRobin   | MAE:  1.55 | RMSE:  1.63 | MAPE:  6.00%
+  Ensemble     | MAE:  0.58 | RMSE:  0.68 | MAPE:  2.26%
+  BEST         | Ensemble (MAPE: 2.26%)
+
+MEDIUM-TERM PERFORMANCE
+--------------------------------------------------
+
+DXG:
+  Hierarchical | MAE:  0.53 | RMSE:  0.57 | MAPE:  2.49%
+  RoundRobin   | MAE:  0.75 | RMSE:  0.88 | MAPE:  3.57%
+  Ensemble     | MAE:  0.90 | RMSE:  1.23 | MAPE:  4.00%
+  BEST         | Hierarchical (MAPE: 2.49%)
+
+FPT:
+  Hierarchical | MAE:  7.05 | RMSE:  8.01 | MAPE:  6.88%
+  RoundRobin   | MAE:  7.30 | RMSE:  9.64 | MAPE:  7.10%
+  Ensemble     | MAE:  6.97 | RMSE: 10.31 | MAPE:  6.79%
+  BEST         | Ensemble (MAPE: 6.79%)
+
+VCB:
+  Hierarchical | MAE:  1.09 | RMSE:  1.27 | MAPE:  1.73%
+  RoundRobin   | MAE:  2.57 | RMSE:  2.67 | MAPE:  4.11%
+  Ensemble     | MAE:  3.07 | RMSE:  3.49 | MAPE:  4.89%
+  BEST         | Hierarchical (MAPE: 1.73%)
+
+VCS:
+  Hierarchical | MAE:  2.42 | RMSE:  2.73 | MAPE:  5.11%
+  RoundRobin   | MAE:  2.05 | RMSE:  2.47 | MAPE:  4.34%
+  Ensemble     | MAE:  1.54 | RMSE:  1.82 | MAPE:  3.16%
+  BEST         | Ensemble (MAPE: 3.16%)
+
+HPG:
+  Hierarchical | MAE:  2.25 | RMSE:  3.34 | MAPE:  7.69%
+  RoundRobin   | MAE:  1.32 | RMSE:  1.57 | MAPE:  4.71%
+  Ensemble     | MAE:  2.29 | RMSE:  2.96 | MAPE:  8.26%
+  BEST         | RoundRobin (MAPE: 4.71%)
+
+TCB:
+  Hierarchical | MAE:  5.51 | RMSE:  6.84 | MAPE: 15.70%
+  RoundRobin   | MAE:  2.05 | RMSE:  3.04 | MAPE:  5.75%
+  Ensemble     | MAE:  1.86 | RMSE:  2.51 | MAPE:  5.32%
+  BEST         | Ensemble (MAPE: 5.32%)
+
+VHM:
+  Hierarchical | MAE: 13.46 | RMSE: 18.43 | MAPE: 13.19%
+  RoundRobin   | MAE: 11.82 | RMSE: 15.08 | MAPE: 11.57%
+  Ensemble     | MAE: 19.33 | RMSE: 25.54 | MAPE: 18.89%
+  BEST         | RoundRobin (MAPE: 11.57%)
+
+MWG:
+  Hierarchical | MAE:  2.25 | RMSE:  2.76 | MAPE:  2.77%
+  RoundRobin   | MAE:  3.37 | RMSE:  5.12 | MAPE:  4.19%
+  Ensemble     | MAE:  1.16 | RMSE:  1.52 | MAPE:  1.44%
+  BEST         | Ensemble (MAPE: 1.44%)
+
+CMG:
+  Hierarchical | MAE:  1.62 | RMSE:  2.08 | MAPE:  3.99%
+  RoundRobin   | MAE:  1.58 | RMSE:  1.94 | MAPE:  3.93%
+  Ensemble     | MAE:  1.90 | RMSE:  2.80 | MAPE:  4.66%
+  BEST         | RoundRobin (MAPE: 3.93%)
+
+KDH:
+  Hierarchical | MAE:  4.30 | RMSE:  5.01 | MAPE: 12.13%
+  RoundRobin   | MAE:  1.92 | RMSE:  2.16 | MAPE:  5.44%
+  Ensemble     | MAE:  1.37 | RMSE:  1.65 | MAPE:  3.86%
+  BEST         | Ensemble (MAPE: 3.86%)
+
+DGC:
+  Hierarchical | MAE:  4.04 | RMSE:  5.86 | MAPE:  4.24%
+  RoundRobin   | MAE:  2.20 | RMSE:  2.60 | MAPE:  2.33%
+  Ensemble     | MAE:  4.26 | RMSE:  4.98 | MAPE:  4.43%
+  BEST         | RoundRobin (MAPE: 2.33%)
+
+MBB:
+  Hierarchical | MAE:  1.79 | RMSE:  2.13 | MAPE:  7.31%
+  RoundRobin   | MAE:  2.74 | RMSE:  3.82 | MAPE: 11.26%
+  Ensemble     | MAE:  1.67 | RMSE:  1.87 | MAPE:  6.70%
+  BEST         | Ensemble (MAPE: 6.70%)
+
+LONG-TERM PERFORMANCE
+--------------------------------------------------
+
+DXG:
+  Hierarchical | MAE:  3.21 | RMSE:  4.75 | MAPE: 19.04%
+  RoundRobin   | MAE:  3.57 | RMSE:  4.20 | MAPE: 20.74%
+  Ensemble     | MAE:  4.06 | RMSE:  4.38 | MAPE: 23.01%
+  BEST         | Hierarchical (MAPE: 19.04%)
+
+FPT:
+  Hierarchical | MAE:  3.61 | RMSE:  3.88 | MAPE:  3.74%
+  RoundRobin   | MAE:  4.19 | RMSE:  4.66 | MAPE:  4.34%
+  Ensemble     | MAE:  3.12 | RMSE:  3.72 | MAPE:  3.28%
+  BEST         | Ensemble (MAPE: 3.28%)
+
+VCB:
+  Hierarchical | MAE:  6.98 | RMSE:  9.38 | MAPE: 12.07%
+  RoundRobin   | MAE:  4.14 | RMSE:  4.52 | MAPE:  7.16%
+  Ensemble     | MAE:  2.34 | RMSE:  3.08 | MAPE:  4.05%
+  BEST         | Ensemble (MAPE: 4.05%)
+
+VCS:
+  Hierarchical | MAE:  1.82 | RMSE:  2.15 | MAPE:  4.11%
+  RoundRobin   | MAE:  1.82 | RMSE:  1.91 | MAPE:  4.01%
+  Ensemble     | MAE:  1.47 | RMSE:  1.67 | MAPE:  3.26%
+  BEST         | Ensemble (MAPE: 3.26%)
+
+HPG:
+  Hierarchical | MAE:  1.50 | RMSE:  2.46 | MAPE:  5.71%
+  RoundRobin   | MAE:  1.54 | RMSE:  1.84 | MAPE:  5.82%
+  Ensemble     | MAE:  0.22 | RMSE:  0.25 | MAPE:  0.84%
+  BEST         | Ensemble (MAPE: 0.84%)
+
+TCB:
+  Hierarchical | MAE:  4.22 | RMSE:  4.88 | MAPE: 12.58%
+  RoundRobin   | MAE:  4.38 | RMSE:  6.25 | MAPE: 13.32%
+  Ensemble     | MAE:  6.11 | RMSE:  6.34 | MAPE: 18.09%
+  BEST         | Hierarchical (MAPE: 12.58%)
+
+VHM:
+  Hierarchical | MAE: 11.22 | RMSE: 13.03 | MAPE: 11.40%
+  RoundRobin   | MAE: 24.54 | RMSE: 34.21 | MAPE: 25.55%
+  Ensemble     | MAE:  6.89 | RMSE:  8.59 | MAPE:  7.03%
+  BEST         | Ensemble (MAPE: 7.03%)
+
+MWG:
+  Hierarchical | MAE:  4.22 | RMSE:  4.93 | MAPE:  5.18%
+  RoundRobin   | MAE:  2.69 | RMSE:  3.82 | MAPE:  3.39%
+  Ensemble     | MAE:  4.62 | RMSE:  6.30 | MAPE:  5.81%
+  BEST         | RoundRobin (MAPE: 3.39%)
+
+CMG:
+  Hierarchical | MAE:  2.66 | RMSE:  2.85 | MAPE:  7.41%
+  RoundRobin   | MAE:  3.39 | RMSE:  3.77 | MAPE:  9.34%
+  Ensemble     | MAE:  3.65 | RMSE:  4.17 | MAPE: 10.32%
+  BEST         | Hierarchical (MAPE: 7.41%)
+
+KDH:
+  Hierarchical | MAE:  2.50 | RMSE:  4.27 | MAPE:  8.23%
+  RoundRobin   | MAE:  1.17 | RMSE:  1.30 | MAPE:  3.59%
+  Ensemble     | MAE:  2.36 | RMSE:  3.05 | MAPE:  7.60%
+  BEST         | RoundRobin (MAPE: 3.59%)
+
+DGC:
+  Hierarchical | MAE:  6.80 | RMSE: 11.51 | MAPE:  9.38%
+  RoundRobin   | MAE: 19.20 | RMSE: 25.66 | MAPE: 26.93%
+  Ensemble     | MAE:  8.19 | RMSE: 13.18 | MAPE: 11.49%
+  BEST         | Hierarchical (MAPE: 9.38%)
+
+MBB:
+  Hierarchical | MAE:  3.21 | RMSE:  3.69 | MAPE: 13.39%
+  RoundRobin   | MAE:  1.93 | RMSE:  2.60 | MAPE:  8.12%
+  Ensemble     | MAE:  4.51 | RMSE:  6.06 | MAPE: 18.90%
+  BEST         | RoundRobin (MAPE: 8.12%)
+
+================================================================================
+LATEX TABLE FORMAT
+================================================================================
+
+\subsubsection{Short-term Performance}
+\begin{table}[!h]
+\centering
+\caption{Average Short-term Performance of Prediction Architectures Across Stocks}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{c c c c c}
+\hline
+\textbf{Stock} & \textbf{Architecture} & \textbf{Avg MAE} & \textbf{Avg RMSE} & \textbf{Avg MAPE} \\
+\hline
+
+\multirow{3}{*}{\textbf{DXG}}
+& Hierarchical    & \textbf{0.55} & \textbf{0.90} & \textbf{2.3\%} \\
+& Ensemble Voting & 0.97 & 1.09 & 4.3\% \\
+& RoundRobin      & 1.13 & 1.16 & 5.2\% \\
+\hline
+
+\multirow{3}{*}{\textbf{FPT}}
+& Ensemble Voting & \textbf{2.97} & \textbf{3.68} & \textbf{3.0\%} \\
+& Hierarchical    & 2.92 & 3.29 & 3.0\% \\
+& RoundRobin      & 3.09 & 3.52 & 3.1\% \\
 \hline
 
 \multirow{3}{*}{\textbf{VCB}}
@@ -18,10 +266,52 @@ python llama_lstm.py
 & Hierarchical    & 1.34 & 1.50 & 2.9\% \\
 \hline
 
+\multirow{3}{*}{\textbf{HPG}}
+& Ensemble Voting & \textbf{1.12} & \textbf{1.52} & \textbf{3.9\%} \\
+& RoundRobin      & 1.10 & 1.24 & 3.9\% \\
+& Hierarchical    & 1.39 & 1.66 & 5.0\% \\
+\hline
+
+\multirow{3}{*}{\textbf{TCB}}
+& RoundRobin      & \textbf{0.73} & \textbf{0.82} & \textbf{2.0\%} \\
+& Hierarchical    & 1.89 & 2.59 & 5.0\% \\
+& Ensemble Voting & 2.19 & 2.79 & 6.0\% \\
+\hline
+
 \multirow{3}{*}{\textbf{VHM}}
 & Ensemble Voting & \textbf{1.74} & \textbf{1.85} & \textbf{1.6\%} \\
 & Hierarchical    & 3.50 & 4.43 & 3.1\% \\
 & RoundRobin      & 7.95 & 8.96 & 7.1\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MWG}}
+& RoundRobin      & \textbf{1.31} & \textbf{1.51} & \textbf{1.5\%} \\
+& Hierarchical    & 1.61 & 2.02 & 1.9\% \\
+& Ensemble Voting & 2.34 & 3.27 & 2.8\% \\
+\hline
+
+\multirow{3}{*}{\textbf{CMG}}
+& Ensemble Voting & \textbf{0.89} & \textbf{0.99} & \textbf{2.2\%} \\
+& Hierarchical    & 1.03 & 1.37 & 2.6\% \\
+& RoundRobin      & 1.14 & 1.26 & 3.0\% \\
+\hline
+
+\multirow{3}{*}{\textbf{KDH}}
+& Hierarchical    & \textbf{1.35} & \textbf{1.49} & \textbf{3.9\%} \\
+& RoundRobin      & 1.95 & 2.22 & 5.7\% \\
+& Ensemble Voting & 2.07 & 2.73 & 6.1\% \\
+\hline
+
+\multirow{3}{*}{\textbf{DGC}}
+& RoundRobin      & \textbf{1.29} & \textbf{1.70} & \textbf{1.4\%} \\
+& Hierarchical    & 2.00 & 2.13 & 2.1\% \\
+& Ensemble Voting & 3.31 & 4.06 & 3.6\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MBB}}
+& Ensemble Voting & \textbf{0.58} & \textbf{0.68} & \textbf{2.3\%} \\
+& Hierarchical    & 0.83 & 1.25 & 3.3\% \\
+& RoundRobin      & 1.55 & 1.63 & 6.0\% \\
 \hline
 
 \end{tabular}
@@ -38,21 +328,9 @@ python llama_lstm.py
 \textbf{Stock} & \textbf{Architecture} & \textbf{Avg MAE} & \textbf{Avg RMSE} & \textbf{Avg MAPE} \\
 \hline
 
-\multirow{3}{*}{\textbf{CMG}}
-& RoundRobin      & \textbf{1.58} & \textbf{1.94} & \textbf{3.9\%} \\
-& Hierarchical    & 1.62 & 2.08 & 4.0\% \\
-& Ensemble Voting & 1.90 & 2.80 & 4.7\% \\
-\hline
-
-\multirow{3}{*}{\textbf{DGC}}
-& RoundRobin      & \textbf{2.20} & \textbf{2.60} & \textbf{2.3\%} \\
-& Hierarchical    & 4.04 & 5.86 & 4.2\% \\
-& Ensemble Voting & 4.26 & 4.98 & 4.4\% \\
-\hline
-
 \multirow{3}{*}{\textbf{DXG}}
 & Hierarchical    & \textbf{0.53} & \textbf{0.57} & \textbf{2.5\%} \\
-& RoundRobin      & 0.74 & 0.88 & 3.5\% \\
+& RoundRobin      & 0.75 & 0.88 & 3.6\% \\
 & Ensemble Voting & 0.90 & 1.23 & 4.0\% \\
 \hline
 
@@ -60,36 +338,6 @@ python llama_lstm.py
 & Ensemble Voting & \textbf{6.97} & \textbf{10.31} & \textbf{6.8\%} \\
 & Hierarchical    & 7.05 & 8.01 & 6.9\% \\
 & RoundRobin      & 7.30 & 9.64 & 7.1\% \\
-\hline
-
-\multirow{3}{*}{\textbf{HPG}}
-& RoundRobin      & \textbf{1.32} & \textbf{1.57} & \textbf{4.7\%} \\
-& Hierarchical    & 2.25 & 3.34 & 7.7\% \\
-& Ensemble Voting & 2.29 & 2.96 & 8.3\% \\
-\hline
-
-\multirow{3}{*}{\textbf{KDH}}
-& Ensemble Voting & \textbf{1.37} & \textbf{1.65} & \textbf{3.9\%} \\
-& RoundRobin      & 1.92 & 2.16 & 5.4\% \\
-& Hierarchical    & 4.30 & 5.01 & 12.1\% \\
-\hline
-
-\multirow{3}{*}{\textbf{MBB}}
-& Ensemble Voting & \textbf{1.67} & \textbf{1.87} & \textbf{6.7\%} \\
-& Hierarchical    & 1.79 & 2.13 & 7.3\% \\
-& RoundRobin      & 2.74 & 3.82 & 11.3\% \\
-\hline
-
-\multirow{3}{*}{\textbf{MWG}}
-& Ensemble Voting & \textbf{1.16} & \textbf{1.52} & \textbf{1.4\%} \\
-& Hierarchical    & 2.25 & 2.76 & 2.8\% \\
-& RoundRobin      & 3.37 & 5.12 & 4.2\% \\
-\hline
-
-\multirow{3}{*}{\textbf{TCB}}
-& Ensemble Voting & \textbf{1.86} & \textbf{2.51} & \textbf{5.3\%} \\
-& RoundRobin      & 2.05 & 3.04 & 5.7\% \\
-& Hierarchical    & 5.51 & 6.84 & 15.7\% \\
 \hline
 
 \multirow{3}{*}{\textbf{VCB}}
@@ -104,10 +352,52 @@ python llama_lstm.py
 & Hierarchical    & 2.42 & 2.73 & 5.1\% \\
 \hline
 
+\multirow{3}{*}{\textbf{HPG}}
+& RoundRobin      & \textbf{1.32} & \textbf{1.57} & \textbf{4.7\%} \\
+& Hierarchical    & 2.25 & 3.34 & 7.7\% \\
+& Ensemble Voting & 2.29 & 2.96 & 8.3\% \\
+\hline
+
+\multirow{3}{*}{\textbf{TCB}}
+& Ensemble Voting & \textbf{1.86} & \textbf{2.51} & \textbf{5.3\%} \\
+& RoundRobin      & 2.05 & 3.04 & 5.7\% \\
+& Hierarchical    & 5.51 & 6.84 & 15.7\% \\
+\hline
+
 \multirow{3}{*}{\textbf{VHM}}
 & RoundRobin      & \textbf{11.82} & \textbf{15.08} & \textbf{11.6\%} \\
 & Hierarchical    & 13.46 & 18.43 & 13.2\% \\
 & Ensemble Voting & 19.33 & 25.54 & 18.9\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MWG}}
+& Ensemble Voting & \textbf{1.16} & \textbf{1.52} & \textbf{1.4\%} \\
+& Hierarchical    & 2.25 & 2.76 & 2.8\% \\
+& RoundRobin      & 3.37 & 5.12 & 4.2\% \\
+\hline
+
+\multirow{3}{*}{\textbf{CMG}}
+& RoundRobin      & \textbf{1.58} & \textbf{1.94} & \textbf{3.9\%} \\
+& Hierarchical    & 1.62 & 2.08 & 4.0\% \\
+& Ensemble Voting & 1.90 & 2.80 & 4.7\% \\
+\hline
+
+\multirow{3}{*}{\textbf{KDH}}
+& Ensemble Voting & \textbf{1.37} & \textbf{1.65} & \textbf{3.9\%} \\
+& RoundRobin      & 1.92 & 2.16 & 5.4\% \\
+& Hierarchical    & 4.30 & 5.01 & 12.1\% \\
+\hline
+
+\multirow{3}{*}{\textbf{DGC}}
+& RoundRobin      & \textbf{2.20} & \textbf{2.60} & \textbf{2.3\%} \\
+& Hierarchical    & 4.04 & 5.86 & 4.2\% \\
+& Ensemble Voting & 4.26 & 4.98 & 4.4\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MBB}}
+& Ensemble Voting & \textbf{1.67} & \textbf{1.87} & \textbf{6.7\%} \\
+& Hierarchical    & 1.79 & 2.13 & 7.3\% \\
+& RoundRobin      & 2.74 & 3.82 & 11.3\% \\
 \hline
 
 \end{tabular}
@@ -124,18 +414,6 @@ python llama_lstm.py
 \textbf{Stock} & \textbf{Architecture} & \textbf{Avg MAE} & \textbf{Avg RMSE} & \textbf{Avg MAPE} \\
 \hline
 
-\multirow{3}{*}{\textbf{CMG}}
-& Hierarchical    & \textbf{2.66} & \textbf{2.85} & \textbf{7.4\%} \\
-& RoundRobin      & 3.39 & 3.77 & 9.3\% \\
-& Ensemble Voting & 3.65 & 4.17 & 10.3\% \\
-\hline
-
-\multirow{3}{*}{\textbf{DGC}}
-& Hierarchical    & \textbf{6.80} & \textbf{11.51} & \textbf{9.4\%} \\
-& Ensemble Voting & 8.19 & 13.18 & 11.5\% \\
-& RoundRobin      & 19.20 & 25.66 & 26.9\% \\
-\hline
-
 \multirow{3}{*}{\textbf{DXG}}
 & Hierarchical    & \textbf{3.21} & \textbf{4.75} & \textbf{19.0\%} \\
 & RoundRobin      & 3.57 & 4.20 & 20.7\% \\
@@ -146,36 +424,6 @@ python llama_lstm.py
 & Ensemble Voting & \textbf{3.12} & \textbf{3.72} & \textbf{3.3\%} \\
 & Hierarchical    & 3.61 & 3.88 & 3.7\% \\
 & RoundRobin      & 4.19 & 4.66 & 4.3\% \\
-\hline
-
-\multirow{3}{*}{\textbf{HPG}}
-& Ensemble Voting & \textbf{0.22} & \textbf{0.25} & \textbf{0.8\%} \\
-& Hierarchical    & 1.50 & 2.46 & 5.7\% \\
-& RoundRobin      & 1.54 & 1.84 & 5.8\% \\
-\hline
-
-\multirow{3}{*}{\textbf{KDH}}
-& RoundRobin      & \textbf{1.17} & \textbf{1.30} & \textbf{3.6\%} \\
-& Ensemble Voting & 2.36 & 3.05 & 7.6\% \\
-& Hierarchical    & 2.50 & 4.27 & 8.2\% \\
-\hline
-
-\multirow{3}{*}{\textbf{MBB}}
-& RoundRobin      & \textbf{1.93} & \textbf{2.60} & \textbf{8.1\%} \\
-& Hierarchical    & 3.21 & 3.69 & 13.4\% \\
-& Ensemble Voting & 4.51 & 6.06 & 18.9\% \\
-\hline
-
-\multirow{3}{*}{\textbf{MWG}}
-& RoundRobin      & \textbf{2.69} & \textbf{3.82} & \textbf{3.4\%} \\
-& Hierarchical    & 4.22 & 4.93 & 5.2\% \\
-& Ensemble Voting & 4.62 & 6.30 & 5.8\% \\
-\hline
-
-\multirow{3}{*}{\textbf{TCB}}
-& Hierarchical    & \textbf{4.22} & \textbf{4.88} & \textbf{12.6\%} \\
-& RoundRobin      & 4.38 & 6.25 & 13.3\% \\
-& Ensemble Voting & 6.11 & 6.34 & 18.1\% \\
 \hline
 
 \multirow{3}{*}{\textbf{VCB}}
@@ -190,10 +438,52 @@ python llama_lstm.py
 & Hierarchical    & 1.82 & 2.15 & 4.1\% \\
 \hline
 
+\multirow{3}{*}{\textbf{HPG}}
+& Ensemble Voting & \textbf{0.22} & \textbf{0.25} & \textbf{0.8\%} \\
+& Hierarchical    & 1.50 & 2.46 & 5.7\% \\
+& RoundRobin      & 1.54 & 1.84 & 5.8\% \\
+\hline
+
+\multirow{3}{*}{\textbf{TCB}}
+& Hierarchical    & \textbf{4.22} & \textbf{4.88} & \textbf{12.6\%} \\
+& RoundRobin      & 4.38 & 6.25 & 13.3\% \\
+& Ensemble Voting & 6.11 & 6.34 & 18.1\% \\
+\hline
+
 \multirow{3}{*}{\textbf{VHM}}
 & Ensemble Voting & \textbf{6.89} & \textbf{8.59} & \textbf{7.0\%} \\
 & Hierarchical    & 11.22 & 13.03 & 11.4\% \\
 & RoundRobin      & 24.54 & 34.21 & 25.6\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MWG}}
+& RoundRobin      & \textbf{2.69} & \textbf{3.82} & \textbf{3.4\%} \\
+& Hierarchical    & 4.22 & 4.93 & 5.2\% \\
+& Ensemble Voting & 4.62 & 6.30 & 5.8\% \\
+\hline
+
+\multirow{3}{*}{\textbf{CMG}}
+& Hierarchical    & \textbf{2.66} & \textbf{2.85} & \textbf{7.4\%} \\
+& RoundRobin      & 3.39 & 3.77 & 9.3\% \\
+& Ensemble Voting & 3.65 & 4.17 & 10.3\% \\
+\hline
+
+\multirow{3}{*}{\textbf{KDH}}
+& RoundRobin      & \textbf{1.17} & \textbf{1.30} & \textbf{3.6\%} \\
+& Ensemble Voting & 2.36 & 3.05 & 7.6\% \\
+& Hierarchical    & 2.50 & 4.27 & 8.2\% \\
+\hline
+
+\multirow{3}{*}{\textbf{DGC}}
+& Hierarchical    & \textbf{6.80} & \textbf{11.51} & \textbf{9.4\%} \\
+& Ensemble Voting & 8.19 & 13.18 & 11.5\% \\
+& RoundRobin      & 19.20 & 25.66 & 26.9\% \\
+\hline
+
+\multirow{3}{*}{\textbf{MBB}}
+& RoundRobin      & \textbf{1.93} & \textbf{2.60} & \textbf{8.1\%} \\
+& Hierarchical    & 3.21 & 3.69 & 13.4\% \\
+& Ensemble Voting & 4.51 & 6.06 & 18.9\% \\
 \hline
 
 \end{tabular}
@@ -234,4 +524,3 @@ Ensemble        | 3.96       | 5.07       | 9.47     %
 ================================================================================
 CALCULATION COMPLETE!
 ================================================================================
-I will search for the main
