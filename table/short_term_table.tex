@@ -1,0 +1,75 @@
+\begin{table*}[t!]
+\centering
+\caption{\textbf{Performance Comparison for Short-term Forecasting (3-day Horizon).} Cell background colors indicate the best-performing architecture for each baseline model (Green = Hierarchical, Blue = Round Robin, Pink = Ensemble Voting). Bold text highlights the best-performing LLM within each baseline model (horizontal comparison).}
+\label{tab:performance_short}
+\scriptsize
+\setlength{\tabcolsep}{1.5pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{@{\extracolsep{\fill}}llccc|ccc|ccc|ccc|ccc|ccc}
+\toprule
+\multirow{3}{*}{\textbf{Stock}} &
+\multirow{3}{*}{\textbf{Architecture}} &
+\multicolumn{9}{c|}{\textbf{LSTM}} &
+\multicolumn{9}{c}{\textbf{Transformer}} \\
+\cmidrule(lr){3-11} \cmidrule(lr){12-20}
+& &
+\multicolumn{3}{c|}{\textbf{Llama-3.1-8B}} &
+\multicolumn{3}{c|}{\textbf{GPT-4o}} &
+\multicolumn{3}{c|}{\textbf{Gemini 2.0}} &
+\multicolumn{3}{c|}{\textbf{Llama-3.1-8B}} &
+\multicolumn{3}{c|}{\textbf{GPT-4o}} &
+\multicolumn{3}{c}{\textbf{Gemini 2.0}} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8} \cmidrule(lr){9-11}
+\cmidrule(lr){12-14} \cmidrule(lr){15-17} \cmidrule(lr){18-20}
+& &
+\textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} &
+\textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} &
+\textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} &
+\textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} &
+\textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} &
+\textbf{MAE} & \textbf{RMSE} & \textbf{MAPE} \\
+\midrule
+\multirow{3}{*}{\textbf{DXG}} & Hierarchical & \cellcolor{colorhier}0.55 & \cellcolor{colorhier}0.90 & \cellcolor{colorhier}\textbf{2.3} & \cellcolor{colorhier}\textbf{0.50} & \textbf{0.62} & \cellcolor{colorhier}\textbf{2.3} & \cellcolor{colorhier}0.71 & \cellcolor{colorhier}0.94 & \cellcolor{colorhier}3.08 & \textbf{0.82} & \textbf{0.93} & \textbf{3.8} & 1.75 & 2.08 & 8.1 & 1.54 & 1.83 & 7.1 \\
+ & Round Robin & 1.13 & 1.16 & 5.2 & \cellcolor{colorrr}\textbf{0.50} & \cellcolor{colorrr}\textbf{0.60} & \cellcolor{colorrr}\textbf{2.3} & 0.79 & 0.97 & 3.49 & \textbf{0.92} & \textbf{1.22} & \textbf{4.0} & \cellcolor{colorrr}1.04 & \cellcolor{colorrr}1.34 & \cellcolor{colorrr}4.8 & 1.09 & 1.41 & 5.1 \\
+ & Ensemble & 0.97 & 1.09 & 4.3 & \textbf{0.51} & \textbf{0.64} & \cellcolor{colorens}\textbf{2.3} & 0.89 & 1.09 & 3.89 & \cellcolor{colorens}0.79 & \cellcolor{colorens}0.85 & \cellcolor{colorens}3.5 & 1.86 & 1.93 & 8.4 & \cellcolor{colorens}\textbf{0.27} & \cellcolor{colorens}\textbf{0.40} & \cellcolor{colorens}\textbf{1.3} \\
+ & \multirow{3}{*}{\textbf{FPT}} & Hierarchical & \cellcolor{colorhier}2.92 & \cellcolor{colorhier}3.29 & \cellcolor{colorhier}3.0 & \cellcolor{colorhier}\textbf{2.04} & \cellcolor{colorhier}\textbf{2.83} & \cellcolor{colorhier}\textbf{2.1} & 2.67 & 2.85 & 2.78 & \cellcolor{colorhier}\textbf{2.44} & \cellcolor{colorhier}3.53 & \cellcolor{colorhier}\textbf{2.5} & 3.64 & 4.08 & 3.8 & \cellcolor{colorhier}2.87 & \cellcolor{colorhier}\textbf{3.33} & \cellcolor{colorhier}2.9 \\
+ & Round Robin & 3.09 & 3.52 & 3.1 & 2.75 & 3.23 & 2.8 & \textbf{2.16} & \textbf{2.50} & \textbf{2.27} & \textbf{2.83} & 3.86 & \textbf{2.9} & 2.86 & \textbf{3.56} & \textbf{2.9} & 3.61 & 3.88 & 3.7 \\
+ & Ensemble & 2.97 & 3.68 & \cellcolor{colorens}3.0 & 2.73 & 3.20 & 2.8 & \cellcolor{colorens}\textbf{1.38} & \cellcolor{colorens}\textbf{1.58} & \cellcolor{colorens}\textbf{1.40} & 3.38 & 4.45 & 3.4 & \cellcolor{colorens}\textbf{1.57} & \cellcolor{colorens}\textbf{1.83} & \cellcolor{colorens}\textbf{1.7} & 2.90 & 3.36 & \cellcolor{colorens}2.9 \\
+ & \multirow{3}{*}{\textbf{VCB}} & Hierarchical & 1.03 & 1.72 & 1.7 & \textbf{0.58} & \textbf{0.73} & \textbf{0.9} & 1.34 & 1.55 & 2.22 & 1.23 & 1.51 & 2.0 & \textbf{0.89} & \textbf{1.01} & \textbf{1.4} & 0.99 & 1.36 & 1.6 \\
+ & Round Robin & \cellcolor{colorrr}0.48 & \cellcolor{colorrr}0.65 & \cellcolor{colorrr}0.8 & \cellcolor{colorrr}\textbf{0.26} & \cellcolor{colorrr}\textbf{0.34} & \cellcolor{colorrr}\textbf{0.4} & \cellcolor{colorrr}1.09 & \cellcolor{colorrr}1.32 & \cellcolor{colorrr}1.81 & 0.82 & 0.87 & 1.3 & 0.66 & \cellcolor{colorrr}0.68 & 1.1 & \cellcolor{colorrr}\textbf{0.45} & \textbf{0.67} & \cellcolor{colorrr}\textbf{0.7} \\
+ & Ensemble & 1.05 & 1.21 & 1.7 & \textbf{0.46} & \textbf{0.65} & \textbf{0.7} & 1.79 & 1.96 & 2.93 & \cellcolor{colorens}0.64 & \cellcolor{colorens}0.84 & \cellcolor{colorens}1.0 & \cellcolor{colorens}0.57 & 0.73 & \cellcolor{colorens}0.9 & \textbf{0.46} & \cellcolor{colorens}\textbf{0.65} & \cellcolor{colorens}\textbf{0.7} \\
+ & \multirow{3}{*}{\textbf{VCS}} & Hierarchical & 1.34 & 1.50 & 2.9 & 1.76 & 1.81 & 3.8 & \textbf{0.75} & \textbf{0.82} & \textbf{1.59} & 1.08 & \textbf{1.23} & 2.3 & \textbf{1.04} & 1.25 & \textbf{2.2} & \cellcolor{colorhier}1.74 & \cellcolor{colorhier}1.79 & \cellcolor{colorhier}3.7 \\
+ & Round Robin & 1.06 & 1.15 & 2.3 & 1.79 & 1.85 & 3.8 & \textbf{0.72} & \textbf{0.81} & \textbf{1.55} & \cellcolor{colorrr}0.94 & \cellcolor{colorrr}1.21 & \cellcolor{colorrr}2.0 & \cellcolor{colorrr}\textbf{0.57} & \cellcolor{colorrr}\textbf{0.65} & \cellcolor{colorrr}\textbf{1.2} & 1.77 & 1.83 & 3.8 \\
+ & Ensemble & \cellcolor{colorens}0.81 & \cellcolor{colorens}1.01 & \cellcolor{colorens}1.7 & \cellcolor{colorens}1.31 & \cellcolor{colorens}1.50 & \cellcolor{colorens}2.8 & \cellcolor{colorens}\textbf{0.68} & \cellcolor{colorens}\textbf{0.80} & \cellcolor{colorens}\textbf{1.45} & \textbf{1.08} & 1.25 & \textbf{2.3} & 1.16 & \textbf{1.24} & 2.5 & 1.80 & 1.86 & 3.9 \\
+ & \multirow{3}{*}{\textbf{HPG}} & Hierarchical & 1.39 & 1.66 & 5.0 & 1.61 & 2.80 & 5.5 & \textbf{1.25} & \textbf{1.31} & \textbf{4.52} & 1.80 & 2.45 & 6.3 & 2.37 & 3.24 & 8.2 & \textbf{0.83} & \textbf{1.15} & \textbf{2.9} \\
+ & Round Robin & \cellcolor{colorrr}\textbf{1.10} & \cellcolor{colorrr}\textbf{1.24} & \cellcolor{colorrr}\textbf{3.9} & \cellcolor{colorrr}1.25 & \cellcolor{colorrr}1.32 & \cellcolor{colorrr}4.4 & \cellcolor{colorrr}1.11 & \cellcolor{colorrr}1.25 & \cellcolor{colorrr}4.01 & 1.22 & 1.35 & 4.4 & 1.46 & 2.14 & 5.0 & \cellcolor{colorrr}\textbf{0.79} & \cellcolor{colorrr}\textbf{0.98} & \cellcolor{colorrr}\textbf{2.8} \\
+ & Ensemble & \textbf{1.12} & 1.52 & \cellcolor{colorens}\textbf{3.9} & 2.02 & 2.70 & 7.0 & 3.78 & \textbf{3.92} & 13.71 & \cellcolor{colorens}1.03 & \cellcolor{colorens}1.15 & \cellcolor{colorens}3.7 & \cellcolor{colorens}\textbf{0.53} & \cellcolor{colorens}\textbf{0.71} & \cellcolor{colorens}\textbf{1.9} & 0.89 & 1.17 & 3.1 \\
+ & \multirow{3}{*}{\textbf{TCB}} & Hierarchical & 1.89 & 2.59 & 5.0 & \textbf{0.96} & \cellcolor{colorhier}\textbf{1.10} & \textbf{2.6} & 1.52 & 1.76 & 4.08 & 1.46 & 2.06 & 4.0 & 1.83 & 1.99 & 4.9 & \textbf{1.39} & \textbf{1.51} & \textbf{3.7} \\
+ & Round Robin & \cellcolor{colorrr}\textbf{0.73} & \cellcolor{colorrr}\textbf{0.82} & \cellcolor{colorrr}\textbf{2.0} & 0.90 & 1.11 & 2.3 & \cellcolor{colorrr}1.42 & \cellcolor{colorrr}1.54 & \cellcolor{colorrr}3.67 & \cellcolor{colorrr}1.23 & \cellcolor{colorrr}1.25 & \cellcolor{colorrr}3.3 & 1.85 & 2.14 & 5.0 & \cellcolor{colorrr}\textbf{1.00} & \textbf{1.23} & \cellcolor{colorrr}\textbf{2.6} \\
+ & Ensemble & 2.19 & 2.79 & 6.0 & \cellcolor{colorens}\textbf{0.85} & \textbf{1.13} & \cellcolor{colorens}\textbf{2.2} & 2.35 & 2.69 & 6.03 & 2.10 & 2.44 & 5.7 & \cellcolor{colorens}1.39 & \cellcolor{colorens}1.90 & \cellcolor{colorens}3.8 & \textbf{1.09} & \cellcolor{colorens}\textbf{1.16} & \textbf{2.9} \\
+ & \multirow{3}{*}{\textbf{VHM}} & Hierarchical & 3.50 & 4.43 & 3.1 & 3.24 & \textbf{3.79} & 2.9 & \cellcolor{colorhier}\textbf{3.05} & 4.63 & \cellcolor{colorhier}\textbf{2.72} & \cellcolor{colorhier}2.53 & \cellcolor{colorhier}\textbf{3.27} & \cellcolor{colorhier}2.2 & \cellcolor{colorhier}\textbf{2.18} & 3.38 & \cellcolor{colorhier}\textbf{1.9} & 3.41 & 4.16 & 3.0 \\
+ & Round Robin & 7.95 & 8.96 & 7.1 & \textbf{2.65} & \textbf{3.68} & \textbf{2.4} & 3.33 & 3.95 & 2.96 & 5.13 & 6.24 & 4.5 & 4.36 & 6.30 & 3.8 & \textbf{3.58} & \textbf{4.47} & \textbf{3.2} \\
+ & Ensemble & \cellcolor{colorens}1.74 & \cellcolor{colorens}1.85 & \cellcolor{colorens}1.6 & \cellcolor{colorens}\textbf{1.27} & \cellcolor{colorens}\textbf{1.43} & \cellcolor{colorens}\textbf{1.2} & 3.19 & \cellcolor{colorens}3.25 & 2.85 & 3.72 & 4.53 & 3.3 & \textbf{2.56} & \cellcolor{colorens}\textbf{2.77} & \textbf{2.2} & \cellcolor{colorens}2.97 & \cellcolor{colorens}3.83 & \cellcolor{colorens}2.6 \\
+ & \multirow{3}{*}{\textbf{MWG}} & Hierarchical & \textbf{1.61} & \textbf{2.02} & \textbf{1.9} & 9.65 & 9.71 & 11.6 & \cellcolor{colorhier}2.59 & \cellcolor{colorhier}2.95 & \cellcolor{colorhier}3.17 & 1.55 & 2.04 & 1.9 & 1.67 & 1.88 & 2.0 & \cellcolor{colorhier}\textbf{1.09} & \cellcolor{colorhier}\textbf{1.27} & \cellcolor{colorhier}\textbf{1.3} \\
+ & Round Robin & \cellcolor{colorrr}\textbf{1.31} & \cellcolor{colorrr}\textbf{1.51} & \cellcolor{colorrr}\textbf{1.5} & 8.82 & 9.26 & 10.7 & 2.68 & 3.45 & 3.32 & \cellcolor{colorrr}\textbf{1.04} & \cellcolor{colorrr}\textbf{1.25} & \cellcolor{colorrr}\textbf{1.2} & 1.61 & 2.05 & 1.9 & 1.17 & 1.31 & 1.4 \\
+ & Ensemble & \textbf{2.34} & \textbf{3.27} & \textbf{2.8} & \cellcolor{colorens}3.53 & \cellcolor{colorens}4.06 & \cellcolor{colorens}4.3 & 3.93 & 4.94 & 4.62 & 1.50 & 1.84 & 1.8 & \cellcolor{colorens}\textbf{1.01} & \cellcolor{colorens}\textbf{1.03} & \cellcolor{colorens}\textbf{1.2} & 1.13 & 1.30 & 1.4 \\
+ & \multirow{3}{*}{\textbf{CMG}} & Hierarchical & \textbf{1.03} & \textbf{1.37} & \textbf{2.6} & 6.02 & 6.10 & 15.3 & 1.75 & 2.21 & 4.39 & 1.29 & 1.78 & 3.2 & \textbf{1.01} & \textbf{1.08} & \textbf{2.6} & 3.45 & 3.98 & 8.7 \\
+ & Round Robin & \textbf{1.14} & \textbf{1.26} & \textbf{3.0} & 3.50 & 4.65 & 9.0 & 3.01 & 3.16 & 7.59 & \cellcolor{colorrr}\textbf{0.99} & \cellcolor{colorrr}\textbf{1.12} & \cellcolor{colorrr}\textbf{2.6} & 1.20 & 1.73 & 2.9 & 5.19 & 5.27 & 13.2 \\
+ & Ensemble & \cellcolor{colorens}\textbf{0.89} & \cellcolor{colorens}\textbf{0.99} & \cellcolor{colorens}\textbf{2.2} & \cellcolor{colorens}1.32 & \cellcolor{colorens}1.62 & \cellcolor{colorens}3.4 & \cellcolor{colorens}0.95 & \cellcolor{colorens}1.36 & \cellcolor{colorens}2.51 & 1.10 & 1.32 & 2.9 & \cellcolor{colorens}\textbf{0.40} & \cellcolor{colorens}\textbf{0.46} & \cellcolor{colorens}\textbf{1.0} & \cellcolor{colorens}3.02 & \cellcolor{colorens}3.49 & \cellcolor{colorens}7.9 \\
+ & \multirow{3}{*}{\textbf{KDH}} & Hierarchical & \cellcolor{colorhier}\textbf{1.35} & \cellcolor{colorhier}\textbf{1.49} & \cellcolor{colorhier}\textbf{3.9} & 2.32 & 3.05 & 6.5 & 4.38 & 4.59 & 12.74 & 1.88 & 2.40 & 5.6 & \textbf{1.55} & 2.14 & \textbf{4.5} & 1.62 & \textbf{1.92} & 4.7 \\
+ & Round Robin & 1.95 & \textbf{2.22} & 5.7 & \cellcolor{colorrr}\textbf{1.60} & \cellcolor{colorrr}2.33 & \cellcolor{colorrr}\textbf{4.5} & \cellcolor{colorrr}\textbf{1.60} & 2.33 & \cellcolor{colorrr}\textbf{4.46} & 2.03 & 2.35 & 5.9 & 1.77 & 2.79 & 5.2 & \cellcolor{colorrr}\textbf{1.23} & \cellcolor{colorrr}\textbf{1.58} & \cellcolor{colorrr}\textbf{3.6} \\
+ & Ensemble & 2.07 & 2.73 & 6.1 & 2.87 & 3.22 & 8.2 & \textbf{1.74} & \cellcolor{colorens}\textbf{1.81} & \textbf{5.00} & \cellcolor{colorens}\textbf{0.96} & \cellcolor{colorens}\textbf{1.19} & \cellcolor{colorens}\textbf{2.8} & \cellcolor{colorens}1.39 & \cellcolor{colorens}1.96 & \cellcolor{colorens}4.1 & 1.61 & 1.84 & 4.7 \\
+ & \multirow{3}{*}{\textbf{DGC}} & Hierarchical & \textbf{2.00} & \textbf{2.13} & \textbf{2.1} & 3.27 & 3.87 & 3.5 & 2.77 & 3.33 & 2.94 & \cellcolor{colorhier}\textbf{1.34} & \cellcolor{colorhier}\textbf{1.81} & \cellcolor{colorhier}\textbf{1.4} & 3.23 & 3.28 & 3.4 & 4.10 & 5.55 & 4.4 \\
+ & Round Robin & \cellcolor{colorrr}\textbf{1.29} & \cellcolor{colorrr}\textbf{1.70} & \cellcolor{colorrr}\textbf{1.4} & 4.91 & 6.77 & 5.1 & 3.80 & 4.34 & 4.04 & 2.09 & 2.97 & 2.3 & \cellcolor{colorrr}\textbf{1.81} & \cellcolor{colorrr}\textbf{2.29} & \cellcolor{colorrr}\textbf{1.9} & 4.50 & 5.86 & 4.8 \\
+ & Ensemble & 3.31 & 4.06 & 3.6 & \cellcolor{colorens}2.31 & \cellcolor{colorens}3.11 & \cellcolor{colorens}2.5 & \cellcolor{colorens}\textbf{2.22} & \cellcolor{colorens}\textbf{2.84} & \cellcolor{colorens}\textbf{2.31} & 3.14 & 3.55 & 3.4 & \textbf{1.89} & \textbf{2.37} & \textbf{2.0} & \cellcolor{colorens}2.42 & \cellcolor{colorens}2.83 & \cellcolor{colorens}2.6 \\
+ & \multirow{3}{*}{\textbf{MBB}} & Hierarchical & 0.83 & 1.25 & 3.3 & \cellcolor{colorhier}1.10 & \cellcolor{colorhier}1.25 & \cellcolor{colorhier}4.3 & \textbf{0.75} & \textbf{0.89} & \textbf{2.85} & 1.21 & 1.36 & 4.8 & 1.07 & 1.33 & 4.3 & \textbf{0.63} & \textbf{0.67} & \textbf{2.4} \\
+ & Round Robin & 1.55 & 1.63 & 6.0 & 2.05 & 2.41 & 7.7 & \cellcolor{colorrr}\textbf{0.55} & \cellcolor{colorrr}\textbf{0.72} & \cellcolor{colorrr}\textbf{2.21} & \cellcolor{colorrr}\textbf{0.91} & \cellcolor{colorrr}1.14 & \cellcolor{colorrr}\textbf{3.6} & 0.97 & \textbf{1.07} & 3.8 & 1.02 & 1.16 & 4.0 \\
+ & Ensemble & \cellcolor{colorens}\textbf{0.58} & \cellcolor{colorens}\textbf{0.68} & \cellcolor{colorens}\textbf{2.3} & 1.75 & 1.95 & 6.9 & 0.66 & 0.81 & 2.50 & 1.81 & 2.24 & 7.0 & \cellcolor{colorens}0.73 & \cellcolor{colorens}0.88 & \cellcolor{colorens}2.7 & \cellcolor{colorens}\textbf{0.31} & \cellcolor{colorens}\textbf{0.48} & \cellcolor{colorens}\textbf{1.1} \\
+\bottomrule
+\end{tabular}
+\vspace{0.1cm}
+\begin{flushleft}
+\scriptsize
+\textbf{Note:} Bold values indicate best performance within each LLM group. Each stock has three rows: Hierarchical, Round Robin, and Ensemble architectures.
+\end{flushleft}
+\end{table*}

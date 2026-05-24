@@ -1,0 +1,29 @@
+\begin{table*}[t]
+\centering
+\caption{Aggregated Performance Comparison Across Forecasting Horizons, Architectures, and LLMs.}
+\label{tab:aggregated_performance}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llccc|ccc}
+\toprule
+\multirow{2}{*}{\textbf{Horizon}} & \multirow{2}{*}{\textbf{Architecture}} & \multicolumn{3}{c|}{\textbf{LSTM-based Multi-Agent}} & \multicolumn{3}{c}{\textbf{Transformer-based Multi-Agent}} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8}
+& & \textbf{MAE} & \textbf{RMSE} & \textbf{MAPE (\%)} & \textbf{MAE} & \textbf{RMSE} & \textbf{MAPE (\%)} \\ \midrule
+\multirow{3}{*}{\textbf{Short-term}} 
+& Hierarchical & 2.1117 & 2.4956 & 4.03 & \textbf{1.7922} & \textbf{2.2119} & \textbf{3.71} \\
+& Round Robin & 2.1117 & 2.4919 & 3.86 & \textbf{1.8253} & \textbf{2.2561} & \textbf{3.51} \\
+& Ensemble & 1.7222 & 2.0703 & 3.43 & \textbf{1.5328} & \textbf{1.8286} & \textbf{3.01} \\
+\midrule
+\multirow{3}{*}{\textbf{Medium-term}} 
+& Hierarchical & 3.6433 & 4.3472 & 6.89 & \textbf{3.1861} & \textbf{3.9572} & \textbf{5.83} \\
+& Round Robin & \textbf{2.9714} & \textbf{3.6694} & \textbf{5.23} & 3.2436 & 4.1267 & 5.82 \\
+& Ensemble & 2.7647 & \textbf{3.4661} & \textbf{4.71} & \textbf{2.6739} & 3.5003 & 5.06 \\
+\midrule
+\multirow{3}{*}{\textbf{Long-term}} 
+& Hierarchical & \textbf{3.7917} & \textbf{4.6594} & \textbf{8.61} & 4.1919 & 5.2447 & 9.16 \\
+& Round Robin & 4.3328 & 5.3242 & \textbf{8.99} & \textbf{4.1294} & \textbf{5.1675} & 9.09 \\
+& Ensemble & \textbf{3.0317} & \textbf{3.7936} & \textbf{7.24} & 4.0689 & 5.0539 & 8.73 \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table*}

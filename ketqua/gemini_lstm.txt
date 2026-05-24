@@ -1,4 +1,4 @@
-K:\1\Preparation_of_Papers_for_IEEE_ACCESS\thongke>python gemini_lstm.py 
+K:\1\Preparation_of_Papers_for_IEEE_ACCESS\thongke>python gemini_lstm.py
 ================================================================================
 PERFORMANCE METRICS CALCULATION RESULTS
 ================================================================================
@@ -33,7 +33,7 @@ FPT:
 HPG:
   Hierarchical | MAE:  1.25 | RMSE:  1.31 | MAPE:  4.52%
   RoundRobin   | MAE:  1.11 | RMSE:  1.25 | MAPE:  4.01%
-  Ensemble     | MAE:  1.25 | RMSE:  1.31 | MAPE:  4.52%
+  Ensemble     | MAE:  3.78 | RMSE:  3.92 | MAPE: 13.71%
   BEST         | RoundRobin (MAPE: 4.01%)
 
 KDH:
@@ -108,7 +108,7 @@ FPT:
 HPG:
   Hierarchical | MAE:  1.40 | RMSE:  1.63 | MAPE:  4.98%
   RoundRobin   | MAE:  1.19 | RMSE:  1.36 | MAPE:  4.29%
-  Ensemble     | MAE:  1.40 | RMSE:  1.63 | MAPE:  4.98%
+  Ensemble     | MAE:  3.19 | RMSE:  3.54 | MAPE: 11.43%
   BEST         | RoundRobin (MAPE: 4.29%)
 
 KDH:
@@ -182,9 +182,9 @@ FPT:
 
 HPG:
   Hierarchical | MAE:  1.13 | RMSE:  1.16 | MAPE:  4.23%
-  RoundRobin   | MAE:  0.85 | RMSE:  0.94 | MAPE:  3.19%
-  Ensemble     | MAE:  1.13 | RMSE:  1.16 | MAPE:  4.23%
-  BEST         | RoundRobin (MAPE: 3.19%)
+  RoundRobin   | MAE:  1.71 | RMSE:  2.19 | MAPE:  6.46%
+  Ensemble     | MAE:  2.51 | RMSE:  3.09 | MAPE:  9.41%
+  BEST         | Hierarchical (MAPE: 4.23%)
 
 KDH:
   Hierarchical | MAE:  3.48 | RMSE:  3.84 | MAPE: 10.65%
@@ -269,7 +269,7 @@ LATEX TABLE FORMAT
 \multirow{3}{*}{\textbf{HPG}}
 & RoundRobin      & \textbf{1.11} & \textbf{1.25} & \textbf{4.0\%} \\
 & Hierarchical    & 1.25 & 1.31 & 4.5\% \\
-& Ensemble Voting & 1.25 & 1.31 & 4.5\% \\
+& Ensemble Voting & 3.78 & 3.92 & 13.7\% \\
 \hline
 
 \multirow{3}{*}{\textbf{KDH}}
@@ -355,7 +355,7 @@ LATEX TABLE FORMAT
 \multirow{3}{*}{\textbf{HPG}}
 & RoundRobin      & \textbf{1.19} & \textbf{1.36} & \textbf{4.3\%} \\
 & Hierarchical    & 1.40 & 1.63 & 5.0\% \\
-& Ensemble Voting & 1.40 & 1.63 & 5.0\% \\
+& Ensemble Voting & 3.19 & 3.54 & 11.4\% \\
 \hline
 
 \multirow{3}{*}{\textbf{KDH}}
@@ -439,9 +439,9 @@ LATEX TABLE FORMAT
 \hline
 
 \multirow{3}{*}{\textbf{HPG}}
-& RoundRobin      & \textbf{0.85} & \textbf{0.94} & \textbf{3.2\%} \\
-& Hierarchical    & 1.13 & 1.16 & 4.2\% \\
-& Ensemble Voting & 1.13 & 1.16 & 4.2\% \\
+& Hierarchical    & \textbf{1.13} & \textbf{1.16} & \textbf{4.2\%} \\
+& RoundRobin      & 1.71 & 2.19 & 6.5\% \\
+& Ensemble Voting & 2.51 & 3.09 & 9.4\% \\
 \hline
 
 \multirow{3}{*}{\textbf{KDH}}
@@ -500,7 +500,7 @@ Architecture    | Avg MAE    | Avg RMSE   | Avg MAPE
 -----------------------------------------------------------------
 Hierarchical    | 1.96       | 2.32       | 3.92     %
 RoundRobin      | 1.86       | 2.19       | 3.45     %
-Ensemble        | 1.75       | 2.04       | 3.33     %
+Ensemble        | 1.96       | 2.25       | 4.10     %
 -----------------------------------------------------------------
 
 MEDIUM-TERM GLOBAL AVERAGES:
@@ -509,7 +509,7 @@ Architecture    | Avg MAE    | Avg RMSE   | Avg MAPE
 -----------------------------------------------------------------
 Hierarchical    | 3.99       | 4.59       | 7.89     %
 RoundRobin      | 2.63       | 3.07       | 5.00     %
-Ensemble        | 2.00       | 2.42       | 4.01     %
+Ensemble        | 2.14       | 2.58       | 4.55     %
 -----------------------------------------------------------------
 
 LONG-TERM GLOBAL AVERAGES:
@@ -517,8 +517,8 @@ LONG-TERM GLOBAL AVERAGES:
 Architecture    | Avg MAE    | Avg RMSE   | Avg MAPE
 -----------------------------------------------------------------
 Hierarchical    | 3.98       | 4.65       | 9.20     %
-RoundRobin      | 3.54       | 4.23       | 7.98     %
-Ensemble        | 2.95       | 3.59       | 6.62     %
+RoundRobin      | 3.61       | 4.33       | 8.25     %
+Ensemble        | 3.07       | 3.75       | 7.06     %
 -----------------------------------------------------------------
 
 ================================================================================

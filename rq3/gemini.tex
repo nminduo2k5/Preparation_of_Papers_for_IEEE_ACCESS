@@ -1,0 +1,165 @@
+\clearpage
+\onecolumn
+
+{
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
+\scriptsize
+\begin{longtable}{llcc|cccc|cccc|cccc}
+\caption{Comparison of Short-term, Medium-term, and Long-term Forecasts Across Architectures and Stocks (Gemini Baseline)}
+\label{tab:full_forecast_gemini} \\
+\toprule
+\multirow{2}{*}{\textbf{Stock}} &
+\multirow{2}{*}{\textbf{Architecture}} &
+\multicolumn{2}{c|}{\textbf{Start}} &
+\multicolumn{4}{c|}{\textbf{Short-term}} &
+\multicolumn{4}{c|}{\textbf{Medium-term}} &
+\multicolumn{4}{c}{\textbf{Long-term}} \\
+\cmidrule(lr){3-4}
+\cmidrule(lr){5-8}
+\cmidrule(lr){9-12}
+\cmidrule(lr){13-16}
+& &
+\textbf{Date} & \textbf{Price} &
+\textbf{End Date} & \textbf{Pred} & \textbf{Act} & \textbf{Gap} &
+\textbf{End Date} & \textbf{Pred} & \textbf{Act} & \textbf{Gap} &
+\textbf{End Date} & \textbf{Pred} & \textbf{Act} & \textbf{Gap} \\
+\midrule
+\endfirsthead
+
+\multicolumn{16}{c}%
+{{\tablename\ \thetable{} -- continued from previous page}} \\
+\toprule
+\multirow{2}{*}{\textbf{Stock}} &
+\multirow{2}{*}{\textbf{Architecture}} &
+\multicolumn{2}{c|}{\textbf{Start}} &
+\multicolumn{4}{c|}{\textbf{Short-term}} &
+\multicolumn{4}{c|}{\textbf{Medium-term}} &
+\multicolumn{4}{c}{\textbf{Long-term}} \\
+\cmidrule(lr){3-4}
+\cmidrule(lr){5-8}
+\cmidrule(lr){9-12}
+\cmidrule(lr){13-16}
+& &
+\textbf{Date} & \textbf{Price} &
+\textbf{End Date} & \textbf{Pred} & \textbf{Act} & \textbf{Gap} &
+\textbf{End Date} & \textbf{Pred} & \textbf{Act} & \textbf{Gap} &
+\textbf{End Date} & \textbf{Pred} & \textbf{Act} & \textbf{Gap} \\
+\midrule
+\endhead
+
+\midrule \multicolumn{16}{r}{{Continued on next page}} \\
+\endfoot
+
+\endlastfoot
+
+% ===================== DXG ======================
+\multirow{4}{*}{\textbf{DXG}}
+& \textbf{Baseline}
+& 31/08 & 22.8 & 03/09 & 19.66 & 24.00 & \textcolor{red}{\(\downarrow\)-4.34} & 14/09 & 26.58 & 24.05 & \textcolor{green}{\(\uparrow\)+2.53} & 30/10 & 19.44 & 21.20 & \textcolor{green}{\(\uparrow\)+1.76} \\
+& & 16/10 & 22.45 & 19/10 & 24.90 & 22.60 & \textcolor{green}{\(\uparrow\)+2.30} & 30/10 & 17.67 & 21.20 & \textcolor{green}{\(\uparrow\)+3.53} & 15/12 & 19.59 & 16.30 & \textcolor{green}{\(\uparrow\)+3.29} \\
+& & 21/10 & 20.0 & 24/10 & 17.19 & 20.90 & \textcolor{red}{\(\downarrow\)-3.71} & 04/11 & 23.12 & 20.15 & \textcolor{green}{\(\uparrow\)+2.97} & 20/12 & 21.13 & 17.80 & \textcolor{red}{\(\downarrow\)-3.33} \\
+& & 22/10 & 20.5 & 25/10 & 23.08 & 20.90 & \textcolor{green}{\(\uparrow\)+2.18} & 05/11 & 16.87 & 20.10 & \textcolor{green}{\(\uparrow\)+3.23} & 21/12 & 21.22 & 17.80 & \textcolor{red}{\(\downarrow\)-3.42} \\
+\midrule
+
+% ===================== FPT ======================
+\multirow{4}{*}{\textbf{FPT}}
+& \textbf{Baseline}
+& 01/09 & 101.6 & 04/09 & 90.02 & 105.00 & \textcolor{red}{\(\downarrow\)-14.98} & 15/09 & 116.10 & 101.90 & \textcolor{green}{\(\uparrow\)+14.20} & 31/10 & 118.85 & 103.90 & \textcolor{green}{\(\uparrow\)+14.95} \\
+& & 16/10 & 89.8 & 19/10 & 104.49 & 88.10 & \textcolor{red}{\(\downarrow\)-16.39} & 30/10 & 86.54 & 102.70 & \textcolor{red}{\(\downarrow\)-16.16} & 15/12 & 113.80 & 93.80 & \textcolor{green}{\(\uparrow\)+20.00} \\
+& & 21/10 & 93 & 24/10 & 86.85 & 97.70 & \textcolor{red}{\(\downarrow\)-10.85} & 04/11 & 89.48 & 103.30 & \textcolor{red}{\(\downarrow\)-13.82} & 20/12 & 80.35 & 93.90 & \textcolor{red}{\(\downarrow\)-13.55} \\
+& & 22/10 & 97 & 25/10 & 105.66 & 97.70 & \textcolor{green}{\(\uparrow\)+7.96} & 05/11 & 118.73 & 100.90 & \textcolor{green}{\(\uparrow\)+17.83} & 21/12 & 113.37 & 93.90 & \textcolor{red}{\(\downarrow\)-19.47} \\
+\midrule
+
+% ===================== VCB ======================
+\multirow{4}{*}{\textbf{VCB}}
+& \textbf{Baseline}
+& 30/08 & 68.6 & 02/09 & 74.74 & 68.60 & \textcolor{red}{\(\downarrow\)-6.14} & 13/09 & 80.08 & 65.80 & \textcolor{red}{\(\downarrow\)-14.28} & 29/10 & 55.04 & 60.70 & \textcolor{green}{\(\uparrow\)+5.66} \\
+& & 16/10 & 62.9 & 19/10 & 51.34 & 61.90 & \textcolor{green}{\(\uparrow\)+10.56} & 30/10 & 65.79 & 60.60 & \textcolor{red}{\(\downarrow\)-5.19} & 15/12 & 50.75 & 56.80 & \textcolor{green}{\(\uparrow\)+6.05} \\
+& & 21/10 & 59.3 & 24/10 & 52.59 & 59.50 & \textcolor{red}{\(\downarrow\)-6.91} & 04/11 & 71.71 & 60.10 & \textcolor{green}{\(\uparrow\)+11.61} & 20/12 & 69.44 & 57.50 & \textcolor{red}{\(\downarrow\)-11.94} \\
+& & 22/10 & 59.6 & 25/10 & 69.68 & 59.50 & \textcolor{red}{\(\downarrow\)-10.18} & 05/11 & 52.38 & 60.80 & \textcolor{red}{\(\downarrow\)-8.42} & 21/12 & 47.77 & 57.50 & \textcolor{green}{\(\uparrow\)+9.73} \\
+\midrule
+
+% ===================== VCS ======================
+\multirow{4}{*}{\textbf{VCS}}
+& \textbf{Baseline}
+& 30/08 & 48.8 & 02/09 & 43.43 & 48.80 & \textcolor{red}{\(\downarrow\)-5.37} & 13/09 & 60.71 & 50.00 & \textcolor{green}{\(\uparrow\)+10.71} & 29/10 & 40.58 & 47.60 & \textcolor{green}{\(\uparrow\)+7.02} \\
+& & 16/10 & 47.2 & 19/10 & 55.76 & 46.80 & \textcolor{red}{\(\downarrow\)-8.96} & 30/10 & 37.11 & 47.40 & \textcolor{red}{\(\downarrow\)-10.29} & 15/12 & 55.26 & 46.50 & \textcolor{red}{\(\downarrow\)-8.76} \\
+& & 21/10 & 45.5 & 24/10 & 41.34 & 46.20 & \textcolor{red}{\(\downarrow\)-4.86} & 04/11 & 37.88 & 47.10 & \textcolor{red}{\(\downarrow\)-9.22} & 20/12 & 37.83 & 43.00 & \textcolor{green}{\(\uparrow\)+5.17} \\
+& & 22/10 & 45.5 & 25/10 & 42.48 & 46.20 & \textcolor{red}{\(\downarrow\)-3.72} & 05/11 & 37.61 & 46.90 & \textcolor{red}{\(\downarrow\)-9.29} & 21/12 & 47.14 & 43.00 & \textcolor{red}{\(\downarrow\)-4.14} \\
+\midrule
+
+% ===================== HPG ======================
+\multirow{4}{*}{\textbf{HPG}}
+& \textbf{Baseline}
+& 01/09 & 27.5 & 04/09 & 25.29 & 29.85 & \textcolor{red}{\(\downarrow\)-4.56} & 15/09 & 24.52 & 30.35 & \textcolor{red}{\(\downarrow\)-5.83} & 31/10 & 20.94 & 26.70 & \textcolor{green}{\(\uparrow\)+5.76} \\
+& & 16/10 & 28.25 & 19/10 & 25.28 & 28.00 & \textcolor{green}{\(\uparrow\)+2.72} & 30/10 & 22.43 & 26.90 & \textcolor{green}{\(\uparrow\)+4.47} & 15/12 & 23.08 & 26.25 & \textcolor{green}{\(\uparrow\)+3.17} \\
+& & 21/10 & 26.8 & 24/10 & 21.22 & 26.40 & \textcolor{green}{\(\uparrow\)+5.18} & 04/11 & 22.53 & 26.75 & \textcolor{green}{\(\uparrow\)+4.22} & 20/12 & 32.25 & 26.70 & \textcolor{red}{\(\downarrow\)-5.55} \\
+& & 22/10 & 26.7 & 25/10 & 23.04 & 26.40 & \textcolor{green}{\(\uparrow\)+3.36} & 05/11 & 22.65 & 26.30 & \textcolor{green}{\(\uparrow\)+3.65} & 21/12 & 31.25 & 26.70 & \textcolor{red}{\(\downarrow\)-4.55} \\
+\midrule
+
+% ===================== TCB ======================
+\multirow{4}{*}{\textbf{TCB}}
+& \textbf{Baseline}
+& 01/09 & 39.6 & 04/09 & 43.81 & 39.60 & \textcolor{red}{\(\downarrow\)-4.21} & 15/09 & 44.42 & 39.00 & \textcolor{red}{\(\downarrow\)-5.42} & 31/10 & 42.56 & 35.10 & \textcolor{red}{\(\downarrow\)-7.46} \\
+& & 16/10 & 41.25 & 19/10 & 35.24 & 40.65 & \textcolor{green}{\(\uparrow\)+5.41} & 30/10 & 39.85 & 35.70 & \textcolor{green}{\(\uparrow\)+4.15} & 15/12 & 35.34 & 32.00 & \textcolor{green}{\(\uparrow\)+3.34} \\
+& & 21/10 & 37.65 & 24/10 & 43.31 & 36.10 & \textcolor{red}{\(\downarrow\)-7.21} & 04/11 & 31.89 & 35.00 & \textcolor{green}{\(\uparrow\)+3.11} & 20/12 & 38.54 & 33.60 & \textcolor{red}{\(\downarrow\)-4.94} \\
+& & 22/10 & 38 & 25/10 & 30.25 & 36.10 & \textcolor{green}{\(\uparrow\)+5.85} & 05/11 & 39.18 & 34.10 & \textcolor{red}{\(\downarrow\)-5.08} & 21/12 & 29.64 & 33.60 & \textcolor{green}{\(\uparrow\)+3.96} \\
+\midrule
+
+% ===================== VHM ======================
+\multirow{4}{*}{\textbf{VHM}}
+& \textbf{Baseline}
+& 01/09 & 104.5 & 04/09 & 92.87 & 102.30 & \textcolor{green}{\(\uparrow\)+9.43} & 15/09 & 113.37 & 104.50 & \textcolor{red}{\(\downarrow\)-8.87} & 31/10 & 78.59 & 99.20 & \textcolor{green}{\(\uparrow\)+20.61} \\
+& & 16/10 & 122 & 19/10 & 140.94 & 116.00 & \textcolor{red}{\(\downarrow\)-24.94} & 30/10 & 94.20 & 104.00 & \textcolor{green}{\(\uparrow\)+9.80} & 15/12 & 104.11 & 93.90 & \textcolor{green}{\(\uparrow\)+10.21} \\
+& & 21/10 & 110.9 & 24/10 & 94.85 & 114.50 & \textcolor{red}{\(\downarrow\)-19.65} & 04/11 & 109.41 & 100.20 & \textcolor{green}{\(\uparrow\)+9.21} & 20/12 & 85.35 & 101.50 & \textcolor{green}{\(\uparrow\)+16.15} \\
+& & 22/10 & 113 & 25/10 & 131.42 & 114.50 & \textcolor{green}{\(\uparrow\)+16.92} & 05/11 & 113.85 & 99.60 & \textcolor{red}{\(\downarrow\)-14.25} & 21/12 & 91.06 & 101.50 & \textcolor{green}{\(\uparrow\)+10.44} \\
+\midrule
+
+% ===================== MWG ======================
+\multirow{4}{*}{\textbf{MWG}}
+& \textbf{Baseline}
+& 01/09 & 78 & 04/09 & 93.56 & 77.50 & \textcolor{red}{\(\downarrow\)-16.06} & 15/09 & 70.13 & 79.50 & \textcolor{red}{\(\downarrow\)-9.37} & 31/10 & 64.88 & 82.60 & \textcolor{red}{\(\downarrow\)-17.72} \\
+& & 16/10 & 84.5 & 19/10 & 68.91 & 84.50 & \textcolor{red}{\(\downarrow\)-15.59} & 30/10 & 75.49 & 83.90 & \textcolor{green}{\(\uparrow\)+8.41} & 15/12 & 66.05 & 77.70 & \textcolor{green}{\(\uparrow\)+11.65} \\
+& & 21/10 & 83 & 24/10 & 93.06 & 85.70 & \textcolor{green}{\(\uparrow\)+7.36} & 04/11 & 71.02 & 81.80 & \textcolor{green}{\(\uparrow\)+10.78} & 20/12 & 72.98 & 82.90 & \textcolor{green}{\(\uparrow\)+9.92} \\
+& & 22/10 & 84.5 & 25/10 & 99.08 & 85.70 & \textcolor{green}{\(\uparrow\)+13.38} & 05/11 & 72.13 & 80.20 & \textcolor{green}{\(\uparrow\)+8.07} & 21/12 & 101.11 & 82.90 & \textcolor{red}{\(\downarrow\)-18.21} \\
+\midrule
+
+% ===================== CMG ======================
+\multirow{4}{*}{\textbf{CMG}}
+& \textbf{Baseline}
+& 01/09 & 40.3 & 04/09 & 49.70 & 41.85 & \textcolor{green}{\(\uparrow\)+7.85} & 15/09 & 47.47 & 40.80 & \textcolor{green}{\(\uparrow\)+6.67} & 31/10 & 51.11 & 41.90 & \textcolor{green}{\(\uparrow\)+9.21} \\
+& & 16/10 & 38 & 19/10 & 29.81 & 37.30 & \textcolor{green}{\(\uparrow\)+7.49} & 30/10 & 46.48 & 41.30 & \textcolor{green}{\(\uparrow\)+5.18} & 15/12 & 29.06 & 35.10 & \textcolor{green}{\(\uparrow\)+6.04} \\
+& & 21/10 & 38.4 & 24/10 & 45.00 & 38.75 & \textcolor{green}{\(\uparrow\)+6.25} & 04/11 & 44.91 & 39.60 & \textcolor{green}{\(\uparrow\)+5.31} & 20/12 & 31.60 & 35.20 & \textcolor{green}{\(\uparrow\)+3.60} \\
+& & 22/10 & 38.5 & 25/10 & 44.46 & 38.75 & \textcolor{green}{\(\uparrow\)+5.71} & 05/11 & 43.89 & 39.30 & \textcolor{green}{\(\uparrow\)+4.59} & 21/12 & 40.77 & 35.20 & \textcolor{red}{\(\downarrow\)-5.57} \\
+\midrule
+
+% ===================== KDH ======================
+\multirow{4}{*}{\textbf{KDH}}
+& \textbf{Baseline}
+& 01/09 & 36.5 & 04/09 & 30.68 & 36.75 & \textcolor{red}{\(\downarrow\)-6.07} & 15/09 & 27.21 & 34.85 & \textcolor{green}{\(\uparrow\)+7.64} & 31/10 & 29.97 & 35.85 & \textcolor{green}{\(\uparrow\)+5.88} \\
+& & 16/10 & 34.2 & 19/10 & 40.84 & 33.90 & \textcolor{red}{\(\downarrow\)-6.94} & 30/10 & 28.76 & 35.85 & \textcolor{red}{\(\downarrow\)-7.09} & 15/12 & 32.05 & 29.60 & \textcolor{green}{\(\uparrow\)+2.45} \\
+& & 21/10 & 31.75 & 24/10 & 40.46 & 33.80 & \textcolor{green}{\(\uparrow\)+6.66} & 04/11 & 40.78 & 35.60 & \textcolor{green}{\(\uparrow\)+5.18} & 20/12 & 35.41 & 32.65 & \textcolor{green}{\(\uparrow\)+2.76} \\
+& & 22/10 & 32.2 & 25/10 & 39.60 & 33.80 & \textcolor{green}{\(\uparrow\)+5.80} & 05/11 & 27.86 & 34.95 & \textcolor{red}{\(\downarrow\)-7.09} & 21/12 & 28.46 & 32.65 & \textcolor{red}{\(\downarrow\)-4.19} \\
+\midrule
+
+% ===================== DGC ======================
+\multirow{4}{*}{\textbf{DGC}}
+& \textbf{Baseline}
+& 01/09 & 98.2 & 04/09 & 116.27 & 99.30 & \textcolor{green}{\(\uparrow\)+16.97} & 15/09 & 108.20 & 99.50 & \textcolor{green}{\(\uparrow\)+8.70} & 31/10 & 107.62 & 96.00 & \textcolor{red}{\(\downarrow\)-11.62} \\
+& & 16/10 & 95 & 19/10 & 103.39 & 93.20 & \textcolor{red}{\(\downarrow\)-10.19} & 30/10 & 107.49 & 93.60 & \textcolor{red}{\(\downarrow\)-13.89} & 15/12 & 78.38 & 93.00 & \textcolor{green}{\(\uparrow\)+14.62} \\
+& & 21/10 & 89.2 & 24/10 & 112.49 & 92.40 & \textcolor{green}{\(\uparrow\)+20.09} & 04/11 & 106.67 & 94.60 & \textcolor{green}{\(\uparrow\)+12.07} & 20/12 & 61.95 & 70.20 & \textcolor{green}{\(\uparrow\)+8.25} \\
+& & 22/10 & 91 & 25/10 & 78.48 & 92.40 & \textcolor{red}{\(\downarrow\)-13.92} & 05/11 & 103.04 & 95.00 & \textcolor{green}{\(\uparrow\)+8.04} & 21/12 & 56.27 & 70.20 & \textcolor{green}{\(\uparrow\)+13.93} \\
+\midrule
+
+% ===================== MBB ======================
+\multirow{4}{*}{\textbf{MBB}}
+& \textbf{Baseline}
+& 01/09 & 27.75 & 04/09 & 34.20 & 28.25 & \textcolor{green}{\(\uparrow\)+5.95} & 15/09 & 29.07 & 26.85 & \textcolor{red}{\(\downarrow\)-2.22} & 31/10 & 26.96 & 23.60 & \textcolor{green}{\(\uparrow\)+3.36} \\
+& & 16/10 & 27.2 & 19/10 & 24.05 & 27.10 & \textcolor{green}{\(\uparrow\)+3.05} & 30/10 & 19.14 & 23.95 & \textcolor{green}{\(\uparrow\)+4.81} & 15/12 & 28.65 & 23.75 & \textcolor{red}{\(\downarrow\)-4.90} \\
+& & 21/10 & 25.3 & 24/10 & 21.04 & 24.40 & \textcolor{green}{\(\uparrow\)+3.36} & 04/11 & 28.51 & 24.00 & \textcolor{red}{\(\downarrow\)-4.51} & 20/12 & 21.88 & 24.70 & \textcolor{green}{\(\uparrow\)+2.82} \\
+& & 22/10 & 25.45 & 25/10 & 19.96 & 24.40 & \textcolor{green}{\(\uparrow\)+4.44} & 05/11 & 27.08 & 23.90 & \textcolor{red}{\(\downarrow\)-3.18} & 21/12 & 27.34 & 24.70 & \textcolor{red}{\(\downarrow\)-2.64} \\
+\midrule
+
+\end{longtable}
+}

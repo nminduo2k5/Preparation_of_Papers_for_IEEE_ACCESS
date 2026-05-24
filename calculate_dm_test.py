@@ -53,7 +53,10 @@ def load_data_from_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    globals_dict = {}
+    globals_dict = {
+        'process_file': lambda *args, **kwargs: None,
+        '__name__': 'mock'
+    }
     try:
         exec(content, globals_dict)
         return globals_dict.get('data', {})
@@ -75,7 +78,7 @@ def print_res(comp, horizon, dm, p):
 
 def run_dm_tests():
     # Load all tables
-    base_dir = r'k:\1\Preparation_of_Papers_for_IEEE_ACCESS'
+    base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'table')
     gemini_lstm = load_data_from_file(os.path.join(base_dir, 'update_table0.py'))
     gemini_trans = load_data_from_file(os.path.join(base_dir, 'update_table0_5.py'))
     

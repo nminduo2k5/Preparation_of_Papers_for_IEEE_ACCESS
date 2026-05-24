@@ -1,0 +1,31 @@
+\begin{table}[h!]
+\centering
+\caption{\textbf{Aggregate Performance Comparison Across Foundation LLM Families (Averaged Over All Stocks and Coordination Architectures).}}
+\label{tab:llm_aggregate_comparison}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{llccc}
+\toprule
+\textbf{Horizon} & \textbf{Metric} & \textbf{Llama-3.1-8B} & \textbf{GPT-4o} & \textbf{Gemini 2.0 Flash} \\ \midrule
+\multirow{3}{*}{\textbf{Short-term (3-day)}} 
+ & \textbf{MAE} & \textbf{1.6985} & 1.9779 & 1.8715 \\
+ & \textbf{RMSE} & \textbf{2.0819} & 2.3849 & 2.2104 \\
+ & \textbf{MAPE (\%)} & \textbf{3.29\%} & 3.89\% & 3.60\% \\
+\midrule
+\multirow{3}{*}{\textbf{Medium-term (14-day)}} 
+ & \textbf{MAE} & 3.5615 & 2.9918 & \textbf{2.6882} \\
+ & \textbf{RMSE} & 4.5851 & 3.7482 & \textbf{3.2001} \\
+ & \textbf{MAPE (\%)} & 6.14\% & \textbf{5.30\%} & 5.32\% \\
+\midrule
+\multirow{3}{*}{\textbf{Long-term (60-day)}} 
+ & \textbf{MAE} & 4.6619 & 3.9197 & \textbf{3.1915} \\
+ & \textbf{RMSE} & 5.9900 & 4.8493 & \textbf{3.7824} \\
+ & \textbf{MAPE (\%)} & 9.73\% & 8.62\% & \textbf{7.56\%} \\
+\midrule
+\multirow{3}{*}{\textbf{Overall Average}} 
+ & \textbf{MAE} & 3.3073 & 2.9631 & \textbf{2.5837} \\
+ & \textbf{RMSE} & 4.2190 & 3.6608 & \textbf{3.0643} \\
+ & \textbf{MAPE (\%)} & 6.39\% & 5.94\% & \textbf{5.49\%} \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

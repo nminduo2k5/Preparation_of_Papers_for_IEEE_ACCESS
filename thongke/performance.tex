@@ -233,19 +233,19 @@
 \begin{tabular}{@{}llcc@{}}
 \toprule
 \textbf{Dimension} & \textbf{Configuration} & \textbf{Mean MAE} & \textbf{Mean MAPE (\%)} \\ \midrule
-\multirow{2}{*}{\textbf{Base Model (Overall)}} & LSTM-based Multi-Agent & \textbf{2.9423} & \textbf{5.89\%} \\
-                                             & Transformer-based Multi-Agent & 2.9605 & 5.99\% \\ \midrule
+\multirow{2}{*}{\textbf{Base Model (Overall)}} & LSTM-based Multi-Agent & 2.9626 & \textbf{5.96\%} \\
+                                             & Transformer-based Multi-Agent & \textbf{2.9605} & 5.99\% \\ \midrule
 \multirow{3}{*}{\textbf{Architecture (under LSTM)}} & Hierarchical Architecture & 3.1822 & 6.51\% \\
-                                                      & Round Robin Architecture & 3.1386 & 6.03\% \\
-                                                      & Ensemble Voting Architecture & \textbf{2.5062} & \textbf{5.12\%} \\ \bottomrule
+                                                      & Round Robin Architecture & 3.1466 & 6.06\% \\
+                                                      & Ensemble Voting Architecture & \textbf{2.5590} & \textbf{5.32\%} \\ \bottomrule
 \end{tabular}
 \end{table}
 
 The empirical evaluation across all horizons in Table \ref{tab:full_performance_all} yields two key findings, visually highlighted to facilitate the analysis of RQ1 (architectural coordination) and RQ2 (foundation LLMs). Specifically, cell background colors indicate the best-performing architecture for each baseline model (Green = Hierarchical, Blue = Round Robin, Yellow = Ensemble Voting), while bold text highlights the best-performing LLM within each baseline model (horizontal comparison).
 
-First, the \textbf{LSTM-based framework} consistently outperforms the \textbf{Transformer-based} model, achieving a lower average MAE (\textbf{2.9423} vs. \textbf{2.9605}) and MAPE (\textbf{5.89\%} vs. \textbf{5.99\%}). This demonstrates the superior sequence modeling stability of recurrent connections under Vietnam's volatile market conditions.
+First, the \textbf{Transformer-based framework} achieves a slightly lower overall average MAE (\textbf{2.9605} vs. \textbf{2.9626}) compared to the \textbf{LSTM-based} model, while the \textbf{LSTM-based} model achieves a slightly lower overall average MAPE (\textbf{5.96\%} vs. \textbf{5.99\%}), demonstrating comparable sequence modeling stability under Vietnam's volatile market conditions.
 
-Second, within the superior LSTM group, the \textbf{Ensemble architecture} is the top overall performer (overall average MAPE of \textbf{5.12\%}), followed by Round Robin (\textbf{6.03\%}) and Hierarchical (\textbf{6.51\%}). Visually, this architectural distribution and the impact of the foundation LLMs are reflected as follows:
+Second, within the superior LSTM group, the \textbf{Ensemble architecture} is the top overall performer (overall average MAPE of \textbf{5.32\%}), followed by Round Robin (\textbf{6.06\%}) and Hierarchical (\textbf{6.51\%}). Visually, this architectural distribution and the impact of the foundation LLMs are reflected as follows:
 \begin{itemize}
     \item \textbf{Ensemble Voting Dominance (Yellow cells):} The yellow shading dominates across most horizons, particularly in technology (CMG, FPT) and retail (MWG), visually demonstrating the architecture's strength in effectively reconciling heterogeneous technical and fundamental signals.
     \item \textbf{Round Robin Localized Performance (Blue cells):} The blue shading highlights exceptional localized performance in banking (VCB, TCB, MBB) and heavy industry (HPG), where progressive, sequential refinement between agents optimizes complex sectoral forecasts.
@@ -253,7 +253,7 @@ Second, within the superior LSTM group, the \textbf{Ensemble architecture} is th
     \item \textbf{Foundation LLM Comparison (Bold text):} Horizontally, the high density of bolded numbers in the Google Gemini 2.0 Flash columns visually confirms its performance leadership, consistently outperforming GPT-4o and Llama-3.1-8B across the majority of architectures and horizons.
 \end{itemize}
 
-Furthermore, to rigorously validate the superiority of the proposed configurations, the Diebold-Mariano (DM) test was conducted (Table \ref{tab:dm_test}). The test shows that while the Transformer baseline outperforms the LSTM-based framework at the short-term horizon ($p < 0.05$), the LSTM-based framework achieves comparable overall performance across aggregate horizons, showing gradual improvement as the forecasting horizon extends. Crucially, within the LSTM group, the Ensemble Voting architecture demonstrates statistically significant improvements over Hierarchical in both medium- and long-term forecasting ($p < 0.01$), and achieves marginal significance over Round Robin ($p < 0.1$). No significant architectural difference was observed at the short-term horizon ($p > 0.1$), likely due to the higher noise-to-signal ratio. This provides robust statistical evidence that the Ensemble's lower aggregate MAPE is not a product of stochastic variation, but rather a persistent architectural advantage in resolving heterogeneous signals.
+Furthermore, to rigorously validate the superiority of the proposed configurations, the Diebold-Mariano (DM) test was conducted (Table \ref{tab:dm_test}). The test shows that while the Transformer baseline outperforms the LSTM-based framework at the short-term horizon ($p < 0.05$), the LSTM-based framework achieves comparable overall performance across aggregate horizons, showing gradual improvement as the forecasting horizon extends. Crucially, within the LSTM group, the Ensemble Voting architecture demonstrates statistically significant improvements over Hierarchical in medium-term ($p < 0.01$) and long-term forecasting ($p < 0.05$). While the Ensemble Voting architecture achieves lower aggregate MAPE than Round Robin, the DM test shows that their performance difference does not reach statistical significance ($p > 0.1$). No significant architectural difference was observed at the short-term horizon ($p > 0.1$), likely due to the higher noise-to-signal ratio. This provides robust statistical evidence that the Ensemble's lower aggregate MAPE is not a product of stochastic variation, but rather a persistent architectural advantage in resolving heterogeneous signals.
 
 \begin{table}[h!]
 \centering
@@ -262,14 +262,14 @@ Furthermore, to rigorously validate the superiority of the proposed configuratio
 \begin{tabular}{@{}llcc@{}}
 \toprule
 \textbf{Comparison Pair (Model 1 vs. Model 2)} & \textbf{Horizon} & \textbf{DM Statistic} & \bm{$p$}\textbf{-value} \\ \midrule
-Transformer vs. \textbf{LSTM} (Overall) & All & 0.5659 & 0.5714 \\
-Transformer vs. \textbf{LSTM} (Overall) & Short-term & -2.3918 & $0.0168^{**}$ \\
-Transformer vs. \textbf{LSTM} (Overall) & Medium-term & 0.1590 & 0.8737 \\
-Transformer vs. \textbf{LSTM} (Overall) & Long-term & 0.7343 & 0.4628 \\ \midrule
-Hierarchical vs. \textbf{Ensemble} (LSTM) & Medium-term & 3.9140 & $0.0001^{***}$ \\
-Round Robin vs. \textbf{Ensemble} (LSTM) & Medium-term & 1.7069 & $0.0878^{*}$ \\
-Hierarchical vs. \textbf{Ensemble} (LSTM) & Long-term & 2.8200 & $0.0048^{***}$ \\
-Round Robin vs. \textbf{Ensemble} (LSTM) & Long-term & 1.6602 & $0.0969^{*}$ \\ \bottomrule
+Transformer vs. \textbf{LSTM} (Overall) & All & 0.5425 & 0.5875 \\
+Transformer vs. \textbf{LSTM} (Overall) & Short-term & -2.5135 & $0.0120^{**}$ \\
+Transformer vs. \textbf{LSTM} (Overall) & Medium-term & 0.1422 & 0.8869 \\
+Transformer vs. \textbf{LSTM} (Overall) & Long-term & 0.7256 & 0.4681 \\ \midrule
+Hierarchical vs. \textbf{Ensemble} (LSTM) & Medium-term & 3.6596 & $0.0003^{***}$ \\
+Round Robin vs. \textbf{Ensemble} (LSTM) & Medium-term & 1.2938 & 0.1957 \\
+Hierarchical vs. \textbf{Ensemble} (LSTM) & Long-term & 2.5474 & $0.0109^{**}$ \\
+Round Robin vs. \textbf{Ensemble} (LSTM) & Long-term & 1.5858 & 0.1128 \\ \bottomrule
 \multicolumn{4}{l}{\footnotesize Note: $^{***}$, $^{**}$, $^{*}$ indicate significance at 1\%, 5\%, and 10\% levels respectively.} \\
 \multicolumn{4}{l}{\footnotesize Positive DM stat indicates Model 2 (LSTM / Ensemble) outperforms Model 1.} \\
 \multicolumn{4}{l}{\footnotesize To address price scale dominance in MSE-based pooling, robustness checks using the} \\

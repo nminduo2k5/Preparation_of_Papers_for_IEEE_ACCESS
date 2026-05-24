@@ -1,0 +1,70 @@
+Model,Architecture,Horizon,MAE,MAPE (%),RMSE
+GEMINI,Baseline,Short-term,8.583,15.170,10.102
+GEMINI,Baseline,Medium-term,7.795,14.618,8.722
+GEMINI,Baseline,Long-term,8.203,15.326,9.759
+GEMINI + LSTM,Ensemble,Short-term,1.963,4.099,2.575
+GEMINI + LSTM,Ensemble,Medium-term,2.145,4.547,3.103
+GEMINI + LSTM,Ensemble,Long-term,3.065,7.056,4.036
+GEMINI + LSTM,Hierarchical,Short-term,1.960,3.923,2.659
+GEMINI + LSTM,Hierarchical,Medium-term,3.991,7.889,5.196
+GEMINI + LSTM,Hierarchical,Long-term,3.976,9.204,4.995
+GEMINI + LSTM,Round Robin,Short-term,1.856,3.448,2.513
+GEMINI + LSTM,Round Robin,Medium-term,2.632,4.996,3.573
+GEMINI + LSTM,Round Robin,Long-term,3.611,8.249,5.058
+GEMINI + TRANSFORMER,Ensemble,Short-term,1.571,2.923,2.203
+GEMINI + TRANSFORMER,Ensemble,Medium-term,1.644,3.502,2.344
+GEMINI + TRANSFORMER,Ensemble,Long-term,2.175,5.905,3.057
+GEMINI + TRANSFORMER,Hierarchical,Short-term,1.970,3.886,2.780
+GEMINI + TRANSFORMER,Hierarchical,Medium-term,3.262,6.263,4.545
+GEMINI + TRANSFORMER,Hierarchical,Long-term,3.302,7.884,4.510
+GEMINI + TRANSFORMER,Round Robin,Short-term,2.116,4.070,3.041
+GEMINI + TRANSFORMER,Round Robin,Medium-term,2.608,5.274,3.614
+GEMINI + TRANSFORMER,Round Robin,Long-term,3.208,7.783,4.138
+GPT,Baseline,Short-term,8.325,14.475,9.960
+GPT,Baseline,Medium-term,8.816,15.554,10.257
+GPT,Baseline,Long-term,8.214,15.352,9.613
+GPT + LSTM,Ensemble,Short-term,1.745,3.683,2.360
+GPT + LSTM,Ensemble,Medium-term,2.436,4.076,3.647
+GPT + LSTM,Ensemble,Long-term,2.184,5.627,3.155
+GPT + LSTM,Hierarchical,Short-term,2.754,5.101,4.011
+GPT + LSTM,Hierarchical,Medium-term,3.081,5.826,4.252
+GPT + LSTM,Hierarchical,Long-term,3.069,7.294,4.029
+GPT + LSTM,Round Robin,Short-term,2.582,4.612,4.034
+GPT + LSTM,Round Robin,Medium-term,2.979,5.004,4.574
+GPT + LSTM,Round Robin,Long-term,3.413,7.995,4.336
+GPT + TRANSFORMER,Ensemble,Short-term,1.254,2.692,1.645
+GPT + TRANSFORMER,Ensemble,Medium-term,2.859,5.426,5.122
+GPT + TRANSFORMER,Ensemble,Long-term,5.616,10.995,10.539
+GPT + TRANSFORMER,Hierarchical,Short-term,1.853,3.954,2.436
+GPT + TRANSFORMER,Hierarchical,Medium-term,3.219,5.667,5.367
+GPT + TRANSFORMER,Hierarchical,Long-term,4.601,9.501,7.084
+GPT + TRANSFORMER,Round Robin,Short-term,1.679,3.293,2.671
+GPT + TRANSFORMER,Round Robin,Medium-term,3.376,5.838,6.849
+GPT + TRANSFORMER,Round Robin,Long-term,4.636,10.331,7.266
+LLAMA,Baseline,Short-term,8.329,14.626,9.812
+LLAMA,Baseline,Medium-term,9.085,15.780,10.704
+LLAMA,Baseline,Long-term,7.956,14.434,9.583
+LLAMA + LSTM,Ensemble,Short-term,1.670,3.258,2.360
+LLAMA + LSTM,Ensemble,Medium-term,3.860,6.034,8.324
+LLAMA + LSTM,Ensemble,Long-term,3.961,9.473,6.029
+LLAMA + LSTM,Hierarchical,Short-term,1.620,3.073,2.238
+LLAMA + LSTM,Hierarchical,Medium-term,3.859,6.935,6.751
+LLAMA + LSTM,Hierarchical,Long-term,4.332,9.353,6.625
+LLAMA + LSTM,Round Robin,Short-term,1.897,3.492,3.060
+LLAMA + LSTM,Round Robin,Medium-term,3.304,5.690,5.788
+LLAMA + LSTM,Round Robin,Long-term,6.047,11.025,12.819
+LLAMA + TRANSFORMER,Ensemble,Short-term,1.772,3.385,2.496
+LLAMA + TRANSFORMER,Ensemble,Medium-term,3.520,6.231,6.232
+LLAMA + TRANSFORMER,Ensemble,Long-term,4.417,9.305,7.812
+LLAMA + TRANSFORMER,Hierarchical,Short-term,1.551,3.318,2.166
+LLAMA + TRANSFORMER,Hierarchical,Medium-term,3.077,5.588,5.811
+LLAMA + TRANSFORMER,Hierarchical,Long-term,4.673,10.074,7.983
+LLAMA + TRANSFORMER,Round Robin,Short-term,1.680,3.166,2.573
+LLAMA + TRANSFORMER,Round Robin,Medium-term,3.748,6.349,6.579
+LLAMA + TRANSFORMER,Round Robin,Long-term,4.547,9.165,7.437
+LSTM,Baseline,Short-term,8.380,14.626,9.957
+LSTM,Baseline,Medium-term,8.893,15.326,10.776
+LSTM,Baseline,Long-term,7.480,14.321,8.684
+TRANSFORMER,Baseline,Short-term,8.460,13.970,10.367
+TRANSFORMER,Baseline,Medium-term,8.298,15.085,9.537
+TRANSFORMER,Baseline,Long-term,7.904,15.445,8.983

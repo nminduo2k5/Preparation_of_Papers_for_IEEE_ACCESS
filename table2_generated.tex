@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering
+\caption{Summary of Aggregate Performance Metrics Across Models and Coordination Architectures.}
+\label{tab:aggregate_performance_summary}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+\textbf{Dimension} & \textbf{Configuration} & \textbf{Mean MAE} & \textbf{Mean MAPE (\%)} \\ \midrule
+\multirow{2}{*}{\textbf{Base Model (Overall)}} & LSTM-based Multi-Agent & 2.9423 & \textbf{5.89\%} \\
+                                             & Transformer-based Multi-Agent & \textbf{2.9605} & 5.99\% \\ \midrule
+\multirow{3}{*}{\textbf{Architecture (under LSTM)}} & Hierarchical Architecture & 3.1822 & 6.51\% \\
+                                                      & Round Robin Architecture & 3.1386 & 6.03\% \\
+                                                      & Ensemble Voting Architecture & \textbf{2.5062} & \textbf{5.12\%} \\ \bottomrule
+\end{tabular*}
+\end{table*}
